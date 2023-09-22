@@ -1,0 +1,436 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker6
+-projectPath
+C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+-logFile
+Logs/AssetImportWorker6.log
+-srvPort
+62955
+Successfully changed project path to: C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19168] Host "[IP] 172.24.80.1 [Port] 0 [Flags] 2 [Guid] 1829434922 [EditorId] 1829434922 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-25AVAUJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19168] Host "[IP] 172.24.80.1 [Port] 0 [Flags] 2 [Guid] 1829434922 [EditorId] 1829434922 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-25AVAUJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 72.15 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.2230
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.034442 seconds.
+- Loaded All Assemblies, in  0.808 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.463 seconds
+Domain Reload Profiling: 1265ms
+	BeginReloadAssembly (239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (80ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (154ms)
+	LoadAllAssembliesAndSetupDomain (307ms)
+		LoadAssemblies (230ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (302ms)
+			TypeCache.Refresh (298ms)
+				TypeCache.ScanAssembly (266ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (464ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (353ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (236ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.805 seconds
+Refreshing native plugins compatible for Editor in 34.66 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.549 seconds
+Domain Reload Profiling: 7336ms
+	BeginReloadAssembly (243ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (88ms)
+	LoadAllAssembliesAndSetupDomain (1385ms)
+		LoadAssemblies (1075ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (462ms)
+			TypeCache.Refresh (377ms)
+				TypeCache.ScanAssembly (350ms)
+			ScanForSourceGeneratedMonoScriptInfo (46ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (5550ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5251ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (4924ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 37.60 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6046 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 107 unused Assets / (66.5 MB). Loaded Objects now: 6556.
+Memory consumption went from 440.0 MB to 373.5 MB.
+Total: 49.021000 ms (FindLiveObjects: 1.068600 ms CreateObjectMapping: 0.604100 ms MarkObjects: 38.934700 ms  DeleteObjects: 8.412000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 113817.706899 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/door-garage.fbx
+  artifactKey: Guid(5c14f61e50f4d4b9c84bd2d835a31bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/door-garage.fbx using Guid(5c14f61e50f4d4b9c84bd2d835a31bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8d9cf6a5840547ae0611cb69f164ab') in 0.201398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/door-house-window.fbx
+  artifactKey: Guid(0bf5f16b7389b4e5f98b9983ed4b66a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/door-house-window.fbx using Guid(0bf5f16b7389b4e5f98b9983ed4b66a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c043b57ef0db77bb4e9ff7affa4ce564') in 0.033810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-wall-window.fbx
+  artifactKey: Guid(a2f73d04c51ee456abe6d132499fabe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-wall-window.fbx using Guid(a2f73d04c51ee456abe6d132499fabe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f486017c7dc9668d681a107d0b6329d1') in 0.033121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/shutter-window-two.fbx
+  artifactKey: Guid(0e2e972479e3a4bd1aa554e575828c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/shutter-window-two.fbx using Guid(0e2e972479e3a4bd1aa554e575828c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b58a8ea42a255aec8e089998e5a3aa') in 0.029427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-wall-corner.fbx
+  artifactKey: Guid(8df96cad437504c61b761a3a095b7ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-wall-corner.fbx using Guid(8df96cad437504c61b761a3a095b7ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762089133db720040b1db6d6e4b09f71') in 0.033973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-roof-porch-edge.fbx
+  artifactKey: Guid(3da69f05b7ce747c886099905866a921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-roof-porch-edge.fbx using Guid(3da69f05b7ce747c886099905866a921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcc8339440b02bbdc3443f94c9791ba') in 0.028555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/stairs-house.fbx
+  artifactKey: Guid(abb04ae458ba649f79e9d6a066d60b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/stairs-house.fbx using Guid(abb04ae458ba649f79e9d6a066d60b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d68abfdb185f4d55c863ce6de9ca959') in 0.028187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-roof-window.fbx
+  artifactKey: Guid(5bdd195278a514f35803cac9a36fe271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/Parts_M/house-roof-window.fbx using Guid(5bdd195278a514f35803cac9a36fe271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86957e7d75e5807e0f779b7d978e78f8') in 0.023464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 40.067831 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/airport-hangar.fbx
+  artifactKey: Guid(52ac9b43f7abdbd428c6b1415b94ae3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/airport-hangar.fbx using Guid(52ac9b43f7abdbd428c6b1415b94ae3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73417918b7247a6a168d5e6b96dbcf65') in 0.026016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-carwash.fbx
+  artifactKey: Guid(cc486b4725b85364a8e206facc18b49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-carwash.fbx using Guid(cc486b4725b85364a8e206facc18b49e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f59fe793007a3fb864b4baf723d65c8') in 0.032588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-mall.fbx
+  artifactKey: Guid(7df09f422b2381944b91e0a1abecc1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-mall.fbx using Guid(7df09f422b2381944b91e0a1abecc1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456017c55a6557da80ba79d36c375ed5') in 0.036913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-5floor-short.fbx
+  artifactKey: Guid(88c06943aec55d448955290963152619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-5floor-short.fbx using Guid(88c06943aec55d448955290963152619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7288fe310a1d125c967ef582950ec67b') in 0.058588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-cafe.fbx
+  artifactKey: Guid(fa0157c8dd90ffc47a90a611f0e313f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-cafe.fbx using Guid(fa0157c8dd90ffc47a90a611f0e313f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700dcac333e285a3e075dbae0ad4f018') in 0.036691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/airport-terminal.fbx
+  artifactKey: Guid(d94181a6c7e144f4f96e9a8091ea69cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/airport-terminal.fbx using Guid(d94181a6c7e144f4f96e9a8091ea69cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16387307346236dccc5b19839eaa8e64') in 0.043651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-5floor-corner.fbx
+  artifactKey: Guid(52fd24c61d5a2694eb28647f727b6ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-5floor-corner.fbx using Guid(52fd24c61d5a2694eb28647f727b6ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66dbbeb58ac971fa27d5828dc85d22b2') in 0.044869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-firestation.fbx
+  artifactKey: Guid(655a7f49eb50ee246a4f2eb78a5a5e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-firestation.fbx using Guid(655a7f49eb50ee246a4f2eb78a5a5e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23348f84dd771929fb959207766819c8') in 0.054812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-cabin-small.fbx
+  artifactKey: Guid(f999dabca44830e4682373096e140ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-cabin-small.fbx using Guid(f999dabca44830e4682373096e140ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7c871eaea8b24cf17fee3d5ec805f8') in 0.112777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-4floor-short.fbx
+  artifactKey: Guid(3ac7fd567bf36ec469976f0ebc0347f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-block-4floor-short.fbx using Guid(3ac7fd567bf36ec469976f0ebc0347f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4de1afdd0772510bf212e291306006') in 0.047124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-house-modern-big.fbx
+  artifactKey: Guid(25f000bf9faee2144ba5447b404e98c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-house-modern-big.fbx using Guid(25f000bf9faee2144ba5447b404e98c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0651fb774caf0c1227473c26f23568') in 0.047867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-burger-joint.fbx
+  artifactKey: Guid(bb527b2ad586ed647b1660cdc4aa3180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Meshes_M/Buildings_M/building-burger-joint.fbx using Guid(bb527b2ad586ed647b1660cdc4aa3180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7098b0cec69afbd0c01f9aa9c7a81f59') in 0.049881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 11.378379 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/camera-dslr-objective-big.prefab
+  artifactKey: Guid(6d9c996cc3614104ab5bcb4f2f90f6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/camera-dslr-objective-big.prefab using Guid(6d9c996cc3614104ab5bcb4f2f90f6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2129caab1242a6d6937ed67d1c6bd9e') in 0.103591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/television.prefab
+  artifactKey: Guid(f526a5e39f40945d7abb24a570e985de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/television.prefab using Guid(f526a5e39f40945d7abb24a570e985de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd7bb7ea86c48d5ed08704a9b4135c0') in 0.041300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/pc-keyboard.prefab
+  artifactKey: Guid(3855e182bdc6846f3980f8aebdbc0e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/pc-keyboard.prefab using Guid(3855e182bdc6846f3980f8aebdbc0e7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de667f501573702b3eb0d5b4f21e27b') in 0.023241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/tv-camera.prefab
+  artifactKey: Guid(c2a13ed99a40a944892fc941ea2c9fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Electronics_M/tv-camera.prefab using Guid(c2a13ed99a40a944892fc941ea2c9fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801f35aa3e000eeea3755a4a1edeb088') in 0.033292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 39.935557 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/kettle.prefab
+  artifactKey: Guid(37619b0d5864b4420b0a6c7b00c35991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/kettle.prefab using Guid(37619b0d5864b4420b0a6c7b00c35991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245bddebd182bb8766b2d3d0ae4a31e7') in 0.038076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/potion.prefab
+  artifactKey: Guid(a7aaa4751f0b64b06ab7c008ecf4fbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/potion.prefab using Guid(a7aaa4751f0b64b06ab7c008ecf4fbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4610e2e65a2595c62be34a1259534c7c') in 0.026083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.993062 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/pumkin-helloween.prefab
+  artifactKey: Guid(53bfc09cff5b345a3bcad19d0cf90507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/pumkin-helloween.prefab using Guid(53bfc09cff5b345a3bcad19d0cf90507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec847f1a7d1d9bf1a25f203ffdaf51e') in 0.022145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/scroll.prefab
+  artifactKey: Guid(ed784d07f629e48a191a3bab51dd3015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/scroll.prefab using Guid(ed784d07f629e48a191a3bab51dd3015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b19aad1e203e7198c4f9551a28b9727') in 0.024724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/railing-stone.prefab
+  artifactKey: Guid(7c8a902e455f74d3b92b47cd9e349c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/railing-stone.prefab using Guid(7c8a902e455f74d3b92b47cd9e349c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475c475fb5d438b3ddeb51ca7f2c7b47') in 0.037980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.165378 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/table-crafting-wood.prefab
+  artifactKey: Guid(6566e9a37c11d844ba0dd05e39e15e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/table-crafting-wood.prefab using Guid(6566e9a37c11d844ba0dd05e39e15e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5884b87dfcc02112b526014ea1d537bb') in 0.032647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/torche.prefab
+  artifactKey: Guid(9fb7d58f5819fa44fb5a3165e0babaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Fantasy_M/torche.prefab using Guid(9fb7d58f5819fa44fb5a3165e0babaee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b50e04590e17a35566646b39578d89') in 0.022743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Операция ввода/вывода была прервана из-за завершения потока команд или по запросу приложения.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

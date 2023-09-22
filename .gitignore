@@ -41,6 +41,7 @@ ExportedObj/
 *.userprefs
 *.pidb
 *.booproj
+*.dylib
 *.svd
 *.pdb
 *.mdb

@@ -1,0 +1,372 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.9f1 (ea401c316338) revision 15351836'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 8029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62955
+Successfully changed project path to: C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24796] Host "[IP] 172.24.80.1 [Port] 0 [Flags] 2 [Guid] 561537636 [EditorId] 561537636 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-25AVAUJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24796] Host "[IP] 172.24.80.1 [Port] 0 [Flags] 2 [Guid] 561537636 [EditorId] 561537636 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-25AVAUJ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 227.61 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Acer/OneDrive/Р Р°Р±РѕС‡РёР№ СЃС‚РѕР»/С…СѓР№ РІРѕР№РЅРµ/RobTheHouse/Rob/Rob/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.2230
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.047248 seconds.
+- Loaded All Assemblies, in  1.153 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.554 seconds
+Domain Reload Profiling: 1701ms
+	BeginReloadAssembly (346ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (201ms)
+	LoadAllAssembliesAndSetupDomain (470ms)
+		LoadAssemblies (333ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (464ms)
+			TypeCache.Refresh (460ms)
+				TypeCache.ScanAssembly (381ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (555ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (417ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (271ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.940 seconds
+Refreshing native plugins compatible for Editor in 266.66 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.796 seconds
+Domain Reload Profiling: 11721ms
+	BeginReloadAssembly (349ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (69ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (130ms)
+	LoadAllAssembliesAndSetupDomain (3351ms)
+		LoadAssemblies (2876ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (674ms)
+			TypeCache.Refresh (605ms)
+				TypeCache.ScanAssembly (565ms)
+			ScanForSourceGeneratedMonoScriptInfo (46ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (7798ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (7491ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (189ms)
+			ProcessInitializeOnLoadAttributes (7103ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 41.93 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6046 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 107 unused Assets / (66.4 MB). Loaded Objects now: 6556.
+Memory consumption went from 439.7 MB to 373.3 MB.
+Total: 76.466200 ms (FindLiveObjects: 2.809300 ms CreateObjectMapping: 1.049900 ms MarkObjects: 52.537800 ms  DeleteObjects: 20.065700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 112625.169696 seconds.
+  path: Assets/Prefabs/Items/Bundt Cake.prefab
+  artifactKey: Guid(0b138673505ecc34daa0fd8016333470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Bundt Cake.prefab using Guid(0b138673505ecc34daa0fd8016333470) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24589698882e8b0dbc529a6b9c3b7e2') in 0.337252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 2.225723 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures
+  artifactKey: Guid(5d675a56355b23c4f833e355e797b873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures using Guid(5d675a56355b23c4f833e355e797b873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9f6d3c49c2c8da81697d97b1169c4d') in 0.001095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.046876 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/carpet.psd
+  artifactKey: Guid(dbc8c2d191a4f9947969c50c537703e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/carpet.psd using Guid(dbc8c2d191a4f9947969c50c537703e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7999b5d53090edb014df166ae0aaa2d0') in 0.119055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/floor1.psd
+  artifactKey: Guid(5e48e402c9427b64188c13bc3875d7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/floor1.psd using Guid(5e48e402c9427b64188c13bc3875d7df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287389153b2616cdae56bb15103cf952') in 0.049968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/door.psd
+  artifactKey: Guid(122fb5efb9b6734438fdc96c6b04ac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/door.psd using Guid(122fb5efb9b6734438fdc96c6b04ac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0226b4246d890946419b387f70b4c41f') in 0.082120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/electronics_emission.psd
+  artifactKey: Guid(c5bfb8321a5696a47b42784f2737616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/electronics_emission.psd using Guid(c5bfb8321a5696a47b42784f2737616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8addba56cf62a98f1ef0e7972eac4206') in 0.060114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/wardrobe.psd
+  artifactKey: Guid(0e5511c49c55d494e810801da46d747f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/wardrobe.psd using Guid(0e5511c49c55d494e810801da46d747f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecf33711a4b499f7c81781e5a9ad4b39') in 0.081117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/cushion.psd
+  artifactKey: Guid(8008fd901f4fd1b44818e5f28a07d452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/cushion.psd using Guid(8008fd901f4fd1b44818e5f28a07d452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3e69f41c03e563ae7055b41ee186ee') in 0.075994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/window_emission.psd
+  artifactKey: Guid(9bbce63780bbaf64b82e79399919bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/window_emission.psd using Guid(9bbce63780bbaf64b82e79399919bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9392e931581896e0fe8355bab6f2d740') in 0.050211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/shelf.psd
+  artifactKey: Guid(0186d7a75469383458a385054661b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/shelf.psd using Guid(0186d7a75469383458a385054661b70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef30070d9786da0f3eea17f0bf04779') in 0.063131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/desk.psd
+  artifactKey: Guid(9cd8ac8a7818eff45a4a37206cfe2546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/desk.psd using Guid(9cd8ac8a7818eff45a4a37206cfe2546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ff8be393481c63aec06b7ce07efd82') in 0.068986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Props/Anime Rooms/Textures/window.psd
+  artifactKey: Guid(cc0494209689a8442a525681bcf7845d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/Anime Rooms/Textures/window.psd using Guid(cc0494209689a8442a525681bcf7845d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0daa8fb02be5dfb707261541a28e687d') in 0.066239 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.107600 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Models
+  artifactKey: Guid(0c119f26db6336c459c783a22356f989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Models using Guid(0c119f26db6336c459c783a22356f989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefbbb1a89eaed22b0f663adefc5d429') in 0.001364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.423588 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Armchair.prefab
+  artifactKey: Guid(d89225c174a3955439a93e85a798211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Armchair.prefab using Guid(d89225c174a3955439a93e85a798211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2255adc9079e77289c4c83ddf33d4ed1') in 0.064770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Basket.prefab
+  artifactKey: Guid(520640125cd9288429b91901711781c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Basket.prefab using Guid(520640125cd9288429b91901711781c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6790580507c70ba897df32fb66794064') in 0.038298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet 002.prefab
+  artifactKey: Guid(f1a5b02ce6c71e04dbe90426b072b4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet 002.prefab using Guid(f1a5b02ce6c71e04dbe90426b072b4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998fac831e6ccec80066621de4c8609b') in 0.032639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Cooker.prefab
+  artifactKey: Guid(7474ef2a457c13745bd61cd0af76274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Cooker.prefab using Guid(7474ef2a457c13745bd61cd0af76274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d8ffeb9a2b9445a68041def2ee08bcd') in 0.047000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/House 2.prefab
+  artifactKey: Guid(b3c01bafbe9c8fa4fbd4cd93e0eaad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/House 2.prefab using Guid(b3c01bafbe9c8fa4fbd4cd93e0eaad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ff6a1ab342f10bb96a324f0633c9b0') in 0.114064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 175
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Dishes.prefab
+  artifactKey: Guid(d9557199083727f4795db6c85a10396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Dishes.prefab using Guid(d9557199083727f4795db6c85a10396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6448908f84ba3b5b4689ca8622a5a1') in 0.028650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Chess.prefab
+  artifactKey: Guid(1addaa49607737d418523adb717c64d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Chess.prefab using Guid(1addaa49607737d418523adb717c64d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34852a21d0b0f12fb64f4f4e4d73d9ec') in 0.071574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Painting.prefab
+  artifactKey: Guid(9c16be079bb4ee343a5c695ee4a1a601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Painting.prefab using Guid(9c16be079bb4ee343a5c695ee4a1a601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb7e9f5bcdabd3ed164c4099e5353d96') in 0.387575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bath.prefab
+  artifactKey: Guid(dd1310fff69f1cd46974882f047d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bath.prefab using Guid(dd1310fff69f1cd46974882f047d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f266421b640604d569243ab20357623d') in 0.041632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Kitchen Stuff.prefab
+  artifactKey: Guid(79f1bb7a99cc856419859c0286fe3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Kitchen Stuff.prefab using Guid(79f1bb7a99cc856419859c0286fe3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3e91af761d710d515f5d768edbe3af') in 0.038194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Операция ввода/вывода была прервана из-за завершения потока команд или по запросу приложения.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
