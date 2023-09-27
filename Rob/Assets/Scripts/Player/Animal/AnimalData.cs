@@ -1,26 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using UnityEngine.UI;
+
 [CreateAssetMenu(fileName ="Animal Data", menuName = "Animal Data")]
 public class AnimalData : ScriptableObject
 {
-    [SerializeField]
-    private AnimalType _animalType;
-    [ShowInInspector]
-    public Animal AnimalPrefab { get; private set; }
-
-    [SerializeField]
-    private ParticleSystem _appereanceEffects;
-    [SerializeField,Range(1f, 10)]
-    private float _speedMove;
-    public AnimalType Animal => _animalType;
+    [Header("MainSettings")]
+    [SerializeField] private AnimalType _animalType;
+    [SerializeField] private Animal _animalPrefab;
+    [SerializeField,Range(1, 10)] private float _speedMove;
+    public AnimalType AnimalType => _animalType;
     public float Speed => _speedMove;
-    public ParticleSystem AppereanceEffect => _appereanceEffects;
+    public Animal AnimalPrefab => _animalPrefab;
 }
 
 public enum AnimalType
 {
     Racoon,
-    CameraMan
+    Owl,
+    Capybara
 }

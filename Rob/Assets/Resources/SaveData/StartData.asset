@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee149f6dca8869e4e8cddebb8f59d275, type: 3}
+  m_Name: StartData
+  m_EditorClassIdentifier: 
+  StartMoney: 0
+  CurrentSkin: 2
+  FirstLevelId: 0
+  UnlockedSkins: 02000000
+  AnimalsCapacity: 1

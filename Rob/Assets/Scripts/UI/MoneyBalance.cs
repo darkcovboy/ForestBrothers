@@ -5,24 +5,25 @@ using TMPro;
 [RequireComponent(typeof(TMP_Text))]
 public class MoneyBalance : MonoBehaviour
 {
-    private MoneyCounter _moneyCounter;
+    private IMoneyChangedHandler _moneyChangedHandler;
     private TMP_Text _text;
 
     [Inject]
-    public void Constructor(MoneyCounter moneyCounter)
+    public void Constructor(IMoneyChangedHandler moneyCounter)
     {
-        _moneyCounter = moneyCounter;
+        _moneyChangedHandler = moneyCounter;
         _text = GetComponent<TMP_Text>();
+        OnValueChanged(_moneyChangedHandler.GetMoney());
     }
 
     private void OnEnable()
     {
-        _moneyCounter.OnMoneyChanged += OnValueChanged;
+        _moneyChangedHandler.OnMoneyChanged += OnValueChanged;
     }
 
     private void OnDisable()
     {
-        _moneyCounter.OnMoneyChanged -= OnValueChanged;
+        _moneyChangedHandler.OnMoneyChanged -= OnValueChanged;
     }
 
     private void OnValueChanged(int money)

@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3931102614128909893}
   - component: {fileID: 3833449281969303490}
-  - component: {fileID: 3631724787764370668}
   - component: {fileID: 5267810740136264916}
   - component: {fileID: 8688945928081501355}
   - component: {fileID: -3821867481115168220}
   - component: {fileID: 6820815056296367250}
+  - component: {fileID: 4604396998552897599}
   m_Layer: 0
   m_Name: Racoon
   m_TagString: Untagged
@@ -32,8 +32,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6826223151518642262}
   - {fileID: 3433144208500721556}
@@ -62,32 +62,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!143 &3631724787764370668
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112974498610680961}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 1
-  m_Radius: 1
-  m_SlopeLimit: 0
-  m_StepOffset: 0
-  m_SkinWidth: 0.05
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &5267810740136264916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09f99d9934e089f48b049035f24c9a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 7
   _distanceBetweenPositions: 10
 --- !u!114 &-3821867481115168220
 MonoBehaviour:
@@ -128,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6bb46568552b6f48955ee03c6c02be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _forceMagnitude: 1
+  _forceMagnitude: 0.5
 --- !u!114 &6820815056296367250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,6 +114,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25815155d90ea5c4bbf17eadb0d16fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!143 &4604396998552897599
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112974498610680961}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 1
+  m_Radius: 1.5
+  m_SlopeLimit: 0
+  m_StepOffset: 0
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.65, z: 0}
 --- !u!1 &1426994206201018098
 GameObject:
   m_ObjectHideFlags: 0

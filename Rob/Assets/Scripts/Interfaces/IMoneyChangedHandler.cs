@@ -1,7 +1,8 @@
-using UnityEngine;
-using UnityEngine.Events;
+using System;
 
 public interface IMoneyChangedHandler
 {
-    public event UnityAction<int> OnMoneyChanged;
+    public event Action<int> OnMoneyChanged;
+
+    public int GetMoney();
 }

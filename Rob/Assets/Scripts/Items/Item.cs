@@ -7,34 +7,37 @@ using DG.Tweening;
 public class Item : MonoBehaviour, ITouchable
 {
     [SerializeField] private ItemData _itemData;
+
     private Rigidbody _rigibody;
     private Vector3 _defaultRotation;
+    private Collider _collider;
 
     public int Reward => _itemData.Reward;
 
     private void Start()
     {
         _rigibody = GetComponent<Rigidbody>();
+        _collider = GetComponent<Collider>();
         _defaultRotation = transform.eulerAngles;
     }
 
     public void ConnectTo(Transform position)
     {
-        gameObject.GetComponent<Collider>().enabled = false;
+        _collider.enabled = false;
         _rigibody.isKinematic = true;
         StartCoroutine(MoveToTarget(position));
     }
 
     public void ConnecTo(ItemCollector itemCollector)
     {
-        gameObject.GetComponent<Collider>().enabled = false;
+        _collider.enabled = false;
         _rigibody.isKinematic = true;
-        transform.DOMove(itemCollector.Point.position, _itemData.MoveDuration).SetEase(Ease.Linear).OnComplete(DestroyObject);
+        transform.DOMove(itemCollector.Point.position, _itemData.MoveDuration).SetEase(Ease.InOutSine).OnComplete(DestroyObject);
     }
 
     public void Disconnect()
     {
-        gameObject.GetComponent<Collider>().enabled = true;
+        _collider.enabled = true;
         _rigibody.isKinematic = false;
         transform.SetParent(null);
     }

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e37f0e78e1f6a244a2a7035dd4bc346, type: 3}
   m_Name: Racoon
   m_EditorClassIdentifier: 
-  _animalType: 0
+  _animalPrefab: {fileID: 5267810740136264916, guid: 9506f99e99a62924499966e0cbdecbbe, type: 3}
   _appereanceEffects: {fileID: 0}
-  _speedMove: 8
+  _speedMove: 6

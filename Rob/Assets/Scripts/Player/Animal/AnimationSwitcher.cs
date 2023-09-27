@@ -8,7 +8,7 @@ public class AnimationSwitcher : MonoBehaviour
     private Animator _animator;
     private MovementHandler _movementHandler;
 
-    private readonly string _moveAnimationKey = "IsMoving";
+    private readonly string _moveAnimationKey = "Speed";
 
     private void Start()
     {
@@ -22,8 +22,8 @@ public class AnimationSwitcher : MonoBehaviour
         _movementHandler.Moved -= MoveAnimation;
     }
 
-    private void MoveAnimation(bool isMoving)
+    private void MoveAnimation(float speed)
     {
-        _animator.SetBool(_moveAnimationKey, isMoving);
+        _animator.SetFloat(_moveAnimationKey, speed);
     }
 }

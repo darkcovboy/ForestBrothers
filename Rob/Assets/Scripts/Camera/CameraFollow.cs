@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
-using Cinemachine;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -17,18 +14,20 @@ public class CameraFollow : MonoBehaviour
         _target = _player.Body;
     }
 
+    [Inject]
     public void Constructor(Player player)
     {
+        Debug.Log("ИГрок прокинулся");
         _player = player;
     }
 
     private void LateUpdate()
     {
         // Проверяем, существует ли цель (игрок)
-        if (_target != null)
+        if (_player.Body != null)
         {
             // Вычисляем позицию, к которой должна двигаться камера
-            Vector3 desiredPosition = _target.position + offset;
+            Vector3 desiredPosition = _player.Body.position + offset;
 
             // Интерполируем текущую позицию камеры к желаемой сглаженной позиции
             Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);

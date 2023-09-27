@@ -1,22 +1,19 @@
 using UnityEngine;
 using Zenject;
 using TMPro;
+using UnityEngine.UI;
 
-[RequireComponent(typeof(TMP_Text))]
 public class ItemCounter : MonoBehaviour
 {
-    private ItemCollector _itemCollector;
-    private TMP_Text _text;
+    [SerializeField] private TMP_Text _text;
+    [SerializeField] private Slider _slider;
+
+    private IItemChangedHandler _itemCollector;
 
     [Inject]
-    public void Constructor(ItemCollector itemCollector)
+    public void Constructor(IItemChangedHandler itemCollector)
     {
         _itemCollector = itemCollector;
-        _text = GetComponent<TMP_Text>();
-    }
-
-    private void OnEnable()
-    {
         _itemCollector.OnCountItemsChanged += OnValueChange;
     }
 
@@ -28,5 +25,7 @@ public class ItemCounter : MonoBehaviour
     private void OnValueChange(int current, int max)
     {
         _text.text = $"{current}/{max}";
+        _slider.value = current;
+        _slider.maxValue = max;
     }
 }

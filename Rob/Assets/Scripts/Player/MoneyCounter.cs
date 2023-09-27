@@ -1,15 +1,16 @@
-using UnityEngine;
 using System;
-using UnityEngine.Events;
 
-public class MoneyCounter : MonoBehaviour, IMoneyChangedHandler
+public class MoneyCounter : IMoneyChangedHandler
 {
-    public event UnityAction<int> OnMoneyChanged;
+    public event Action<int> OnMoneyChanged;
 
     private int _money;
+    private int _startMoney;
 
-    private void Start()
+    public MoneyCounter(int startMoney)
     {
+        _money = startMoney;
+        _startMoney = startMoney;
         OnMoneyChanged?.Invoke(_money);
     }
 
@@ -20,5 +21,29 @@ public class MoneyCounter : MonoBehaviour, IMoneyChangedHandler
 
         _money += money;
         OnMoneyChanged?.Invoke(_money);
+    }
+
+    public bool IsEnough(int price)
+    { 
+        return _money > price;
+    }
+
+    public void Spend(int price)
+    {
+        if(price < 0)
+            throw new ArgumentException();
+
+        _money -= price;
+        OnMoneyChanged?.Invoke(_money);
+    }
+
+    public void UpdateMoney()
+    {
+        OnMoneyChanged?.Invoke(_money);
+    }
+
+    public int GetMoney()
+    {
+        return _money;
     }
 }
