@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: LilitaOne-Regular-GreenOutline
   m_EditorClassIdentifier: 
-  hashCode: 1275464279
+  hashCode: 799517232
   material: {fileID: 7374927986402738804}
-  materialHashCode: -224660969
+  materialHashCode: 697864720
   m_Version: 1.1.0
   m_SourceFontFileGUID: 18656ef7a51c9493bbb7e0a789ec9bf7
   m_SourceFontFile_EditorRef: {fileID: 0}

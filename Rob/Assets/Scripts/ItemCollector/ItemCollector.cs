@@ -4,17 +4,17 @@ using UnityEngine.Events;
 
 public class ItemCollector : MonoBehaviour, IItemChangedHandler, IGameResultHandler
 {
-    private MoneyCounter _moneyCounter;
-
     [SerializeField] private int _countItems = 0;
     [SerializeField] private Transform _pointToAttach;
-    private int _countItemsMax;
-    private readonly float _percentage = 0.9f;
-
+    [SerializeField] private RewardDisplayPool _rewardDisplayPool;
     public Transform Point => _pointToAttach;
 
     public event UnityAction<int, int> OnCountItemsChanged;
     public event UnityAction OnGameWinning;
+
+    private MoneyCounter _moneyCounter;
+    private int _countItemsMax;
+    private readonly float _percentage = 0.9f;
 
     private void Start()
     {
@@ -46,6 +46,7 @@ public class ItemCollector : MonoBehaviour, IItemChangedHandler, IGameResultHand
     {
         _moneyCounter.AddMoney(reward);
         _countItems++;
+        _rewardDisplayPool.ShowTextPopup(reward);
         OnCountItemsChanged?.Invoke(_countItems, _countItemsMax);
 
         if(_countItems >= _countItemsMax)
