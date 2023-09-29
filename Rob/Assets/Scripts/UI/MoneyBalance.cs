@@ -13,12 +13,12 @@ public class MoneyBalance : MonoBehaviour
     {
         _moneyChangedHandler = moneyCounter;
         _text = GetComponent<TMP_Text>();
-        OnValueChanged(_moneyChangedHandler.GetMoney());
     }
 
     private void OnEnable()
     {
         _moneyChangedHandler.OnMoneyChanged += OnValueChanged;
+        OnValueChanged(_moneyChangedHandler.GetMoney());
     }
 
     private void OnDisable()

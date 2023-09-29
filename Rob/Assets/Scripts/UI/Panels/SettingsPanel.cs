@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Button _exitButton;
+
+    private void OnEnable()
     {
-        
+        _exitButton.onClick.AddListener(ClosePanel);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        _exitButton.onClick.RemoveListener(ClosePanel);
     }
+
+    private void ClosePanel() => gameObject.Deactivate();
 }

@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using Zenject;
 
 public class GameplayPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private TMP_Text _levelNumber;
 
-    // Update is called once per frame
-    void Update()
+    [Inject]
+    public void Constructor(PlayerSave playerSave)
     {
-        
+        _levelNumber.text = $"Level {playerSave.SaveData.LastLevelName}";
     }
 }

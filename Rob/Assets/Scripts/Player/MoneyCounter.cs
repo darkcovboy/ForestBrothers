@@ -4,13 +4,17 @@ public class MoneyCounter : IMoneyChangedHandler
 {
     public event Action<int> OnMoneyChanged;
 
+    public int EarnedMoney => _earnedMoney;
+
     private int _money;
+    private int _earnedMoney;
     private int _startMoney;
 
     public MoneyCounter(int startMoney)
     {
         _money = startMoney;
         _startMoney = startMoney;
+        _earnedMoney = 0;
         OnMoneyChanged?.Invoke(_money);
     }
 
@@ -20,6 +24,7 @@ public class MoneyCounter : IMoneyChangedHandler
             throw new ArgumentException();
 
         _money += money;
+        _earnedMoney += money;
         OnMoneyChanged?.Invoke(_money);
     }
 

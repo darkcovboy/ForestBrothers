@@ -3,8 +3,9 @@ using UnityEngine;
 using System;
 using Zenject;
 using Sirenix.OdinInspector;
+using UnityEngine.Events;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IGameLose
 {
     private const int _mainCharacterIndex = 0;
 
@@ -25,6 +26,8 @@ public class Player : MonoBehaviour
     private PlayerSave _playerSave;
 
     private int _maxCapacity;
+
+    public event UnityAction OnGameLossing;
 
     private void Start()
     {
@@ -65,6 +68,13 @@ public class Player : MonoBehaviour
     public void RemoveCharacter(Animal animal)
     {
         _characters.Remove(animal);
+        _capacity--;
+
+        if( _capacity == 0 )
+        {
+            OnGameLossing?.Invoke();
+        }
+
         Destroy(animal.gameObject);
     }
 

@@ -3,6 +3,7 @@ using UnityEngine;
 using System;
 using UnityEngine.Events;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class PlayerSave
 {
@@ -31,13 +32,6 @@ public class PlayerSave
         _skinContainer = skinContainer;
     }
 
-    public void LevelWin(int money, int levelIndex)
-    {
-        SaveData.Money = money;
-        //Поменять потому что в теории у меня будет бесконечное кол левелов, поэтому тут нужно по-другому сохранять
-        SaveData.LastLevel = levelIndex;
-    }
-
     public void OpenNewSkin(AnimalType skin)
     {
         if (SaveData.UnlockedSkins.Contains(skin))
@@ -58,6 +52,18 @@ public class PlayerSave
         Save();
     }
 
+    public void CompleteLevel(int money)
+    {
+        if(SceneManager.sceneCountInBuildSettings < (SaveData.LastLevelId + 1))
+        {
+            SaveData.LastLevelId = 1;
+        }
+
+        SaveData.LastLevelName++;
+        SaveData.Money = money;
+        Save();
+    }
+
     private void Save()
     {
         string jsonData = JsonUtility.ToJson(SaveData);
@@ -67,22 +73,24 @@ public class PlayerSave
 
     private SaveData LoadNewData(SaveStartData startData)
     {
-        return new SaveData(startData.StartMoney, startData.FirstLevelId, startData.CurrentSkin, startData.UnlockedSkins, startData.AnimalsCapacity);
+        return new SaveData(startData.StartMoney, startData.FirstLevelName, startData.FirstLevelId, startData.CurrentSkin, startData.UnlockedSkins, startData.AnimalsCapacity);
     }
 }
 
 public class SaveData
 {
     public int Money;
-    public int LastLevel;
+    public int LastLevelName;
+    public int LastLevelId;
     public AnimalType SelectedSkin;
     public List<AnimalType> UnlockedSkins;
     public int Capacity;
 
-    public SaveData(int money, int level, AnimalType selectedSkin, List<AnimalType> unlockedSkins, int capacity)
+    public SaveData(int money, int level,int levelId, AnimalType selectedSkin, List<AnimalType> unlockedSkins, int capacity)
     {
         Money = money;
-        LastLevel = level;
+        LastLevelName = level;
+        LastLevelId = levelId;
         SelectedSkin = selectedSkin;
         UnlockedSkins = unlockedSkins;
         Capacity = capacity;
