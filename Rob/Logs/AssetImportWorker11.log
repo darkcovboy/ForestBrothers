@@ -1,0 +1,1725 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.10f1 (ff3792e53c62) revision 16725906'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 16221 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/Users/darkc/Documents/GitHub/Rob/Rob
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+51963
+Successfully changed project path to: C:/Users/darkc/Documents/GitHub/Rob/Rob
+C:/Users/darkc/Documents/GitHub/Rob/Rob
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19584] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 4248644342 [EditorId] 4248644342 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19584] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 4248644342 [EditorId] 4248644342 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 2618.90 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.10f1 (ff3792e53c62)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/darkc/Documents/GitHub/Rob/Rob/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.2230
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.183667 seconds.
+- Loaded All Assemblies, in  5.271 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.243 seconds
+Domain Reload Profiling: 5512ms
+	BeginReloadAssembly (3885ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (343ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (232ms)
+	LoadAllAssembliesAndSetupDomain (798ms)
+		LoadAssemblies (3883ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (796ms)
+			TypeCache.Refresh (795ms)
+				TypeCache.ScanAssembly (575ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (243ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (187ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (122ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  9.838 seconds
+Refreshing native plugins compatible for Editor in 8.16 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.358 seconds
+Domain Reload Profiling: 11192ms
+	BeginReloadAssembly (153ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (9587ms)
+		LoadAssemblies (9080ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (597ms)
+			TypeCache.Refresh (550ms)
+				TypeCache.ScanAssembly (493ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1359ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1190ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (609ms)
+			ProcessInitializeOnLoadMethodAttributes (460ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 8.21 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6506 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 113 unused Assets / (66.6 MB). Loaded Objects now: 7026.
+Memory consumption went from 482.1 MB to 415.5 MB.
+Total: 20.016500 ms (FindLiveObjects: 0.487200 ms CreateObjectMapping: 0.444900 ms MarkObjects: 14.931600 ms  DeleteObjects: 4.151600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/EpiShowcase.cs: bc786fe5107a676209768b89581ed7ca -> 560d903eb64b2fb30588ee6fc53dcb76
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 436558.902264 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD0.prefab
+  artifactKey: Guid(b8bee898baca6f140832b25e633eb366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD0.prefab using Guid(b8bee898baca6f140832b25e633eb366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f74490abca151005bb40bcc4e50a574') in 0.264670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Catfish_LOD1.prefab
+  artifactKey: Guid(a7167c1c26022a041bb26224f3bf706a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Catfish_LOD1.prefab using Guid(a7167c1c26022a041bb26224f3bf706a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8320cd6e69b4c7caa7df3a7c445e1987') in 0.036582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 151
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD1.prefab
+  artifactKey: Guid(fae5dfcd8bbbe954e9b01c21832d698a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD1.prefab using Guid(fae5dfcd8bbbe954e9b01c21832d698a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec02e7b2a765dae5244882d18e0c852') in 0.054072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD1.prefab
+  artifactKey: Guid(a691680a7e7c00244b2fab16213706c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD1.prefab using Guid(a691680a7e7c00244b2fab16213706c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aceae850821631dfea98359c3e1888bf') in 0.038828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper.prefab
+  artifactKey: Guid(695af264b5c597f44982fbae3a066894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper.prefab using Guid(695af264b5c597f44982fbae3a066894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8219306d0870f41f4ab8b4e17d25ead5') in 0.058309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 388
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Piranha.prefab
+  artifactKey: Guid(4db18ef25dc37d845a0d239f8830c269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Piranha.prefab using Guid(4db18ef25dc37d845a0d239f8830c269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493c31e116801e9c443aa7df2985a866') in 0.105088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 412
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper_LOD0.prefab
+  artifactKey: Guid(ec5b8dd77e74fe64ca1433029285c018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper_LOD0.prefab using Guid(ec5b8dd77e74fe64ca1433029285c018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9643ac23ad2ed8059d5dd94199eb6ab7') in 0.032033 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper_LOD3.prefab
+  artifactKey: Guid(a80faa23f5b2d9a48940baa79a490a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Mudskipper_LOD3.prefab using Guid(a80faa23f5b2d9a48940baa79a490a82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dda2eeafaee14f78e4795c59a8418c1') in 0.028931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD0.prefab
+  artifactKey: Guid(926abe3d81c571e409b04b43f5de46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD0.prefab using Guid(926abe3d81c571e409b04b43f5de46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb46a9eb63e8ee7444ac722931bada5') in 0.040737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Bass_LOD2.prefab
+  artifactKey: Guid(09725dbb61fa785448f679b6d5c91da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Bass_LOD2.prefab using Guid(09725dbb61fa785448f679b6d5c91da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f647232286520c312ebe06ad85c9365') in 0.033022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD3.prefab
+  artifactKey: Guid(6d1d3fd66f2de2248ac0cd5ff632e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Alligator_LOD3.prefab using Guid(6d1d3fd66f2de2248ac0cd5ff632e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295257633ab458d67a933a9ac84a392a') in 0.031834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Bass.prefab
+  artifactKey: Guid(9ff3b4047691bba439780ac7d82ef0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Bass.prefab using Guid(9ff3b4047691bba439780ac7d82ef0a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22444472f2d6802989f5d8cc9f8b6aea') in 0.053624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 460
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Catfish.prefab
+  artifactKey: Guid(88485630c5206e446b7b0fab24c8adba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Catfish.prefab using Guid(88485630c5206e446b7b0fab24c8adba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26ab535cebcf311034e4647d9a02469') in 0.047997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 484
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD3.prefab
+  artifactKey: Guid(cf4130ecf45209f47aa78938814f8bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Prefabs/Otter_LOD3.prefab using Guid(cf4130ecf45209f47aa78938814f8bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc12a8beaefdb3c671e2c8954a8d8c1b') in 0.030761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 3.066628 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Bandicoot.png
+  artifactKey: Guid(c8791a9d52335ee43b94316bb838df2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Bandicoot.png using Guid(c8791a9d52335ee43b94316bb838df2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38eb610101e437288d25478fd17fc756') in 0.028450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Chick.png
+  artifactKey: Guid(d6649ae5c23dcef4b875151b385e9a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Chick.png using Guid(d6649ae5c23dcef4b875151b385e9a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3e4739ee59f415dddecdd1adc7877d4') in 0.018134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Dog.png
+  artifactKey: Guid(2da50d2fe698419428dbea1cfd7d42db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Dog.png using Guid(2da50d2fe698419428dbea1cfd7d42db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dccb85719d7bccec8fdfce2873f6909b') in 0.019499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_FennecFox.png
+  artifactKey: Guid(e0e5faee502402442a0632de4c74569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_FennecFox.png using Guid(e0e5faee502402442a0632de4c74569e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5a9c2ead8af9c4fa7df31ffdfb95df') in 0.017997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_FrillNeckedLizard.png
+  artifactKey: Guid(9d9661033204b6047a487c1b6cad4828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_FrillNeckedLizard.png using Guid(9d9661033204b6047a487c1b6cad4828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0299f5183012be164b79f74b41f31744') in 0.016735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Textures/T_Hippo.png
+  artifactKey: Guid(2c7018c499a9f3c4ea3acd9e29dd2327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Textures/T_Hippo.png using Guid(2c7018c499a9f3c4ea3acd9e29dd2327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '022b78025582bd0c1d117c17167ab3a8') in 0.019061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_Jackrabbit.png
+  artifactKey: Guid(6f5036e834315644589a41bdcc6a5258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_Jackrabbit.png using Guid(6f5036e834315644589a41bdcc6a5258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2187c743d2a93f766c0ab322d51719') in 0.018378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_Javelina.png
+  artifactKey: Guid(d1bec9dec9cb05b42a09d5d0fc166188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Desert Vol.2/Textures/T_Javelina.png using Guid(d1bec9dec9cb05b42a09d5d0fc166188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73fb2d4ce54092f10b6da3127014da6f') in 0.020618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Textures/T_Macaw.png
+  artifactKey: Guid(2bdaad3505b550d4cb705c9447c26342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Textures/T_Macaw.png using Guid(2bdaad3505b550d4cb705c9447c26342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5967d99337861112f4953092ced3d010') in 0.021301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Kakapo.png
+  artifactKey: Guid(25e44182e2110f24f928b6286c34fe5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Kakapo.png using Guid(25e44182e2110f24f928b6286c34fe5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da72a9f49eb4c9ff8d0cb7a8070171b4') in 0.022464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Kiwi.png
+  artifactKey: Guid(d5e244c555ce38744810f0027a34171e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Island Vol.2/Textures/T_Kiwi.png using Guid(d5e244c555ce38744810f0027a34171e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d7794f2837e548be0f336ac342d758') in 0.024934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Crow.png
+  artifactKey: Guid(b3888425d64a19b45ae9c7105e747eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Crow.png using Guid(b3888425d64a19b45ae9c7105e747eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94911cd311268d754839be3da1837071') in 0.023497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Dove.png
+  artifactKey: Guid(039842b6257470e43aa3e7a866bd5a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Dove.png using Guid(039842b6257470e43aa3e7a866bd5a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b011ac6b2e3eca8e2a95062eb7f571') in 0.022774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Cat.png
+  artifactKey: Guid(014a9a76ac71946488b31e350777bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Textures/T_Cat.png using Guid(014a9a76ac71946488b31e350777bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196f9f81f8267416602ede6cfaeb6375') in 0.021084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Textures/T_Cheetah.png
+  artifactKey: Guid(a687375313bb7d14ea3956b900223ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Textures/T_Cheetah.png using Guid(a687375313bb7d14ea3956b900223ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e0b9158c0ac17a2f8223c15e16399e') in 0.027009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Eagle.png
+  artifactKey: Guid(d8218e485e7a50547b43f431f2049d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Eagle.png using Guid(d8218e485e7a50547b43f431f2049d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4896ce616a0c119a9f3fdb2e6f4299ab') in 0.024214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Textures/T_Jaguar.png
+  artifactKey: Guid(5531ecba545cc03409c0e39c74519c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Textures/T_Jaguar.png using Guid(5531ecba545cc03409c0e39c74519c79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef46e70871907064dcd474db7a240118') in 0.022564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Hog.png
+  artifactKey: Guid(0a7d88b1defdf5c49b1115a1b6712aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Forest Vol.1/Textures/T_Hog.png using Guid(0a7d88b1defdf5c49b1115a1b6712aef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09207ddf240eacdff8b7b9a33fd3c98e') in 0.021914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Donkey.png
+  artifactKey: Guid(d076a1e1146af4b438b3aad6d9fe9438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Donkey.png using Guid(d076a1e1146af4b438b3aad6d9fe9438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf85bf148d67803c7037087ce6af742e') in 0.026927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Duck.png
+  artifactKey: Guid(1ab47172d66fb6a4b942074d419dcc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Textures/T_Duck.png using Guid(1ab47172d66fb6a4b942074d419dcc7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7101a74ca8c2fa63dbc3dbf9095742a9') in 0.024560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 26.754987 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Buffalo_LOD0.fbx
+  artifactKey: Guid(a0a827afe37221c469a9667b8bd2970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Buffalo_LOD0.fbx using Guid(a0a827afe37221c469a9667b8bd2970d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772f1ffc6199e538e9cdf5d2d8bc54d1') in 0.063333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Models/Cheetah_LOD0.fbx
+  artifactKey: Guid(2429479c1e8bf5948bbb1dbfb6b19770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Models/Cheetah_LOD0.fbx using Guid(2429479c1e8bf5948bbb1dbfb6b19770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e964a64ca74f70c79acc0e26739647') in 0.033032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Chick_LOD3.fbx
+  artifactKey: Guid(307e210741021f54dacd6760d6618c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Chick_LOD3.fbx using Guid(307e210741021f54dacd6760d6618c51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a6094f9b5e9e545f6d2cec4cb70907') in 0.033987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Chick_LOD1.fbx
+  artifactKey: Guid(9181d488e3ccb934185b32a4f710cb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Chick_LOD1.fbx using Guid(9181d488e3ccb934185b32a4f710cb62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09b81c0ec687de8ff1b6dd1432f398a') in 0.032782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD2.fbx
+  artifactKey: Guid(67e4874c2423d8f44860491ef2f54e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD2.fbx using Guid(67e4874c2423d8f44860491ef2f54e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a28a9488a72177435263eb2498f8fa3') in 0.034525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Animations/Chick_Animations.fbx
+  artifactKey: Guid(30f0be25395649f49b5166ea39770b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Animations/Chick_Animations.fbx using Guid(30f0be25395649f49b5166ea39770b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d772b5a733e35f7addfd8ccecf97cb') in 0.044224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD1.fbx
+  artifactKey: Guid(b2ede1520cb454e46b8118cf795b1f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD1.fbx using Guid(b2ede1520cb454e46b8118cf795b1f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc6ac64325f1c8e1ad03e012784c5a6') in 0.045619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Models/Cheetah_LOD1.fbx
+  artifactKey: Guid(c476531a356bec54199187cd2155454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Safari Vol.1/Models/Cheetah_LOD1.fbx using Guid(c476531a356bec54199187cd2155454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454c063cb4dd012939ed75382d86292d') in 0.037067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Materials/M_Cow.mat
+  artifactKey: Guid(5be8811f5fbd35546b47d4d6e0bdc7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Materials/M_Cow.mat using Guid(5be8811f5fbd35546b47d4d6e0bdc7e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d8b9906fbb3f1aafe47a63ad777456') in 0.019170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD0.fbx
+  artifactKey: Guid(3001844c6aa996e4783c89dcff3950a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Farm Vol.1/Models/Cow_LOD0.fbx using Guid(3001844c6aa996e4783c89dcff3950a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c183e20601556778c89d59abb1d0828d') in 0.040602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Models/Cat_LOD0.fbx
+  artifactKey: Guid(76c2b062b8f58f049aff4c677644000e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.1 [v1.3]/Pets Vol.1/Models/Cat_LOD0.fbx using Guid(76c2b062b8f58f049aff4c677644000e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2f02e37bd84202c79a4e990c4a5c4f') in 0.041680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Models/Chimp_LOD0.fbx
+  artifactKey: Guid(52673d98ae59c8b48ae4dd1a6a874d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Models/Chimp_LOD0.fbx using Guid(52673d98ae59c8b48ae4dd1a6a874d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f33e8c5db35dce235ce230af2de1ee8') in 0.066392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 970.684023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/bear_polar.prefab
+  artifactKey: Guid(2cc25105b3317a94abd8b0b3e5b158dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/bear_polar.prefab using Guid(2cc25105b3317a94abd8b0b3e5b158dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbcf7b2c530db0f68816d2cf0423d25') in 0.025905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/crab.prefab
+  artifactKey: Guid(62ebecb4503909f4ba0d96ace9406a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/crab.prefab using Guid(62ebecb4503909f4ba0d96ace9406a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89fdc7535bddf2596edf0a76ef91fe76') in 0.034058 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/chick.prefab
+  artifactKey: Guid(befea99e6a7676c47bfc66e6fe82aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/chick.prefab using Guid(befea99e6a7676c47bfc66e6fe82aa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b1e2cf8bef0b2e20c7bd9a1959b12f') in 0.020853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/penguin.prefab
+  artifactKey: Guid(a346c7be19d41f44fb911c9043372213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/penguin.prefab using Guid(a346c7be19d41f44fb911c9043372213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2223a54bf9594ae35d28bc33b312e3cd') in 0.020957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/sheep-white.prefab
+  artifactKey: Guid(528266c03dd795f41abf9cdbd9f22723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/sheep-white.prefab using Guid(528266c03dd795f41abf9cdbd9f22723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c967de875fbbf13a8aa2088b014b99e') in 0.060825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/snake.prefab
+  artifactKey: Guid(0b17531a26ca47c479883fbdac1d022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/snake.prefab using Guid(0b17531a26ca47c479883fbdac1d022f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b489ae06bc53ad90f6315bbeb4bed96') in 0.030923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/stegosaurus.prefab
+  artifactKey: Guid(cb7410ed189ae444f9afc02cce9731d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/stegosaurus.prefab using Guid(cb7410ed189ae444f9afc02cce9731d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6552285afdee50a09d7bb531f4cc7970') in 0.030455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/pig.prefab
+  artifactKey: Guid(7582eb0f12ae4824ea115a20af2996bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/pig.prefab using Guid(7582eb0f12ae4824ea115a20af2996bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b502c38da7c8ea80725c84212cbd35eb') in 0.039392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/fish-swarm.prefab
+  artifactKey: Guid(bcf68baabdde27847b41fdf4f2e89ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/fish-swarm.prefab using Guid(bcf68baabdde27847b41fdf4f2e89ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b81bfd76111be3a7199ad33e70bf0e') in 0.026047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/fish.prefab
+  artifactKey: Guid(8f707f9679bbca448a566a7be9493e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/fish.prefab using Guid(8f707f9679bbca448a566a7be9493e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68674cdc4c315b4f21d8cff09f6ed7cc') in 0.020095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/horse.prefab
+  artifactKey: Guid(1aa5cc5b29638654085e47f13564030b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/horse.prefab using Guid(1aa5cc5b29638654085e47f13564030b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59b1fc2549fb72e05d0902dc23fbff2') in 0.022513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/seagull.prefab
+  artifactKey: Guid(b3e4ae3df23344341a716d7e239c218b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/seagull.prefab using Guid(b3e4ae3df23344341a716d7e239c218b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf85a599682d55e8d764ff6aa7dd93d') in 0.027407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/shark.prefab
+  artifactKey: Guid(881a2db4a7b341d41848d375ad871de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Animals_M/shark.prefab using Guid(881a2db4a7b341d41848d375ad871de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e4cfcaf7b775149390dd5c7dfca285') in 0.021892 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 1.938929 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrel.prefab
+  artifactKey: Guid(9159f83903b0ac1419be247272f0d115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrel.prefab using Guid(9159f83903b0ac1419be247272f0d115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89fb50e7545bc61193775b28a487963') in 0.018529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrier-concrete-tank.prefab
+  artifactKey: Guid(b788c4b1172704ca08dca5cff733063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrier-concrete-tank.prefab using Guid(b788c4b1172704ca08dca5cff733063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d3e8b0391efddd33bcc011c184cc94') in 0.017436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/bike-apocalypse.prefab
+  artifactKey: Guid(0792c654ba5af974aa17b4066be53a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/bike-apocalypse.prefab using Guid(0792c654ba5af974aa17b4066be53a8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b1429a9b1b5dc757cf8289793f7e8f') in 0.018540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/building-house-block-apocalypse.prefab
+  artifactKey: Guid(9f7c8cb315b625e49890750b049dcad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/building-house-block-apocalypse.prefab using Guid(9f7c8cb315b625e49890750b049dcad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09d3dab038a6d036c9306ba3855441c') in 0.052722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/crate-supply.prefab
+  artifactKey: Guid(9ec89c1577003453abd60ed56703775a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/crate-supply.prefab using Guid(9ec89c1577003453abd60ed56703775a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6564d08778c9cea9af1db295910e049') in 0.018156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-a.prefab
+  artifactKey: Guid(75723812017c0284fb9df4c9e323d4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-a.prefab using Guid(75723812017c0284fb9df4c9e323d4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e361999b7237fef7208f22527dcb3a4f') in 0.020358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-c.prefab
+  artifactKey: Guid(e87c1c73f958d8d40a90cd123f45ce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-c.prefab using Guid(e87c1c73f958d8d40a90cd123f45ce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa82f202ea8ec47eb1321c8c7c8b964') in 0.025797 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-b.prefab
+  artifactKey: Guid(cd8144206b2c0294d89e77bbdd38ffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-apocalypse-b.prefab using Guid(cd8144206b2c0294d89e77bbdd38ffdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9cdb2db0514e06a64c64a056e5eb45') in 0.022263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/covid.prefab
+  artifactKey: Guid(178feaaed46948147beea712e969d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/covid.prefab using Guid(178feaaed46948147beea712e969d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169458ea2dfbbeefc3e408ccc31f554b') in 0.028159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrel-empty.prefab
+  artifactKey: Guid(b49fc27c715e7a24f86de63a33cb2f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barrel-empty.prefab using Guid(b49fc27c715e7a24f86de63a33cb2f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d312017771fca0a7b9f4f3fd3a94b2b') in 0.022981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-city-apocalypse-b.prefab
+  artifactKey: Guid(c383341ce33323b419a93653e24d411b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-city-apocalypse-b.prefab using Guid(c383341ce33323b419a93653e24d411b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4c0120c4b9ca8000777d27ad076583') in 0.022258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barricade-window.prefab
+  artifactKey: Guid(3c26b62b100db45969d64fbfed03cab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/barricade-window.prefab using Guid(3c26b62b100db45969d64fbfed03cab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8680b1818a8c1d726f88caa34e1f3175') in 0.020442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/cooling-tower-apocalypse-props.prefab
+  artifactKey: Guid(6f29d674be5d2b44c9d99a2f98864233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/cooling-tower-apocalypse-props.prefab using Guid(6f29d674be5d2b44c9d99a2f98864233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97d56449f66897dd07ed10188177f9c') in 0.024427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-city-apocalypse-c.prefab
+  artifactKey: Guid(0e82bcf10128dc6428f96b9bbcfbc0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-city-apocalypse-c.prefab using Guid(0e82bcf10128dc6428f96b9bbcfbc0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a973162b3a8c8294721e5f36d2a40568') in 0.022629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/building-house-block-big-apocalypse.prefab
+  artifactKey: Guid(c11a64b2f856f1e46a39531b56cf6846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/building-house-block-big-apocalypse.prefab using Guid(c11a64b2f856f1e46a39531b56cf6846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b06869729d493afbfe86178719af84') in 0.035915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.654011 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-double-apocalypse-c.prefab
+  artifactKey: Guid(358c881e4e0e56e41856a33e6cc08ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/lamp-road-double-apocalypse-c.prefab using Guid(358c881e4e0e56e41856a33e6cc08ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0313564d746a3c9e78d992717d5bc726') in 0.022679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/pole-electric-apocalypse-b.prefab
+  artifactKey: Guid(9dff607a02722a8468b9b7f3683d879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/pole-electric-apocalypse-b.prefab using Guid(9dff607a02722a8468b9b7f3683d879c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece4aae8788d7fba4dfa21773e6cd513') in 0.022199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/pole-electric-apocalypse-a.prefab
+  artifactKey: Guid(8847ef58efc43694da643ad122e93069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/pole-electric-apocalypse-a.prefab using Guid(8847ef58efc43694da643ad122e93069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce827bae173527d1690aad737160c046') in 0.018893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/traffic-lights-apocalypse-a.prefab
+  artifactKey: Guid(d7b91879bce96a54ab852afc533a83c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/traffic-lights-apocalypse-a.prefab using Guid(d7b91879bce96a54ab852afc533a83c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8135b027e8187ea8c1209ce2f152611') in 0.017675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/power-line-pole-apocalypse-c.prefab
+  artifactKey: Guid(55db544c11965d941a5003f59ff37aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/power-line-pole-apocalypse-c.prefab using Guid(55db544c11965d941a5003f59ff37aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ef3f120a194b6efcd88020789b6bc3') in 0.022838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/road-sign-green-apocalypse.prefab
+  artifactKey: Guid(8c5229fcd6395de4ebf1e4e2fc920f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/road-sign-green-apocalypse.prefab using Guid(8c5229fcd6395de4ebf1e4e2fc920f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7155cd0698e3bf87ada52bd2f39fa239') in 0.022260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/truck-broken.prefab
+  artifactKey: Guid(df159233b7037438b92f745daaa8393d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/truck-broken.prefab using Guid(df159233b7037438b92f745daaa8393d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a166065bd9fbb3408bd6ae1a9a7fda65') in 0.023482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/windmill-apocalypse-b.prefab
+  artifactKey: Guid(a9f922558a0d4004ca715546d1d3b4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/windmill-apocalypse-b.prefab using Guid(a9f922558a0d4004ca715546d1d3b4ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ba6c0331b580d1e61ca284afa5b01a') in 0.023349 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/windmill-apocalypse-a.prefab
+  artifactKey: Guid(c11739417b34b0e4b8ba01fc839373c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/windmill-apocalypse-a.prefab using Guid(c11739417b34b0e4b8ba01fc839373c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c764543e45946ed9fe417f754bceefe6') in 0.023139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/traffic-lights-apocalypse-c.prefab
+  artifactKey: Guid(f2bb78a445b54154fa72441a486fb819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/traffic-lights-apocalypse-c.prefab using Guid(f2bb78a445b54154fa72441a486fb819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799fea898fa2c1f0b10ca9219463d617') in 0.024404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/power-line-pole-apocalypse-a.prefab
+  artifactKey: Guid(8e7c4c9092368de46bacefa7b2561c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Apocalypse_M/power-line-pole-apocalypse-a.prefab using Guid(8e7c4c9092368de46bacefa7b2561c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e6488ada6ad5f771b51052e3b00e72') in 0.033691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 9.396812 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/boy-beach.prefab
+  artifactKey: Guid(821decd56800f4fbaa6479df296d67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/boy-beach.prefab using Guid(821decd56800f4fbaa6479df296d67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b3c06853f167a1f761a372862691a1') in 0.025163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/girl-skirt.prefab
+  artifactKey: Guid(df0a2ae6927e4384fa8448512ce5cade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/girl-skirt.prefab using Guid(df0a2ae6927e4384fa8448512ce5cade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb277448887ea4eeae904ecfec905113') in 0.019544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-casual.prefab
+  artifactKey: Guid(d7a23874c72e5a34f95e076f8cdcf09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-casual.prefab using Guid(d7a23874c72e5a34f95e076f8cdcf09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eacf657de6e5767e692db6258605160c') in 0.018932 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-construction-worker.prefab
+  artifactKey: Guid(7dec47860c1724a8fb3661000800979c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-construction-worker.prefab using Guid(7dec47860c1724a8fb3661000800979c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7445d86716d9b9bfd9fb6753325644') in 0.019661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-farm.prefab
+  artifactKey: Guid(e619736e4c44c402ca76ed0015fbbac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-farm.prefab using Guid(e619736e4c44c402ca76ed0015fbbac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc697753f733d5048bc7839bf00e2577') in 0.019309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-hazmat.prefab
+  artifactKey: Guid(d408d1acc96391c4eb8c18c3ccf8c5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-hazmat.prefab using Guid(d408d1acc96391c4eb8c18c3ccf8c5f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a66d109f7555a5da7ead1a26b881efb') in 0.041543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/girl-winter.prefab
+  artifactKey: Guid(d1e9e8ca1659f384f88afa88596b5215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/girl-winter.prefab using Guid(d1e9e8ca1659f384f88afa88596b5215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9f2b602ab0b8ba418b584c54d01d83') in 0.041736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-EOD.prefab
+  artifactKey: Guid(b20697d7d45372048b1585bbc717759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-EOD.prefab using Guid(b20697d7d45372048b1585bbc717759d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bff5ff715a53085a610f3237f160533') in 0.037945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-beach.prefab
+  artifactKey: Guid(ae5918a66ba5a46dd9a1137345e462f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-beach.prefab using Guid(ae5918a66ba5a46dd9a1137345e462f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c919d287cc8c407f2306cec23deb40e') in 0.033448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-egypt-soldier.prefab
+  artifactKey: Guid(420ceb26225f0f449970d1c4cccbc835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-egypt-soldier.prefab using Guid(420ceb26225f0f449970d1c4cccbc835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5481d431a190ac05012859ce28806e') in 0.043116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-doctor.prefab
+  artifactKey: Guid(34f9383b1a1e78f4fa35769f1cefb7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/People_M/man-doctor.prefab using Guid(34f9383b1a1e78f4fa35769f1cefb7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83e49f2d1ee3dd5a679d9dcc93b9be39') in 0.031645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 6.250151 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/balloon-single.prefab
+  artifactKey: Guid(fd3cbb4a3ad2648489865cca6afa4af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/balloon-single.prefab using Guid(fd3cbb4a3ad2648489865cca6afa4af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40d4a4be492e10b71d10a73e2313ddc') in 0.019407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/beer-tap.prefab
+  artifactKey: Guid(9bcec4d872dc18343af4c14db1e790ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/beer-tap.prefab using Guid(9bcec4d872dc18343af4c14db1e790ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892d1d4e0a096ead78a38fea16f99755') in 0.020520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/cargo-simple.prefab
+  artifactKey: Guid(cfa04bb77bc6d97468eeed0c256756ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/cargo-simple.prefab using Guid(cfa04bb77bc6d97468eeed0c256756ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efea7cd0c34537d0d04ee2ffc1579dce') in 0.020141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/crane-port.prefab
+  artifactKey: Guid(c059534ad9aa3479c8f97125c5e75516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/crane-port.prefab using Guid(c059534ad9aa3479c8f97125c5e75516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdee33ff63086c3e183fffddd5cd972') in 0.016888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/lights-string.prefab
+  artifactKey: Guid(655b04b5133176e40a1cbd1e0bee32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/lights-string.prefab using Guid(655b04b5133176e40a1cbd1e0bee32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ccb4f4d8832a7f113c241b809c24fa') in 0.032607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/polyperfect-sign.prefab
+  artifactKey: Guid(a54e07c3d427e324eab0341a20e30bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/polyperfect-sign.prefab using Guid(a54e07c3d427e324eab0341a20e30bdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da9e7f663a965188d738b30025df4ef') in 0.022617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/package-box.prefab
+  artifactKey: Guid(7b49ae5af64e047cf9c52dffe612a365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/package-box.prefab using Guid(7b49ae5af64e047cf9c52dffe612a365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5d91707506c41e57239ddf53b6eabb') in 0.030279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/presne-box-block.prefab
+  artifactKey: Guid(fdddf307fbe6c4138a9019d179853a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/presne-box-block.prefab using Guid(fdddf307fbe6c4138a9019d179853a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652afa91cd9e4234a30dd0218a3ebbef') in 0.033804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/balloons-bunch-more.prefab
+  artifactKey: Guid(3a75cc88ca494ad40b5196d35dcfb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/balloons-bunch-more.prefab using Guid(3a75cc88ca494ad40b5196d35dcfb352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074097fb639b5349867fe68e18b65628') in 0.025243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.869864 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/tent.prefab
+  artifactKey: Guid(1932beae19ab8904ead075ad7af83277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/tent.prefab using Guid(1932beae19ab8904ead075ad7af83277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3194c5114c887ce2e6df82e503cda3') in 0.020436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/tent-pyramid.prefab
+  artifactKey: Guid(369f418abcbdfff48acf13ae5fec7988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Props_M/tent-pyramid.prefab using Guid(369f418abcbdfff48acf13ae5fec7988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5226da3ffe5f7ffef9b56aecdb664f1e') in 0.024233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 3.321627 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/axe.prefab
+  artifactKey: Guid(5a459641d59e2ca46b1f815c1c217cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/axe.prefab using Guid(5a459641d59e2ca46b1f815c1c217cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199448ee63312e58063718d8ed0f8806') in 0.018645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/garden-hoe.prefab
+  artifactKey: Guid(d72f0e7356e5bb44bb6ddf898fb0b8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/garden-hoe.prefab using Guid(d72f0e7356e5bb44bb6ddf898fb0b8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316e06b8d7a9dbe61ebf57ff3c7d6d0f') in 0.018524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/shovel.prefab
+  artifactKey: Guid(582f1a3b91a90974f9518032402cc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/shovel.prefab using Guid(582f1a3b91a90974f9518032402cc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b48ea2b110698cabba38400a91347a4') in 0.022257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M
+  artifactKey: Guid(ac8b286843c9dbe47bdc4c50db9689cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M using Guid(ac8b286843c9dbe47bdc4c50db9689cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ccfce008e109dbc245416599ab1400') in 0.000955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/wrench.prefab
+  artifactKey: Guid(4dec5b4b3334ac54a8b9ded4812d6533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/wrench.prefab using Guid(4dec5b4b3334ac54a8b9ded4812d6533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fa5992be47bd97253fc8a105adde2f') in 0.021950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/hammer.prefab
+  artifactKey: Guid(641fec17292c7ac4a9607002d28dbde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/M/- Prefabs_M/Tools_M/hammer.prefab using Guid(641fec17292c7ac4a9607002d28dbde2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b1594b60cd942ed7614d1e48eaa0ce') in 0.022117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 15.559856 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/basketball.prefab
+  artifactKey: Guid(ab9343e63f5f144e8951bb15d7e44211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/basketball.prefab using Guid(ab9343e63f5f144e8951bb15d7e44211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06b3852ef13499f3f62e3ef69417309') in 0.076647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/ski.prefab
+  artifactKey: Guid(8001319e8c6348e4488412c90dfbb1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/ski.prefab using Guid(8001319e8c6348e4488412c90dfbb1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c79b889b7dc7258ee85e78c4bb50bf') in 0.036893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/windsurf.prefab
+  artifactKey: Guid(5a66506e52a94ae4fb99e80af37adc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/windsurf.prefab using Guid(5a66506e52a94ae4fb99e80af37adc1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b66f21245a6818c54561d9fe156dc80') in 0.044418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/flag-golf_red.prefab
+  artifactKey: Guid(3f7b150152ab4eb4f8cfd6b92800faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/flag-golf_red.prefab using Guid(3f7b150152ab4eb4f8cfd6b92800faef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b41f8a909d0228f70e07d7e3b32fd7') in 0.046655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/golf-bag.prefab
+  artifactKey: Guid(600ea8ed1eb8c514097b5b00a21f5e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/golf-bag.prefab using Guid(600ea8ed1eb8c514097b5b00a21f5e99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5894a59a7336e3f5640c0408aafe85') in 0.046896 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/ski-flag.prefab
+  artifactKey: Guid(e2167394a02156f46b48cb347fae02a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/Sport_T/ski-flag.prefab using Guid(e2167394a02156f46b48cb347fae02a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2e7501916f0d41510853e66d26809c') in 0.045897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 7.582677 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/boy-beach.prefab
+  artifactKey: Guid(08000b4459889420fada288a1d9bdc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/boy-beach.prefab using Guid(08000b4459889420fada288a1d9bdc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c178345f3977c86745ab820f445196') in 0.062716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-coat.prefab
+  artifactKey: Guid(19dcc75c921f73d4082857beea3ac4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-coat.prefab using Guid(19dcc75c921f73d4082857beea3ac4f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520f5705986f2c1d4fa3d8b76445d55c') in 0.041131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-doctor.prefab
+  artifactKey: Guid(d6f5d1340b3ec804cbbde8893e2ba49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-doctor.prefab using Guid(d6f5d1340b3ec804cbbde8893e2ba49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4027b9a025eaebcb2edb70810cbfee0b') in 0.048866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-hazmat.prefab
+  artifactKey: Guid(5684412737e1953438ae6ec84788db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-hazmat.prefab using Guid(5684412737e1953438ae6ec84788db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be26f9d6edf4c38312f2bce4e92b0f9') in 0.051241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-astronaut.prefab
+  artifactKey: Guid(13dec937b4f104e48987ea63aa0a7985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-astronaut.prefab using Guid(13dec937b4f104e48987ea63aa0a7985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47389eed56451328d5149ddfedca3d28') in 0.102007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-cowboy.prefab
+  artifactKey: Guid(61380b1f8ab20434b8c9b3cd16fc4fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-cowboy.prefab using Guid(61380b1f8ab20434b8c9b3cd16fc4fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f24c46f2b21a0840199d5ed4a930092') in 0.047770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-jamaica.prefab
+  artifactKey: Guid(a19866d69239f0b41bbfcc5eafa517ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-jamaica.prefab using Guid(a19866d69239f0b41bbfcc5eafa517ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba55bd49f7b1444075a6dc01f8561841') in 0.047057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-egypt-worker.prefab
+  artifactKey: Guid(0e26d7393cc2e9647aa3811954fdf0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-egypt-worker.prefab using Guid(0e26d7393cc2e9647aa3811954fdf0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '173bd74aee4077d94c3b5b63c11dec5f') in 0.045418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-casual.prefab
+  artifactKey: Guid(c7f7c3ded316ae34c8b5819a9bc4cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-casual.prefab using Guid(c7f7c3ded316ae34c8b5819a9bc4cd0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ad16c8a744b5dab215a3da5f3fa6eb') in 0.043254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-hazard.prefab
+  artifactKey: Guid(d9a74d3cd95fe49ee8f6b131d1fa0bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-hazard.prefab using Guid(d9a74d3cd95fe49ee8f6b131d1fa0bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01142d797d0c6b991cd17ee79f798e36') in 0.036740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 6.696739 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-knight.prefab
+  artifactKey: Guid(a3f2a77b910d8284cbe9b421f21b209c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-knight.prefab using Guid(a3f2a77b910d8284cbe9b421f21b209c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac48fdd813a6f4d1858d811356d398a') in 0.042189 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-lord.prefab
+  artifactKey: Guid(5b4de2d9d242e484390f88b9a503f441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-lord.prefab using Guid(5b4de2d9d242e484390f88b9a503f441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ecf86a72135b28e53d9dab2fec2895') in 0.041201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pedestrian-rival.prefab
+  artifactKey: Guid(efbfd966a62f0a24899baf4e044d0bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pedestrian-rival.prefab using Guid(efbfd966a62f0a24899baf4e044d0bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ea4afa91115986373c6b57e7144b7a') in 0.049485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pirate-captain.prefab
+  artifactKey: Guid(fc78a662ea574674b906f8a9f149a772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pirate-captain.prefab using Guid(fc78a662ea574674b906f8a9f149a772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f03f2a77d958997f0077a78226c661') in 0.047792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pedestrian-rival-young.prefab
+  artifactKey: Guid(6f36d74db8918d14499af300e0424220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-pedestrian-rival-young.prefab using Guid(6f36d74db8918d14499af300e0424220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ebef73df1c0e7fbded8f16142fde55') in 0.048198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-monk-old.prefab
+  artifactKey: Guid(0cb4491a47c413f4e97aa546789e0378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-monk-old.prefab using Guid(0cb4491a47c413f4e97aa546789e0378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc907b219002e3a1db8cf3d0c6c82d4') in 0.048539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-metalhead.prefab
+  artifactKey: Guid(6aba9775813441b4b905722de86271a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/polyperfect/Low Poly Ultimate Pack/T/- Prefabs_T/People_T/man-metalhead.prefab using Guid(6aba9775813441b4b905722de86271a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5296495d539ee2d5f96754e1204d0328') in 0.039593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 24284.194320 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Armchair.prefab
+  artifactKey: Guid(d89225c174a3955439a93e85a798211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Armchair.prefab using Guid(d89225c174a3955439a93e85a798211e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5872af4d3947842cbcd45ab3e90a5bb2') in 0.174687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Boxes.prefab
+  artifactKey: Guid(567394f18115fcf47a3c73d9fc13bb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Boxes.prefab using Guid(567394f18115fcf47a3c73d9fc13bb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2d89d6a073a985ed45d73c9030a487') in 0.043143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Chairs.prefab
+  artifactKey: Guid(c2295b34083ed0c4b95a252933176bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Chairs.prefab using Guid(c2295b34083ed0c4b95a252933176bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1930ffbd985232977734a9df28344c') in 0.020962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Glass.prefab
+  artifactKey: Guid(f3638bc957e46844e835931a51ea4ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Glass.prefab using Guid(f3638bc957e46844e835931a51ea4ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e75326338dc58bb4fb24b4dc9d81466') in 0.021556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Lamp.prefab
+  artifactKey: Guid(86f89f9c2c1237c4c8daaddf88ad499d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Lamp.prefab using Guid(86f89f9c2c1237c4c8daaddf88ad499d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afb68cb948122e3f032a65188e114f4') in 0.025097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Mirror.prefab
+  artifactKey: Guid(73f7eae3185b5514b8bbc03107939a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Mirror.prefab using Guid(73f7eae3185b5514b8bbc03107939a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365df2b06fe10e2cf32f15277b4ca209') in 0.027598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet1.prefab
+  artifactKey: Guid(523873fc9002b974c8a0292076ec82af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet1.prefab using Guid(523873fc9002b974c8a0292076ec82af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab3e7c6c0f40e614fbe4fb58caeaf18b') in 0.017021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Cooker.prefab
+  artifactKey: Guid(7474ef2a457c13745bd61cd0af76274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Cooker.prefab using Guid(7474ef2a457c13745bd61cd0af76274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d70744c40d29076f1ddbd112e198a98') in 0.017411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bed.prefab
+  artifactKey: Guid(c78b068d06d936540835ce2788ae7bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bed.prefab using Guid(c78b068d06d936540835ce2788ae7bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '277a3f5eb4955d89616d962521af89af') in 0.024792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet2.prefab
+  artifactKey: Guid(6d05b9c6f1a84414ca2b2a2d4851d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Carpet2.prefab using Guid(6d05b9c6f1a84414ca2b2a2d4851d8d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48085f6d23386203bc258d4c64823b4') in 0.025424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Books.prefab
+  artifactKey: Guid(23f96c6f17e0d5b4bacaf839fb197387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Books.prefab using Guid(23f96c6f17e0d5b4bacaf839fb197387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbbea9a1d38cd74e33915f2495a894fa') in 0.024479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bath.prefab
+  artifactKey: Guid(dd1310fff69f1cd46974882f047d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Bath.prefab using Guid(dd1310fff69f1cd46974882f047d74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a599e2c4ad29e674457764d3f239299') in 0.022919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Kitchen Stuff.prefab
+  artifactKey: Guid(79f1bb7a99cc856419859c0286fe3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Kitchen Stuff.prefab using Guid(79f1bb7a99cc856419859c0286fe3efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787640e82de50d5d0ab5953d460d3d7d') in 0.017101 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Microwave.prefab
+  artifactKey: Guid(97f0c639a9eb92b43a377663bfdbfd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Microwave.prefab using Guid(97f0c639a9eb92b43a377663bfdbfd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c2389ff701e29e246c5a7574ab0cf7') in 0.016922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Painting.prefab
+  artifactKey: Guid(9c16be079bb4ee343a5c695ee4a1a601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Painting.prefab using Guid(9c16be079bb4ee343a5c695ee4a1a601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c92cc8fbf75cc95a4e0dc37b301d0c54') in 0.190329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.410535 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Pc Chair.prefab
+  artifactKey: Guid(27b0bcb7fda86b3458767f6126a71381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Pc Chair.prefab using Guid(27b0bcb7fda86b3458767f6126a71381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea20536cbe6b93e71cfae8879c2e612') in 0.029221 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Wardrobe.prefab
+  artifactKey: Guid(349bf11d0a3e402469f2825045862a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Wardrobe.prefab using Guid(349bf11d0a3e402469f2825045862a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27aed908058a63b88bba1b0f2d5ebe2b') in 0.020907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Tv Unit.prefab
+  artifactKey: Guid(01703f21ce284a1498b9b8bea9ac8103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Tv Unit.prefab using Guid(01703f21ce284a1498b9b8bea9ac8103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd675f222271838a49a382e01835827e') in 0.049234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 44
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Vase.prefab
+  artifactKey: Guid(419bf7a95ce43b847833705cfa58c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Vase.prefab using Guid(419bf7a95ce43b847833705cfa58c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf52377506a9432502e584856e5582c') in 0.023692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Towel.prefab
+  artifactKey: Guid(10a6bc1f9fa8e1545a0996baaa9c5040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Props/StudioBillion/House Interior/Prefabs/Towel.prefab using Guid(10a6bc1f9fa8e1545a0996baaa9c5040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f313abba91750ab272fbd385b738d3bd') in 0.014500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 323.885086 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraChainSaw.mat
+  artifactKey: Guid(19f0e0514f8da1b4a9312cb13409fa90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraChainSaw.mat using Guid(19f0e0514f8da1b4a9312cb13409fa90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca17b00b4f2e66b1b605e1386fc9d91') in 0.046016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.072541 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraChainsaw.png
+  artifactKey: Guid(bdb28ec5055795148b19f22efe5d5b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraChainsaw.png using Guid(bdb28ec5055795148b19f22efe5d5b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2c7510bebbff31ac7f05949292c5c5') in 0.087226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.993515 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraChainSaw 1.mat
+  artifactKey: Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraChainSaw 1.mat using Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e740230ed5468e0234acc424062a57') in 0.013821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.279625 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraKnight.mat
+  artifactKey: Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraKnight.mat using Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cb2026fa0bd697cee344b7b35ba600') in 0.012373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.074405 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraChainsaw 1.png
+  artifactKey: Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraChainsaw 1.png using Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66071d95b67ab3ad0375ba8f206bc99f') in 0.013175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.999990 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraKnight.png
+  artifactKey: Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraKnight.png using Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf2b05453b703e0372f31688c468aec') in 0.013466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 87.280414 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraKnight.png
+  artifactKey: Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Textures/T_CapybaraKnight.png using Guid(6c4823ea267af024d8d0bbac45a6c191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f409f5f29c39e20dcf058ba7220deb28') in 0.020725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 35.036172 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraKnight.mat
+  artifactKey: Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Materials/M_CapybaraKnight.mat using Guid(a7ffb3c09da941644bd34b26f928d8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd699247886a2306d24b1cf62e0153d7c') in 0.016028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 40.096702 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2
+  artifactKey: Guid(b8db6363f0252ff459c65e8b447d7400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2 using Guid(b8db6363f0252ff459c65e8b447d7400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a112dd53af9036daefd2b4418d34a82d') in 0.001448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.209121 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs
+  artifactKey: Guid(ae26c552c967af54080194c18b5545d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs using Guid(ae26c552c967af54080194c18b5545d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613cfa9c27e0e2ca8c20d6cacd2e479a') in 0.001229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.056691 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Chimp.prefab
+  artifactKey: Guid(717550b31524c29428baac275522eeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Chimp.prefab using Guid(717550b31524c29428baac275522eeee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705142c9f777bd56c05f16afd8fe4559') in 0.217670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 412
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Chimp_LOD3.prefab
+  artifactKey: Guid(7835e7d96794d7e40ae66c53decd37a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Chimp_LOD3.prefab using Guid(7835e7d96794d7e40ae66c53decd37a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23fdcbc568403166afb44b72632f412') in 0.026429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/MonitorLizard_LOD0.prefab
+  artifactKey: Guid(471080d849c49cb43a9de06a2afdb3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/MonitorLizard_LOD0.prefab using Guid(471080d849c49cb43a9de06a2afdb3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9844b2d000deccd8fb489ae5b16ffa33') in 0.069459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD2.prefab
+  artifactKey: Guid(9cb1b0e38ec7b4d4a987572d9efe1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD2.prefab using Guid(9cb1b0e38ec7b4d4a987572d9efe1ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a6c174b704de1a00d4c8e19e02d4ce') in 0.053308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Macaw_LOD3.prefab
+  artifactKey: Guid(48cc6ba324b70814bb22fa7cd1952153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Macaw_LOD3.prefab using Guid(48cc6ba324b70814bb22fa7cd1952153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d82dfba1b9c796d616aa60455c90e8c') in 0.040319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/MonitorLizard.prefab
+  artifactKey: Guid(23b490bc5facb034484c5eaf8c4be3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/MonitorLizard.prefab using Guid(23b490bc5facb034484c5eaf8c4be3db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0302a9d504598da33dee6ca3e426de') in 0.083768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 412
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD0.prefab
+  artifactKey: Guid(85247b7bb2807054ab6db88c4db387f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD0.prefab using Guid(85247b7bb2807054ab6db88c4db387f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab35ff7345be5f5dd6d4a0dad4ef054') in 0.072590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD1.prefab
+  artifactKey: Guid(0360f899e6098d8408ce8e5e320d9965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD1.prefab using Guid(0360f899e6098d8408ce8e5e320d9965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f45edb2060b7a276e2e3176c6ea90d') in 0.049010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD0.prefab
+  artifactKey: Guid(fe6fcb50bd9a57b4d829e5211c52f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD0.prefab using Guid(fe6fcb50bd9a57b4d829e5211c52f473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f3bfe8de7605e0e200a7c9e8943867') in 0.052000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD3.prefab
+  artifactKey: Guid(a4452f4b47e70f743af794542e289417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD3.prefab using Guid(a4452f4b47e70f743af794542e289417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6190a9686295e521c25ad61a39c5e439') in 0.035118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD1.prefab
+  artifactKey: Guid(d87774eb4010aff4a835eed9225bed9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Gaur_LOD1.prefab using Guid(d87774eb4010aff4a835eed9225bed9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bf0e53b1f6f27f7725b3ae9026193f') in 0.044323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD2.prefab
+  artifactKey: Guid(aa83931daa672fc43a36ae244941f075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD2.prefab using Guid(aa83931daa672fc43a36ae244941f075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e427bc1902b2fea98cc859396755c4') in 0.043899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD0.prefab
+  artifactKey: Guid(2094e8d24b324c6498b9e5d264faf8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Jaguar_LOD0.prefab using Guid(2094e8d24b324c6498b9e5d264faf8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb07d8a78a4e4874d6132fb82b11292') in 0.035988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Macaw_LOD2.prefab
+  artifactKey: Guid(7bd3864c0ce57874fb003a83a2ed78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Macaw_LOD2.prefab using Guid(7bd3864c0ce57874fb003a83a2ed78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f764780ba2e9cbe3a8b5de30e1590e3') in 0.033923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard.prefab
+  artifactKey: Guid(0a7a5cecefca0514eb956392884898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard.prefab using Guid(0a7a5cecefca0514eb956392884898b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdcc17622a98ca77f48f09762c7c8071') in 0.078157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 460
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD3.prefab
+  artifactKey: Guid(0dc08ba20428bf349a6504b023b4bbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Leopard_LOD3.prefab using Guid(0dc08ba20428bf349a6504b023b4bbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ec153acb04122b9244b016598d1a75c') in 0.028596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 147
+========================================================================
+Received Import Request.
+  Time since last request: 1.911864 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Mousedeeer_LOD0.prefab
+  artifactKey: Guid(ea55013bd32ce64478380c83efb67338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Mousedeeer_LOD0.prefab using Guid(ea55013bd32ce64478380c83efb67338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e34091b8392dc7bdc22cde98be9393') in 0.077010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake.prefab
+  artifactKey: Guid(9413d3d671a2b3743ad92a747b8a3e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake.prefab using Guid(9413d3d671a2b3743ad92a747b8a3e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffb5fb4fb887a9afb869cdbb44f5100') in 0.108795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 412
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake_LOD2.prefab
+  artifactKey: Guid(5962ed4fe99a85245a78ca243d5df4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake_LOD2.prefab using Guid(5962ed4fe99a85245a78ca243d5df4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef41051e3d936bff2894300d58e45366') in 0.037154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake_LOD0.prefab
+  artifactKey: Guid(7d8420796db1fd74a98725245fb7ea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/Snake_LOD0.prefab using Guid(7d8420796db1fd74a98725245fb7ea3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb5e21034c40aeea429440d151eb381') in 0.045502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/OrangUtan_LOD0.prefab
+  artifactKey: Guid(e7b5a78ebfcb1014488798b89558b0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/OrangUtan_LOD0.prefab using Guid(e7b5a78ebfcb1014488798b89558b0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565fad0bbad452b8028b4573c3091675') in 0.039459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/OrangUtan_LOD2.prefab
+  artifactKey: Guid(50765ad3f60e5814f8acce08ced5eef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Prefabs/OrangUtan_LOD2.prefab using Guid(50765ad3f60e5814f8acce08ced5eef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809573ed247d910d3fa68b762e9afef0') in 0.033726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 139
+========================================================================
+Received Import Request.
+  Time since last request: 7.653668 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_Jaguar.mat
+  artifactKey: Guid(a23c288282c747243926bd4bfe3087e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_Jaguar.mat using Guid(a23c288282c747243926bd4bfe3087e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc947f914c61ff5ad4e813e39558bac') in 0.015553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_Macaw.mat
+  artifactKey: Guid(7135cc07a0f5a4745a60dd65de60a159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_Macaw.mat using Guid(7135cc07a0f5a4745a60dd65de60a159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb01a54e6681a75fefa552a18cc3ed3') in 0.019115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_MonitorLizard.mat
+  artifactKey: Guid(a31475415e2bc0349ac9f97f4493d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_MonitorLizard.mat using Guid(a31475415e2bc0349ac9f97f4493d2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b97fe774d74582bce93a4d837dae12') in 0.019202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_OrangUtan.mat
+  artifactKey: Guid(043a877fb2b21e941899d3f306386b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/Jungle Vol.2/Materials/M_OrangUtan.mat using Guid(043a877fb2b21e941899d3f306386b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da97bc26dc3246154d9b1940a96a34a') in 0.030240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
