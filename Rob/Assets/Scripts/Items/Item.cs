@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Item : MonoBehaviour, ITouchable
@@ -23,23 +24,21 @@ public class Item : MonoBehaviour, ITouchable
 
     public void ConnectTo(Transform position)
     {
-        _collider.enabled = false;
-        _rigibody.isKinematic = true;
+        OffPhysics();
         StartCoroutine(MoveToTarget(position));
     }
 
     public void ConnecTo(ItemCollector itemCollector)
     {
-        _collider.enabled = false;
-        _rigibody.isKinematic = true;
+        OffPhysics();
         transform.DOMove(itemCollector.Point.position, _itemData.MoveDuration).SetEase(Ease.InOutSine).OnComplete(DestroyObject);
     }
 
+    [Button]
     public void Disconnect()
     {
-        _collider.enabled = true;
-        _rigibody.isKinematic = false;
         transform.SetParent(null);
+        OnPhysics();
     }
 
     private IEnumerator MoveToTarget(Transform target)
@@ -53,6 +52,18 @@ public class Item : MonoBehaviour, ITouchable
         }
 
         transform.SetParent(target);
+    }
+
+    private void OffPhysics()
+    {
+        _collider.enabled = false;
+        _rigibody.isKinematic = true;
+    }
+
+    private void OnPhysics()
+    {
+        _collider.enabled = true;
+        _rigibody.isKinematic = false;
     }
 
     private void DestroyObject() => DestroyImmediate(gameObject);

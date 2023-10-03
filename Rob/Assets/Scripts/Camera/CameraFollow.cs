@@ -3,38 +3,36 @@ using Zenject;
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField] private Transform _target; // Цель
-    [SerializeField] private float smoothSpeed = 5f; // Сглаживание движения камеры
-    [SerializeField] private Vector3 offset; // Отступ камеры от игрока
+    [SerializeField] private float _smoothSpeed = 5f;
+    [SerializeField] private Vector3 _offset;
+    [SerializeField] private Vector3 _winOffset;
 
     private Player _player;
-
-    private void Start()
-    {
-        _target = _player.Body;
-    }
+    private IGameResultHandler _gameResultHandler;
 
     [Inject]
-    public void Constructor(Player player)
+    public void Constructor(Player player, IGameResultHandler gameResultHandler)
     {
         Debug.Log("ИГрок прокинулся");
         _player = player;
+        _gameResultHandler = gameResultHandler;
+        _gameResultHandler.OnGameWinning += OnWin;
     }
 
     private void LateUpdate()
     {
-        // Проверяем, существует ли цель (игрок)
         if (_player.Body != null)
         {
-            // Вычисляем позицию, к которой должна двигаться камера
-            Vector3 desiredPosition = _player.Body.position + offset;
+            Vector3 desiredPosition = _player.Body.position + _offset;
 
-            // Интерполируем текущую позицию камеры к желаемой сглаженной позиции
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, _smoothSpeed * Time.deltaTime);
 
-            // Устанавливаем позицию камеры равной сглаженной позиции
             transform.position = smoothedPosition;
         }
     }
 
+    private void OnWin()
+    {
+        _offset = _winOffset;
+    }
 }

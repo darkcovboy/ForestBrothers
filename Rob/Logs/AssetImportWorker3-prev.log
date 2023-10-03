@@ -15,7 +15,7 @@ C:/Users/darkc/Documents/GitHub/Rob/Rob
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-51091
+61250
 Successfully changed project path to: C:/Users/darkc/Documents/GitHub/Rob/Rob
 C:/Users/darkc/Documents/GitHub/Rob/Rob
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/darkc/Documents/GitHub/Rob/Rob
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11960] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 3475861105 [EditorId] 3475861105 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [15724] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 3674821622 [EditorId] 3674821622 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11960] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 3475861105 [EditorId] 3475861105 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [15724] Host "[IP] 10.54.235.250 [Port] 0 [Flags] 2 [Guid] 3674821622 [EditorId] 3674821622 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-BVBJ8MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 56.06 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 23.49 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.024928 seconds.
-- Loaded All Assemblies, in  0.781 seconds
+Registered in 0.011989 seconds.
+- Loaded All Assemblies, in  0.399 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.340 seconds
-Domain Reload Profiling: 1118ms
-	BeginReloadAssembly (309ms)
+- Finished resetting the current domain, in  0.287 seconds
+Domain Reload Profiling: 684ms
+	BeginReloadAssembly (112ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (138ms)
-	LoadAllAssembliesAndSetupDomain (224ms)
-		LoadAssemblies (306ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (111ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (220ms)
-			TypeCache.Refresh (218ms)
-				TypeCache.ScanAssembly (200ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (146ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (341ms)
+	FinalizeReload (287ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (272ms)
+		SetupLoadedEditorAssemblies (219ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
+			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (183ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
+			ProcessInitializeOnLoadAttributes (143ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 1118ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.065 seconds
-Refreshing native plugins compatible for Editor in 9.12 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.973 seconds
+Refreshing native plugins compatible for Editor in 8.01 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,47 +126,72 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+
+=================================================================
+	Native Crash Reporting
+=================================================================
+Got a UNKNOWN while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+=================================================================
+	Managed Stacktrace:
+=================================================================
+	  at <unknown> <0xffffffff>
+	  at System.Object:__icall_wrapper_ves_icall_array_new_specific <0x0006d>
+	  at System.Collections.Generic.List`1:set_Capacity <0x00072>
+	  at System.Collections.Generic.List`1:EnsureCapacity <0x0008a>
+	  at System.Collections.Generic.List`1:AddWithResize <0x00032>
+	  at IdentifierLookups:RunInitializeTask <0x0056a>
+	  at System.Threading.ThreadHelper:ThreadStart_Context <0x000a5>
+	  at System.Threading.ExecutionContext:RunInternal <0x001dd>
+	  at System.Threading.ExecutionContext:Run <0x0002a>
+	  at System.Threading.ExecutionContext:Run <0x0005a>
+	  at System.Threading.ThreadHelper:ThreadStart <0x00042>
+	  at System.Object:runtime_invoke_void__this__ <0x000d5>
+=================================================================
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.399 seconds
-Domain Reload Profiling: 2460ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  1.287 seconds
+Domain Reload Profiling: 2255ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (24ms)
-	RebuildCommonClasses (42ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (760ms)
-		LoadAssemblies (511ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (690ms)
+		LoadAssemblies (470ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (356ms)
-			TypeCache.Refresh (307ms)
-				TypeCache.ScanAssembly (286ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
+		AnalyzeDomain (323ms)
+			TypeCache.Refresh (279ms)
+				TypeCache.ScanAssembly (260ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
 			ResolveRequiredComponents (15ms)
-	FinalizeReload (1400ms)
+	FinalizeReload (1287ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1211ms)
+		SetupLoadedEditorAssemblies (1096ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (6ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (123ms)
-			ProcessInitializeOnLoadAttributes (602ms)
-			ProcessInitializeOnLoadMethodAttributes (462ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (543ms)
+			ProcessInitializeOnLoadMethodAttributes (416ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 11.30 ms, found 6 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 8.32 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6104 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 108 unused Assets / (66.5 MB). Loaded Objects now: 6621.
-Memory consumption went from 454.1 MB to 387.7 MB.
-Total: 22.119800 ms (FindLiveObjects: 0.478000 ms CreateObjectMapping: 0.397200 ms MarkObjects: 16.960600 ms  DeleteObjects: 4.282900 ms)
+Unloading 6111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 108 unused Assets / (66.4 MB). Loaded Objects now: 6628.
+Memory consumption went from 454.3 MB to 387.9 MB.
+Total: 19.496100 ms (FindLiveObjects: 0.460900 ms CreateObjectMapping: 0.413400 ms MarkObjects: 14.687000 ms  DeleteObjects: 3.933800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,6 +206,296 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 187754.854113 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Blue_01.mat
+  artifactKey: Guid(53a03a1bd2d84d44dbfb0dab1200b8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Blue_01.mat using Guid(53a03a1bd2d84d44dbfb0dab1200b8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05479097c3799867bcada65b79141a69') in 0.128009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Orange.mat
+  artifactKey: Guid(edc2b15e86600e94bb70197105ba80e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Orange.mat using Guid(edc2b15e86600e94bb70197105ba80e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778c0d5ecac535dc54d55ea9dd22b022') in 0.014990 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Red.mat
+  artifactKey: Guid(0af954739f306cb4d9a2f1394b9a7483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Red.mat using Guid(0af954739f306cb4d9a2f1394b9a7483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bdc5dbf64840cfc8fffd02d33901af') in 0.020652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Light_green.mat
+  artifactKey: Guid(cb165df00fd7aba47a796ccf9826ff07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Light_green.mat using Guid(cb165df00fd7aba47a796ccf9826ff07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68425aeceba5761f0ed0ebc21368e9d') in 0.015266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Brown.mat
+  artifactKey: Guid(9566062ad8b167f42ab3f759bbafc5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Materials/Brown.mat using Guid(9566062ad8b167f42ab3f759bbafc5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a5b90cdfeb31bf86a94a2d0a98725e') in 0.012504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.231358 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Models/Characters/Stickman_sphere_Criminal_01.fbx
+  artifactKey: Guid(4d40b52ba1511b84b956295bb642a479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Models/Characters/Stickman_sphere_Criminal_01.fbx using Guid(4d40b52ba1511b84b956295bb642a479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ee6a865e6e065f41cec27a242ea9ba') in 0.174140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Models/Characters/Stickman_sphere_Suit.fbx
+  artifactKey: Guid(4bf76148838cc484cacc30fdcc22121c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/BizulkaProduction/Stickman sphere head vol.1 gang/Models/Characters/Stickman_sphere_Suit.fbx using Guid(4bf76148838cc484cacc30fdcc22121c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2998d568929ebcfb799c8070df240166') in 0.146459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 102
+========================================================================
+Received Import Request.
+  Time since last request: 243.483633 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Alligator_LOD1.fbx
+  artifactKey: Guid(319405b092d6112448eef8bb489e03f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Alligator_LOD1.fbx using Guid(319405b092d6112448eef8bb489e03f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd83b474595db8364ed79c0b306ace740') in 0.053153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD0.fbx
+  artifactKey: Guid(c3fe01405c65a9e429779f253fc9af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD0.fbx using Guid(c3fe01405c65a9e429779f253fc9af85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc9df487bf49fa05803158ed1d4e219') in 0.056843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD2.fbx
+  artifactKey: Guid(5028a9a982944c0408580ec17c2ae033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD2.fbx using Guid(5028a9a982944c0408580ec17c2ae033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f4d41ff427441e0cf3bacf7b91283a') in 0.049986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD1.fbx
+  artifactKey: Guid(396e281eaf151804894588b5ec06b235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD1.fbx using Guid(396e281eaf151804894588b5ec06b235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f014ef8a0fd42974fa956d8f188d10ef') in 0.049738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Capybara_LOD1.fbx
+  artifactKey: Guid(45a3a2ecf240cbf48beb9fad20401b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Capybara_LOD1.fbx using Guid(45a3a2ecf240cbf48beb9fad20401b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f5d5fc55c37a22ee0b58ed39458c89') in 0.044958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Bass_LOD0.fbx
+  artifactKey: Guid(f97b51ea30c11144dbe9750a9f87304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Bass_LOD0.fbx using Guid(f97b51ea30c11144dbe9750a9f87304c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d9b7884c81919ecfb5843bfb3b4e91f') in 0.054174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD2.fbx
+  artifactKey: Guid(82708af274cc0364081d80b242698555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD2.fbx using Guid(82708af274cc0364081d80b242698555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df5650099756225db20ff7f955dce6a3') in 0.048905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD3.fbx
+  artifactKey: Guid(0e0fd69c26abf54498fee7d54fa06bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Shoebill_LOD3.fbx using Guid(0e0fd69c26abf54498fee7d54fa06bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa55ff752b0c0a4847437a2d4576084') in 0.041761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Piranha_LOD0.fbx
+  artifactKey: Guid(3ed15832f92f8ec4a8d12535282d2115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Piranha_LOD0.fbx using Guid(3ed15832f92f8ec4a8d12535282d2115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23cd2b40978307bd5ff21782db4de2d6') in 0.066315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Piranha_LOD3.fbx
+  artifactKey: Guid(7e29f8a99ae204940957def4791eef24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Piranha_LOD3.fbx using Guid(7e29f8a99ae204940957def4791eef24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ac1e933a5b13a9d9f5254efa65119b') in 0.044786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Mudskipper_LOD0.fbx
+  artifactKey: Guid(8eafdf1001303d648aa174dc2fa253e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Mudskipper_LOD0.fbx using Guid(8eafdf1001303d648aa174dc2fa253e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9eab44d812f2bf74d0d0c8a3c94a935') in 0.044487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD3.fbx
+  artifactKey: Guid(d257ec46351252246ae2693079138074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD3.fbx using Guid(d257ec46351252246ae2693079138074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099be28300c28194d64b4d789f6ae824') in 0.041271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Alligator_LOD2.fbx
+  artifactKey: Guid(8973809bf9c805e4687a8ae61c551861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Alligator_LOD2.fbx using Guid(8973809bf9c805e4687a8ae61c551861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79338946da250c69032a2e9b8e8c23ae') in 0.041852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD1.fbx
+  artifactKey: Guid(e6f131e02676bb94381708f4f60a6358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Catfish_LOD1.fbx using Guid(e6f131e02676bb94381708f4f60a6358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f7d37b9929515815bce57b0e0ff330') in 0.044728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/RiverDolphin_LOD1.fbx
+  artifactKey: Guid(ea67d39fe9e3475428544f547760d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/RiverDolphin_LOD1.fbx using Guid(ea67d39fe9e3475428544f547760d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f37885a370e0b9a654ab3325b11706a') in 0.041971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Capybara_LOD0.fbx
+  artifactKey: Guid(6ffed2dd93e9bab4fb3b3684d5332dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Capybara_LOD0.fbx using Guid(6ffed2dd93e9bab4fb3b3684d5332dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f6ef4561871915290b9fac7926eb3a') in 0.057642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Bass_LOD2.fbx
+  artifactKey: Guid(9798ba6a971a2284d856ce7c4faacab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Bass_LOD2.fbx using Guid(9798ba6a971a2284d856ce7c4faacab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f562ba73be2dbcf01b90563025cfbc1') in 0.039867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Mudskipper_LOD2.fbx
+  artifactKey: Guid(c3cc4c841190e794baefe5347a613029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddedAssets/Characters/Quirky Series Vol.4 [v1.3]/River Vol.2/Models/Mudskipper_LOD2.fbx using Guid(c3cc4c841190e794baefe5347a613029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94ddddbfef3f3cc9115ed9d21cca874') in 0.041486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.901 seconds
+Refreshing native plugins compatible for Editor in 11.11 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.664 seconds
+Domain Reload Profiling: 3559ms
+	BeginReloadAssembly (243ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (530ms)
+		LoadAssemblies (580ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (70ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (2665ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1663ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (140ms)
+			ProcessInitializeOnLoadAttributes (731ms)
+			ProcessInitializeOnLoadMethodAttributes (756ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 13.48 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6003 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (66.4 MB). Loaded Objects now: 6702.
+Memory consumption went from 433.9 MB to 367.5 MB.
+Total: 27.201200 ms (FindLiveObjects: 0.585700 ms CreateObjectMapping: 0.621800 ms MarkObjects: 21.277300 ms  DeleteObjects: 4.715100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1849.753182 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@Cheer02.fbx
+  artifactKey: Guid(2db69e2e66090a345894461abe625bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@Cheer02.fbx using Guid(2db69e2e66090a345894461abe625bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9506ad48fccefdfdde284760dd8a1c80') in 0.047181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@HandWave01.fbx
+  artifactKey: Guid(de09d408ba4ba99489d0ad1f73a0ac54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@HandWave01.fbx using Guid(de09d408ba4ba99489d0ad1f73a0ac54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f392be7611f3be521c5aa8ad5c0b71a') in 0.009645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@HandWave02.fbx
+  artifactKey: Guid(e6be78c67ed2e31439200bc8843b3a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Animations/Social/BasicMotions@HandWave02.fbx using Guid(e6be78c67ed2e31439200bc8843b3a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d92af2ad7648c512984d9d3e3ef16f1') in 0.009023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 141
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
 AssetImportWorker is now disconnected from the server

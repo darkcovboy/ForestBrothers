@@ -6,6 +6,7 @@ using UnityEngine;
 public class ItemFinder : MonoBehaviour
 {
     [SerializeField] private Animal _animal;
+
     private void Start()
     {
         GetComponent<Collider>().isTrigger = true;

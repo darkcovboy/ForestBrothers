@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class MovementHandler : MonoBehaviour, IMovable
 {
     [SerializeField] private float _distanceBetweenPositions;
+    [SerializeField] private Animal _animal;
 
     public event UnityAction<float> Moved;
 
@@ -20,6 +21,16 @@ public class MovementHandler : MonoBehaviour, IMovable
         _defaultY = transform.position.y;
     }
 
+    private void OnEnable()
+    {
+        _animal.OnDiyng += OnDiyng;
+    }
+
+    private void OnDisable()
+    {
+        _animal.OnDiyng -= OnDiyng;
+    }
+
     private void Update()
     {
         Vector3 direction = _movementInput.GetInputDirection();
@@ -33,6 +44,7 @@ public class MovementHandler : MonoBehaviour, IMovable
         _movementInput = input;
         _speed = speed;
     }
+
     public void Move(Vector3 direction)
     {
         Vector3 moveDirection = direction * _speed;
@@ -50,5 +62,11 @@ public class MovementHandler : MonoBehaviour, IMovable
         {
             transform.position = _originalPosition.position;
         }
+    }
+
+    private void OnDiyng()
+    {
+        _characterController.enabled = false;
+        this.GetComponent<MovementHandler>().enabled = false;
     }
 }

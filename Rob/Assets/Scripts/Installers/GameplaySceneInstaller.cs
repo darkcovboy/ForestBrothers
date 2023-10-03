@@ -26,9 +26,9 @@ public class GameplaySceneInstaller : MonoInstaller
 
     private void BindStart()
     {
-        _playerSave = new PlayerSave(_skinsContainer);
+        _playerSave = new PlayerSave();
+        _playerSave.SkinContainer = _skinsContainer;
         _loader = Loader.Instance;
-        
         Container.Bind<Loader>().FromInstance(_loader).AsSingle();
         Container.Bind<PlayerSave>().FromInstance(_playerSave).AsSingle();
         _moneyCounter = new MoneyCounter(_playerSave.SaveData.Money);
@@ -44,7 +44,6 @@ public class GameplaySceneInstaller : MonoInstaller
         Container.Bind<IMoneyChangedHandler>().To<MoneyCounter>().FromInstance(_moneyCounter).AsSingle();
         Container.Bind<IItemChangedHandler>().To<ItemCollector>().FromInstance(_itemCollector);
         Container.Bind<IGameResultHandler>().To<ItemCollector>().FromInstance(_itemCollector);
-
         _moneyCounter.UpdateMoney();
     }
 
@@ -63,7 +62,7 @@ public class GameplaySceneInstaller : MonoInstaller
     private void BindPlayer()
     {
         Container.Bind<Player>().FromMethod(CreatePlayer).AsSingle();
-        //Container.Bind<IGameLose>().To<Player>();
+        //Container.Bind<IGameLose>().To<Player>().FromInstance(_player);
     }
 
     private Player CreatePlayer()

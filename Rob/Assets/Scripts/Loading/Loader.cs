@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class Loader : MonoBehaviour
 {
-    private const int FirstLevelIndex = 1;
-
     [SerializeField] private Slider _loadingBar;
 
-    public static Loader Instance { get; private set; } 
+    public static Loader Instance { get; private set; }
+
+    private int _nextLevelIndex;
+    private readonly int FirstLevelIndex = 1;
 
     private void Awake()
     {
@@ -19,9 +20,14 @@ public class Loader : MonoBehaviour
             return;
         }
 
-
+        gameObject.Deactivate();
         Instance = this;
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void SetNextLevel(int index)
+    {
+        _nextLevelIndex = index;
     }
 
     public void Restart()
@@ -31,10 +37,16 @@ public class Loader : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        if ((SceneManager.GetActiveScene().buildIndex + 1) > SceneManager.sceneCountInBuildSettings)
+        if ((_nextLevelIndex + 1) > SceneManager.sceneCountInBuildSettings)
+        {
             Load(FirstLevelIndex);
+        }
         else
-            Load((SceneManager.GetActiveScene().buildIndex + 1));
+        {
+            Load(_nextLevelIndex);
+            _nextLevelIndex++;
+        }
+            
     }
 
     private void Load(int levelIndex)

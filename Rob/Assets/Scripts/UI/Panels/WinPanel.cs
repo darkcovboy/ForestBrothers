@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class WinPanel : MonoBehaviour
 {
-    [SerializeField] private GameplayPanel _panel;
     [SerializeField] private TMP_Text _earnedMoney;
     [SerializeField] private Button _multiplyMoneyButton;
     [SerializeField] private Button _nextLevelButton;
+    [SerializeField] private CanvasGroupHolder _canvasGroupHolder;
 
     private IGameResultHandler _gameResult;
     private Loader _loader;
@@ -18,7 +18,7 @@ public class WinPanel : MonoBehaviour
 
     private void OnEnable()
     {
-        _panel.gameObject.Deactivate();
+        _canvasGroupHolder.ClosePanels(this.gameObject);
         _multiplyMoneyButton.onClick.AddListener(MultiplyMoney);
         _nextLevelButton.onClick.AddListener(NextLevel);
         ShowEarned(_moneyCounter.EarnedMoney);

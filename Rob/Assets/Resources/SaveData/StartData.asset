@@ -16,7 +16,7 @@ MonoBehaviour:
   CurrentSkin: 2
   FirstLevelId: 1
   FirstLevelName: 1
-  UnlockedSkins: 02000000
-  AnimalsCapacity: 6
+  UnlockedSkins: 0200000000000000
+  AnimalsCapacity: 1
   PlayerPrefab: {fileID: 0}
   ItemCollectorPrefab: {fileID: 0}

@@ -40,6 +40,9 @@ public class Player : MonoBehaviour, IGameLose
 
     private void Update()
     {
+        if (_characters.Count == 0)
+            return;
+
         if (_characters[0] != null)
         {
             _positions.transform.position = _characters[0].transform.position;
@@ -58,11 +61,23 @@ public class Player : MonoBehaviour, IGameLose
     }
 
     [Inject]
-    public void Constructor(IInput input, PlayerSave playerSave)
+    public void Constructor(IInput input, PlayerSave playerSave, IGameResultHandler gameResultHandler)
     {
         _inputType = input;
         _playerSave = playerSave;
         _playerSave.OnSkinChanged += ChangeSkin;
+        gameResultHandler.OnGameWinning += GameResultHandler_OnGameWinning;
+    }
+
+    private void GameResultHandler_OnGameWinning()
+    {
+        Transform lookAt = Camera.main.transform;
+
+        foreach (var animal in _characters)
+        {
+            animal.transform.LookAt(lookAt);
+            animal.Win();
+        }
     }
 
     public void RemoveCharacter(Animal animal)
@@ -70,12 +85,10 @@ public class Player : MonoBehaviour, IGameLose
         _characters.Remove(animal);
         _capacity--;
 
-        if( _capacity == 0 )
+        if(_capacity == 0)
         {
             OnGameLossing?.Invoke();
         }
-
-        Destroy(animal.gameObject);
     }
 
     public void RemoveCharacter(int i)

@@ -13,9 +13,9 @@ public class PlayerSave
     public event UnityAction<AnimalData> OnSkinChanged;
     public SaveData SaveData { get; private set; }
 
-    private SkinsContainer _skinContainer;
+    public SkinsContainer SkinContainer { get; set; }
 
-    public PlayerSave(SkinsContainer skinContainer)
+    public PlayerSave()
     {
         PlayerPrefs.DeleteAll();
         if (PlayerPrefs.HasKey(_savesKey))
@@ -29,7 +29,6 @@ public class PlayerSave
             SaveData = LoadNewData(saveStartData);
             Save();
         }
-        _skinContainer = skinContainer;
     }
 
     public void OpenNewSkin(AnimalType skin)
@@ -48,7 +47,7 @@ public class PlayerSave
         else
             throw new Exception();
 
-        OnSkinChanged?.Invoke(_skinContainer.AnimalData.First<AnimalData>(selectSkin => selectSkin.AnimalType == skin));
+        OnSkinChanged?.Invoke(SkinContainer.AnimalData.First<AnimalData>(selectSkin => selectSkin.AnimalType == skin));
         Save();
     }
 

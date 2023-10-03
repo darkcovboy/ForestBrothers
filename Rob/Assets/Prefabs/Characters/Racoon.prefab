@@ -76,6 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointHandler: {fileID: 4567008132243869551}
   _itemFinder: {fileID: 555351982504279155}
+  _switcher: {fileID: 6820815056296367250}
 --- !u!114 &8688945928081501355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _distanceBetweenPositions: 10
+  _animal: {fileID: 5267810740136264916}
 --- !u!114 &-3821867481115168220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,6 +116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25815155d90ea5c4bbf17eadb0d16fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animal: {fileID: 5267810740136264916}
+  _animator: {fileID: 3833449281969303490}
+  _movementHandler: {fileID: 8688945928081501355}
 --- !u!143 &4604396998552897599
 CharacterController:
   m_ObjectHideFlags: 0
