@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: RacoonSkin
   m_EditorClassIdentifier: 
   _animalType: 0
-  _price: 600
-  _image: {fileID: 21300000, guid: 347ffa1716acd724085f4c83606903cb, type: 3}
+  _price: 1000
+  _isByingForRealMoney: 0
+  _realMoneyPrice: 0
+  _image: {fileID: 21300000, guid: a1c2cad5cbe53924a9250ec9953f2e47, type: 3}
   _animalViewModel: {fileID: 6603690072593645488, guid: f6837d55c5fd60a46aab43712ac30c62, type: 3}

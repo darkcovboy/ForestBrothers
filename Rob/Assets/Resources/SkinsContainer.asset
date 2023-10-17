@@ -13,6 +13,22 @@ MonoBehaviour:
   m_Name: SkinsContainer
   m_EditorClassIdentifier: 
   _animalDatas:
-  - {fileID: 11400000, guid: 02ce84090c241c44f8d8a747fdc7d565, type: 2}
-  - {fileID: 11400000, guid: 4a9fb457bf8832a4385ac59f6bfd74f2, type: 2}
+  - {fileID: 11400000, guid: 2e533d36344683947ae7603694f77afd, type: 2}
+  - {fileID: 11400000, guid: c42528967cf61a04199589616c16be7b, type: 2}
+  - {fileID: 11400000, guid: f0e46619e6a67bf4ba0aea5890e14f68, type: 2}
   - {fileID: 11400000, guid: dec3d6f61dd586c429c3fab49f5f8c7c, type: 2}
+  - {fileID: 11400000, guid: 7448b571aaa7be84c8e31a532a3f2aad, type: 2}
+  - {fileID: 11400000, guid: 281fc50a10b72c8419ba2be8265df1d4, type: 2}
+  - {fileID: 11400000, guid: 6d558a047125e5a4da2ec09c87232991, type: 2}
+  - {fileID: 11400000, guid: 81ceeeaa36c1d6c44a067f0105d0985c, type: 2}
+  - {fileID: 11400000, guid: 7cc5e18c0a885504092b556d416a71c2, type: 2}
+  - {fileID: 11400000, guid: 1154e1c20c48d844bb95cdfea99c823d, type: 2}
+  - {fileID: 11400000, guid: beb4cfe4185063a4d95a0686d19f2bb3, type: 2}
+  - {fileID: 11400000, guid: 02ce84090c241c44f8d8a747fdc7d565, type: 2}
+  - {fileID: 11400000, guid: 0cad75db88c0bbf4291161fbfe0fef84, type: 2}
+  - {fileID: 11400000, guid: e3384dc45a3726045afc4a0cbd48f8a9, type: 2}
+  - {fileID: 11400000, guid: 141ab07ced8024247b22f7598e139e69, type: 2}
+  - {fileID: 11400000, guid: 4a9fb457bf8832a4385ac59f6bfd74f2, type: 2}
+  - {fileID: 11400000, guid: 43ad1292b333d1f4090420b221d87f21, type: 2}
+  - {fileID: 11400000, guid: 82b9e8b1f6b3c5e48b63371f073d8968, type: 2}
+  - {fileID: 11400000, guid: 5fef3cb2e9731b9489e5936a846f0867, type: 2}

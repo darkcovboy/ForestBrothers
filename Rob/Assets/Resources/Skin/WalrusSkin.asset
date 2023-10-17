@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3860a7ed98badfd4c85cf39ed5068b8f, type: 3}
+  m_Name: WalrusSkin
+  m_EditorClassIdentifier: 
+  _animalType: 19
+  _price: 900
+  _isByingForRealMoney: 0
+  _realMoneyPrice: 0
+  _image: {fileID: 21300000, guid: b2c15713124877841bde6398b49f62be, type: 3}
+  _animalViewModel: {fileID: 1373113183796658390, guid: 59f118e75dbdfed4bae084fa4cd829e1, type: 3}

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e37f0e78e1f6a244a2a7035dd4bc346, type: 3}
+  m_Name: Minecraft(NeedToAdd)
+  m_EditorClassIdentifier: 
+  _animalType: 18
+  _animalPrefab: {fileID: 8842795266039241860, guid: e619bb4c1e457d54f9bc9eec6406be80, type: 3}
+  _speedMove: 6

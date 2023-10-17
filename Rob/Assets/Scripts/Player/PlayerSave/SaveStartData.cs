@@ -10,9 +10,7 @@ public class SaveStartData : ScriptableObject
     public int FirstLevelName;
     public List<AnimalType> UnlockedSkins;
     [Range(1, 10)] public int AnimalsCapacity;
-    [Header("Prefabs")]
-    public Player PlayerPrefab;
-    public ItemCollector ItemCollectorPrefab;
+    
 
     private void OnValidate()
     {

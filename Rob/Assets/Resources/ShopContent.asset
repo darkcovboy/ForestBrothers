@@ -13,6 +13,22 @@ MonoBehaviour:
   m_Name: ShopContent
   m_EditorClassIdentifier: 
   _animalSkinsItems:
-  - {fileID: 11400000, guid: 7a1b436ba5e222b49bf132b62318326c, type: 2}
-  - {fileID: 11400000, guid: 37263c57e2219ae4f8d49ccaabcfd7a2, type: 2}
+  - {fileID: 11400000, guid: cddc926993e72dc41b05f0738017a414, type: 2}
+  - {fileID: 11400000, guid: b0e50e1fbd82cd643841ef10ab810198, type: 2}
+  - {fileID: 11400000, guid: 2675bb79320f9b249bfe210b4e7c4508, type: 2}
   - {fileID: 11400000, guid: e7176c575c05a954088708d7873d6579, type: 2}
+  - {fileID: 11400000, guid: 8465f360857892848a6f0594db4c4560, type: 2}
+  - {fileID: 11400000, guid: 97926b75267deff4bad8527f246c3afd, type: 2}
+  - {fileID: 11400000, guid: 8dfe696ec036e0947929003dea8729bb, type: 2}
+  - {fileID: 11400000, guid: d7c55a96680f7d349930ca3d37ee0d8d, type: 2}
+  - {fileID: 11400000, guid: 011bb456fc252c24c97ae4c4decaa107, type: 2}
+  - {fileID: 11400000, guid: 39c7d902cb80e3a41a205cd8fbce8a46, type: 2}
+  - {fileID: 11400000, guid: 2d070896c358b2e47b863ceb9e571df4, type: 2}
+  - {fileID: 11400000, guid: 37263c57e2219ae4f8d49ccaabcfd7a2, type: 2}
+  - {fileID: 11400000, guid: 884052c1fba1e234ca9ba60c96511e94, type: 2}
+  - {fileID: 11400000, guid: 76859ad3b78b2f3468792f9180073505, type: 2}
+  - {fileID: 11400000, guid: ee2c0d5af31832e4db9cca4595a42dcf, type: 2}
+  - {fileID: 11400000, guid: 7a1b436ba5e222b49bf132b62318326c, type: 2}
+  - {fileID: 11400000, guid: 2974bbbe5b1a6dd4eae5e49a2f53ae12, type: 2}
+  - {fileID: 11400000, guid: 736b679f9d7639f4596ced0bb051c839, type: 2}
+  - {fileID: 11400000, guid: c4f59ed1ed3e08340a66253f9725c8df, type: 2}

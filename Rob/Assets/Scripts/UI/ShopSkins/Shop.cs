@@ -1,7 +1,9 @@
+using Agava.YandexGames;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -11,6 +13,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private ShopContent _contentItems;
 
     [SerializeField] private BuyButton _buyButton;
+    [SerializeField] private BuyButton _buyForRealMoneyButton;
     [SerializeField] private Button _selectionButton;
     [SerializeField] private Image _selectedText;
 
@@ -30,12 +33,14 @@ public class Shop : MonoBehaviour
         _shopPanel.SkinViewClicked += OnItemViewClicked;
         _buyButton.Click += OnBuyButtonClick;
         _selectionButton.onClick.AddListener(OnSelectionButtonClick);
+        _buyForRealMoneyButton.Click += OnBuyForRealMoneyButtonClick;
         _exitButton.onClick.AddListener(CloseShop);
     }
     private void OnDisable()
     {
         _shopPanel.SkinViewClicked -= OnItemViewClicked;
         _buyButton.Click -= OnBuyButtonClick;
+        _buyForRealMoneyButton.Click -= OnBuyForRealMoneyButtonClick;
         _selectionButton.onClick.RemoveListener(OnSelectionButtonClick);
         _exitButton.onClick.RemoveListener(CloseShop);
     }
@@ -63,7 +68,11 @@ public class Shop : MonoBehaviour
         }
         else
         {
-            ShowBuyButton(item.Price);
+
+            if (item.AnimalSkinItem.BuiyngForRealMoney)
+                ShowBuyButtonRealMoney(item.AnimalSkinItem.RealMoneyPrice);
+            else
+                ShowBuyButton(item.Price);
         }
     }
 
@@ -76,6 +85,17 @@ public class Shop : MonoBehaviour
             SelectSkin();
             _previousSkinView.Unlock();
         }
+    }
+
+    private void OnBuyForRealMoneyButtonClick()
+    {
+        Billing.PurchaseProduct(_previousSkinView.AnimalSkinItem.ProductId.ToString(), (purchaseProductResponse) =>
+        {
+            _shopPanel.OpenSkin(_previousSkinView);
+            SelectSkin();
+            _previousSkinView.Unlock();
+            Debug.Log($"Purchased {purchaseProductResponse.purchaseData.productID}");
+        });
     }
 
     private void SelectSkin()
@@ -94,6 +114,7 @@ public class Shop : MonoBehaviour
         _selectedText.gameObject.Activate();
         HideSelectionButton();
         HideBuyButton();
+        HideBuyForMoneyButton();
     }
 
     private void ShowSelectionButton()
@@ -101,26 +122,41 @@ public class Shop : MonoBehaviour
         _selectionButton.gameObject.Activate();
         HideSelectedText();
         HideBuyButton();
+        HideBuyForMoneyButton();
+    }
+
+    private void ShowBuyButtonRealMoney(int price)
+    {
+        _buyForRealMoneyButton.gameObject.Activate();
+        _buyForRealMoneyButton.UpdateText(price);
+        _buyForRealMoneyButton.Unlock();
+
+        HideSelectedText();
+        HideSelectionButton();
+        HideBuyButton();
     }
 
     private void ShowBuyButton(int price)
     {
         _buyButton.gameObject.Activate();
+        _buyForRealMoneyButton.gameObject.Deactivate();
         _buyButton.UpdateText(price);
 
-        if(_moneyCounter.IsEnough(price))
+        if (_moneyCounter.IsEnough(price))
             _buyButton.Unlock();
         else
             _buyButton.Lock();
 
         HideSelectedText();
         HideSelectionButton();
+        HideBuyForMoneyButton();
     }
 
-    [Button]
     private void CloseShop() => gameObject.Deactivate();
 
     private void HideBuyButton() => _buyButton.gameObject.Deactivate();
     private void HideSelectionButton() => _selectionButton.gameObject.Deactivate();
     private void HideSelectedText() => _selectedText.gameObject.Deactivate();
+
+    private void HideBuyForMoneyButton() => _buyForRealMoneyButton.gameObject.Deactivate();
 }

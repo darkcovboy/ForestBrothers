@@ -6,7 +6,6 @@ using Zenject;
 
 public class ShopPanel : MonoBehaviour
 {
-
     public event Action<SkinView> SkinViewClicked;
     private List<SkinView> _skinViews = new List<SkinView>();
 
@@ -34,7 +33,7 @@ public class ShopPanel : MonoBehaviour
             skinView.Unselect();
             skinView.UnHighlight();
 
-            Debug.Log(skinView.AnimalSkinItem.AnimalType + " " + _playerSave.SaveData.UnlockedSkins.Contains(skinView.AnimalSkinItem.AnimalType));
+            //Debug.Log(skinView.AnimalSkinItem.AnimalType + " " + _playerSave.SaveData.UnlockedSkins.Contains(skinView.AnimalSkinItem.AnimalType));
             if(_playerSave.SaveData.UnlockedSkins.Contains(skinView.AnimalSkinItem.AnimalType))
             {
                 if (skinView.AnimalSkinItem.AnimalType == _playerSave.SaveData.SelectedSkin)

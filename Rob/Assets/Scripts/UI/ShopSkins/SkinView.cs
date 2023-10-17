@@ -14,6 +14,7 @@ public class SkinView : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Image _lockImage;
 
     [SerializeField] private Price _price;
+    [SerializeField] private Price _priceYAN;
 
     [SerializeField] private Image _selectionText;
 
@@ -34,7 +35,17 @@ public class SkinView : MonoBehaviour, IPointerClickHandler
 
         _contentImage.sprite = animalSkinItem.Image;
 
-        _price.Show(animalSkinItem.Price);
+
+        if (AnimalSkinItem.BuiyngForRealMoney)
+        {
+            _price.gameObject.Deactivate();
+            _priceYAN.Show(animalSkinItem.RealMoneyPrice);
+        }
+        else
+        {
+            _priceYAN.Deactivate();
+            _price.Show(animalSkinItem.Price);
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData) => Click?.Invoke(this);
@@ -43,7 +54,16 @@ public class SkinView : MonoBehaviour, IPointerClickHandler
     {
         IsLock = true;
         _lockImage.gameObject.Activate();
-        _price.Show(AnimalSkinItem.Price);
+
+        if(AnimalSkinItem.BuiyngForRealMoney)
+        {
+            _priceYAN.Show(AnimalSkinItem.RealMoneyPrice);
+        }
+        else
+        {
+            _price.Show(AnimalSkinItem.Price);
+        }
+        
     }
 
     public void Unlock()
@@ -51,6 +71,7 @@ public class SkinView : MonoBehaviour, IPointerClickHandler
         IsLock = false;
         _lockImage.gameObject.Deactivate();
         _price.Hide();
+        _priceYAN.Hide();
     }
 
     public void Select()

@@ -18,5 +18,22 @@ public enum AnimalType
 {
     Racoon,
     Owl,
-    Capybara
+    Capybara,
+    CapybaraWitch,
+    ArmyCapybara,
+    Pochito,
+    CoolCapybara,
+    AmongUsCapybara,
+    KnightCapybara,
+    Alligator,
+    PumpkinCapybara,
+    CelebrationCapybara,
+    WarriorCapybara,
+    SkibidiCapybara,
+    Pig,
+    Tortoise,
+    OranGutan,
+    MrBeast,
+    Minecraft,
+    Walrus
 }

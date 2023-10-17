@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a2551d3b300d4d48bf17f544660ef6f, type: 3}
+  m_Name: GamePrefabContainerWithEnemy
+  m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 8879496445751550805, guid: dd19eef887c45be48b45a4eb190a28d4, type: 3}
+  ItemCollectorPrefab: {fileID: 2874774162937084932, guid: d652a08ffe1ec3d4b98075204127e6a2, type: 3}
+  CanvasGroupHolder: {fileID: 6360543319322149612, guid: a6fd40a341ab3c049ab124c7d1304f80, type: 3}
+  HaveEnemy: 1
+  Enemy: {fileID: 1273724219437110368, guid: 60cbe00fba10946408b6a7f42bb45665, type: 3}

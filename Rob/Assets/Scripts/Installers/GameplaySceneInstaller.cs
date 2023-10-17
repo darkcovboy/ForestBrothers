@@ -1,3 +1,5 @@
+using Sirenix.OdinInspector;
+using System;
 using System.Linq;
 using UnityEngine;
 using Zenject;
@@ -5,23 +7,41 @@ using Zenject.SpaceFighter;
 
 public class GameplaySceneInstaller : MonoInstaller
 {
-    [SerializeField] private Player _playerPrefab;
-    [SerializeField] private Transform _playerStartPositon;
-    [SerializeField] private CameraFollow _cameraFollow;
-    [SerializeField] private ItemCollector _itemCollector;
-    [SerializeField] private ItemKeeper _itemKeeper;
+    [Header("Containers")]
+    [SerializeField] private GamePrefabsContainer _gamePrefabsContainer;
     [SerializeField] private SkinsContainer _skinsContainer;
+    [Header("Positions")]
+    [SerializeField] private Transform _playerStartPositon;
+    [SerializeField] private Transform _itemCollectorPosition;
+    [Header("Enemy(Can be null)")]
+    [SerializeField] private Transform _enemyPosition;
+    [Header("Objects")]
+    [SerializeField] private CameraFollow _cameraFollow;
+    [SerializeField] private ItemKeeper _itemKeeper;
+    [SerializeField] private LocalizationDeterminate _localizationDeterminate;
 
     private MoneyCounter _moneyCounter;
     private PlayerSave _playerSave;
     private Loader _loader;
     private Player _player;
+    private ItemCollector _itemCollector;
+
     public override void InstallBindings()
     {
         BindStart();
         BindMovement();
         BindPlayer();
         BindUI();
+        BindEnemy();
+    }
+
+    private void BindEnemy()
+    {
+        if(_gamePrefabsContainer.HaveEnemy)
+        {
+            Enemy enemy = Container.InstantiatePrefabForComponent<Enemy>(_gamePrefabsContainer.Enemy, _enemyPosition.position, Quaternion.identity, null);
+            Container.Bind<Enemy>().FromInstance(enemy).AsSingle();
+        }
     }
 
     private void BindStart()
@@ -36,6 +56,8 @@ public class GameplaySceneInstaller : MonoInstaller
         Container.Bind<MoneyCounter>().FromInstance(_moneyCounter).AsCached();
         Container.Bind<RewardedVideo>().FromInstance(rewardedVideo).AsSingle();
         Container.Bind<ItemKeeper>().FromInstance(_itemKeeper).AsSingle();
+        Container.Bind<LocalizationDeterminate>().FromInstance(_localizationDeterminate).AsSingle();
+        _itemCollector = Container.InstantiatePrefabForComponent<ItemCollector>(_gamePrefabsContainer.ItemCollectorPrefab, _itemCollectorPosition.position, Quaternion.identity, null);
         Container.Bind<ItemCollector>().FromInstance(_itemCollector).AsSingle();
     }
 
@@ -67,7 +89,7 @@ public class GameplaySceneInstaller : MonoInstaller
 
     private Player CreatePlayer()
     {
-        Player player = Container.InstantiatePrefabForComponent<Player>(_playerPrefab, _playerStartPositon.position, Quaternion.identity, null);
+        Player player = Container.InstantiatePrefabForComponent<Player>(_gamePrefabsContainer.PlayerPrefab, _playerStartPositon.position, Quaternion.identity, null);
         AnimalData animalData = _skinsContainer.AnimalData.First<AnimalData>(x => x.AnimalType == _playerSave.SaveData.SelectedSkin);
         player.Initialize(_playerSave.SaveData.Capacity, animalData);
         _player = player;

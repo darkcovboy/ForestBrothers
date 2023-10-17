@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: StartData
   m_EditorClassIdentifier: 
   StartMoney: 1000
-  CurrentSkin: 2
+  CurrentSkin: 3
   FirstLevelId: 1
   FirstLevelName: 1
-  UnlockedSkins: 0200000000000000
-  AnimalsCapacity: 1
-  PlayerPrefab: {fileID: 0}
-  ItemCollectorPrefab: {fileID: 0}
+  UnlockedSkins: 020000000000000003000000
+  AnimalsCapacity: 7

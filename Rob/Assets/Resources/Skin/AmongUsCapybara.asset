@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3860a7ed98badfd4c85cf39ed5068b8f, type: 3}
+  m_Name: AmongUsCapybara
+  m_EditorClassIdentifier: 
+  _animalType: 7
+  _price: 10000
+  _isByingForRealMoney: 1
+  _realMoneyPrice: 100
+  _productId: 2
+  _image: {fileID: 21300000, guid: 7e61daefd9a843d418a5fca7f871865e, type: 3}
+  _animalViewModel: {fileID: 669545581151747267, guid: 67a61d7e8e5c1e54284a902df5fe8fbf, type: 3}
