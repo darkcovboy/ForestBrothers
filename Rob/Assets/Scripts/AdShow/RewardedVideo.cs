@@ -4,16 +4,16 @@ using Zenject;
 
 public class RewardedVideo
 {
+    public const int AddMoneyCount = 80;
+
     private const int Multiplier = 3;
-    private const int AddMoneyCount = 80;
 
     private MoneyCounter _moneyCounter;
     private bool _isAudioOff;
-
-    [Inject]
     public void Constructor(MoneyCounter moneyCounter)
     {
         _moneyCounter = moneyCounter;
+        Debug.Log("MoneyCounter");
     }
 
     public void MultiplyMoney()
@@ -50,6 +50,8 @@ public class RewardedVideo
 
     private void OnRewardAdd()
     {
+        Debug.Log("OnRewardedThing");
+        Debug.Log(_moneyCounter != null);
         _moneyCounter.AddMoney(AddMoneyCount);
     }
 }

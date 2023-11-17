@@ -653,14 +653,13 @@ namespace UnityEditor.ShaderGraph.Drawing
             if (m_GraphView == null)
                 return;
 
-            var dependentNodes = new List<AbstractMaterialNode>();
-            if (!inNode.owner.graphIsConcretizing)
-                NodeUtils.CollectNodesNodeFeedsInto(dependentNodes, inNode);
-            else dependentNodes.Add(inNode);
+            IEnumerable<IShaderNodeView> theViews = m_GraphView.nodes.ToList().OfType<IShaderNodeView>();
 
+            var dependentNodes = new List<AbstractMaterialNode>();
+            NodeUtils.CollectNodesNodeFeedsInto(dependentNodes, inNode);
             foreach (var node in dependentNodes)
             {
-                var nodeView = m_GraphView.GetNodeByGuid(node.objectId) as IShaderNodeView;
+                var nodeView = theViews.FirstOrDefault(x => x.node.objectId == node.objectId);
                 if (nodeView != null)
                     nodeView.OnModified(scope);
             }

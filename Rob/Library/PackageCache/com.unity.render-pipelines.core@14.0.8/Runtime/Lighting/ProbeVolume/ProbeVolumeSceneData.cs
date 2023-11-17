@@ -256,6 +256,13 @@ namespace UnityEngine.Rendering
                     InitializeScenarios(set);
             }
 
+            // Initialize baking set in case it's empty:
+            if (bakingSets.Count == 0)
+            {
+                var set = CreateNewBakingSet("Default");
+                set.sceneGUIDs = serializedProfiles.Select(s => s.sceneGUID).ToList();
+            }
+
             SyncBakingSetSettings();
         }
 
@@ -325,13 +332,11 @@ namespace UnityEngine.Rendering
         void InitializeBakingSet(BakingSet set, string name)
         {
             var newProfile = ScriptableObject.CreateInstance<ProbeReferenceVolumeProfile>();
-
 #if UNITY_EDITOR
-            var path = AssetDatabase.GenerateUniqueAssetPath($"Assets/{name}.asset");
-            AssetDatabase.CreateAsset(newProfile, path);
+            ProjectWindowUtil.CreateAsset(newProfile, name + ".asset");
 #endif
 
-            set.name = newProfile.name;
+            set.name = name;
             set.profile = newProfile;
             set.settings = ProbeVolumeBakingProcessSettings.Default;
 

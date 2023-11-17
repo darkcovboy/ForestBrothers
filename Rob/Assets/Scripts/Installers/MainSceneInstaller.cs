@@ -3,14 +3,13 @@ using Zenject;
 
 public class MainSceneInstaller : MonoInstaller
 {
-    [SerializeField] private MainScenePanel _mainScenePanel;
+    [SerializeField] private LocalizationDeterminate _localization;
     [SerializeField] private Loader _loaderPrefab;
 
     public override void InstallBindings()
     {
-        PlayerSave playerSave = new PlayerSave();
+        Container.Bind<LocalizationDeterminate>().FromInstance(_localization);
         Loader loader = Container.InstantiatePrefabForComponent<Loader>(_loaderPrefab);
-        loader.SetNextLevel(playerSave.SaveData.LastLevelId);
         Container.Bind<Loader>().FromInstance(loader).AsSingle();
     }
 }

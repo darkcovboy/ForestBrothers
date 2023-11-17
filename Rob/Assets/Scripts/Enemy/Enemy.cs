@@ -46,10 +46,10 @@ public class Enemy : MonoBehaviour
     private void CatchAnimal(Animal animal)
     {
         _currentAnimal = animal;
+        _currentAnimal.transform.position = _target.position;
         _currentAnimal.Remove();
         _currentAnimal.transform.parent = _target;
         _enemyAnimationSwitcher.PlayAttackAnimation();
-        _currentAnimal.transform.position = _target.position;
         _currentAnimal.transform.DOScale(_scaleDeacrease, _durationMove);
         StartCoroutine(OnAnimalDestroy());
     }

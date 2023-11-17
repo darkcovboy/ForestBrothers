@@ -42,7 +42,6 @@ namespace UnityEngine.Rendering
                     case GraphicsDeviceType.PlayStation5:
                     case GraphicsDeviceType.PlayStation5NGGC:
                     case GraphicsDeviceType.Vulkan:
-                    case GraphicsDeviceType.Metal:
                         return true;
 
                     default:

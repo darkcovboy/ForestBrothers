@@ -26,6 +26,7 @@ public class Shop : MonoBehaviour
     private SkinView _previousSkinView;
 
     private MoneyCounter _moneyCounter;
+    private RewardedVideo _rewardVideo;
 
     private void OnEnable()
     {
@@ -46,9 +47,10 @@ public class Shop : MonoBehaviour
     }
 
     [Inject]
-    public void Constructor(MoneyCounter moneyCounter)
+    public void Constructor(MoneyCounter moneyCounter, RewardedVideo rewardedVideo)
     {
         _moneyCounter = moneyCounter;
+        _rewardVideo = rewardedVideo;
     }
 
     private void OnItemViewClicked(SkinView item)

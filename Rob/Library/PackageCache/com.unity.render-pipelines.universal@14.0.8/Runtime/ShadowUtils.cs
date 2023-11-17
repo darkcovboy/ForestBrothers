@@ -1,5 +1,4 @@
 using System;
-using UnityEngine.Experimental.Rendering.RenderGraphModule;
 
 namespace UnityEngine.Rendering.Universal
 {
@@ -460,9 +459,7 @@ namespace UnityEngine.Rendering.Universal
                 if (handle.rt.filterMode != FilterMode.Bilinear)
                     return true;
             }
-
-            TextureDesc shadowDesc = RTHandleResourcePool.CreateTextureDesc(descriptor, TextureSizeMode.Explicit, anisoLevel, mipMapBias, m_ForceShadowPointSampling ? FilterMode.Point : FilterMode.Bilinear, TextureWrapMode.Clamp, name);
-            return RenderingUtils.RTHandleNeedsReAlloc(handle, shadowDesc, false);
+            return RenderingUtils.RTHandleNeedsReAlloc(handle, descriptor, m_ForceShadowPointSampling ? FilterMode.Point : FilterMode.Bilinear, TextureWrapMode.Clamp, true, anisoLevel, mipMapBias, name, false);
         }
 
         /// <summary>

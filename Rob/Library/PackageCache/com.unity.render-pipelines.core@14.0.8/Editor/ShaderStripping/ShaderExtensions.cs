@@ -22,19 +22,15 @@ namespace UnityEditor.Rendering
         {
             renderPipelineTag = string.Empty;
 
-            var shaderData = ShaderUtil.GetShaderData(shader);
-            if (shaderData == null)
-                return false;
-
             int subshaderIndex = (int)snippetData.pass.SubshaderIndex;
             if (subshaderIndex < 0 || subshaderIndex >= shader.subshaderCount)
                 return false;
 
-            var subShader = shaderData.GetSerializedSubshader(subshaderIndex);
-            if (subShader == null)
+            int passIndex = (int)snippetData.pass.PassIndex;
+            if (passIndex < 0 || passIndex >= shader.GetPassCountInSubshader(subshaderIndex))
                 return false;
 
-            var shaderTag = subShader.FindTagValue(s_RenderPipelineShaderTagId);
+            var shaderTag = shader.FindPassTagValue(subshaderIndex, passIndex, s_RenderPipelineShaderTagId);
             if (string.IsNullOrEmpty(shaderTag.name))
                 return false;
 

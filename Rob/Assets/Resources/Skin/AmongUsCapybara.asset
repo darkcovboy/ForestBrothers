@@ -15,7 +15,7 @@ MonoBehaviour:
   _animalType: 7
   _price: 10000
   _isByingForRealMoney: 1
-  _realMoneyPrice: 100
+  _realMoneyPrice: 25
   _productId: 2
   _image: {fileID: 21300000, guid: 7e61daefd9a843d418a5fca7f871865e, type: 3}
   _animalViewModel: {fileID: 669545581151747267, guid: 67a61d7e8e5c1e54284a902df5fe8fbf, type: 3}

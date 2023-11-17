@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478b8cd5d183b4241b6c5e1a03e4df4f, type: 3}
   m_Name: Fonts
   m_EditorClassIdentifier: 
-  _engFont: {fileID: 11400000, guid: e5f23c043d30440488032c5bec5b5cf7, type: 2}
-  _ruFont: {fileID: 11400000, guid: 02fea1fb776e0ad43a5e684a1ab0ce9e, type: 2}
+  _engFont: {fileID: 11400000, guid: f05eab017f0e21a4cb2fd7e153b05ec9, type: 2}
+  _ruFont: {fileID: 11400000, guid: f05eab017f0e21a4cb2fd7e153b05ec9, type: 2}
   _trFont: {fileID: 11400000, guid: 02fea1fb776e0ad43a5e684a1ab0ce9e, type: 2}

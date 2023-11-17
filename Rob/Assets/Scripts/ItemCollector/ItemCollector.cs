@@ -15,9 +15,11 @@ public class ItemCollector : MonoBehaviour, IItemChangedHandler, IGameResultHand
     private MoneyCounter _moneyCounter;
     private int _countItemsMax;
     private readonly float _percentage = 0.9f;
+    private Vector3 _colliderSize;
 
     private void Start()
     {
+        _colliderSize = gameObject.GetComponent<BoxCollider>().size;
         OnCountItemsChanged?.Invoke(_countItems, _countItemsMax);
     }
 
@@ -52,6 +54,8 @@ public class ItemCollector : MonoBehaviour, IItemChangedHandler, IGameResultHand
         if(_countItems >= _countItemsMax)
         {
             OnGameWinning?.Invoke();
+            _colliderSize = _colliderSize * 2;
+            gameObject.GetComponent<BoxCollider>().size = _colliderSize;
         }
     }
 }

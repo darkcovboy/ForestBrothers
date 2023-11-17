@@ -4,6 +4,16 @@ using System;
 using UnityEngine.Events;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using PlayerPrefs = Agava.YandexGames.PlayerPrefs;
+using System.Collections;
+using Agava.YandexGames;
+using System.Threading.Tasks;
+using UnityEngine.UI;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using Agava.YandexGames;
+
+#endif
+
 
 public class PlayerSave
 {
@@ -15,20 +25,19 @@ public class PlayerSave
 
     public SkinsContainer SkinContainer { get; set; }
 
-    public PlayerSave()
+    private ICoroutineRunner _runner;
+
+    public PlayerSave(ICoroutineRunner coroutineRunner)
     {
-        PlayerPrefs.DeleteAll();
-        if (PlayerPrefs.HasKey(_savesKey))
-        {
-            string json = PlayerPrefs.GetString(_savesKey);
-            SaveData = JsonUtility.FromJson<SaveData>(json);
-        }
-        else
-        {
-            SaveStartData saveStartData = Resources.Load<SaveStartData>(_startDataPath);
-            SaveData = LoadNewData(saveStartData);
-            Save();
-        }
+        _runner = coroutineRunner;
+        _runner.StartCoroutine(Start());
+    }
+
+    public void UpdateMoney(int money)
+    {
+        Debug.Log(SaveData.Money + "  " + money);
+        SaveData.Money = money;
+        Save();
     }
 
     public void OpenNewSkin(AnimalType skin)
@@ -61,13 +70,91 @@ public class PlayerSave
         SaveData.LastLevelName++;
         SaveData.Money = money;
         Save();
+
+    }
+
+    private IEnumerator Start()
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+       yield return YandexGamesSdk.Initialize(); 
+       Debug.Log("Start async");
+       StartAsync();
+       
+#elif UNITY_EDITOR
+        SaveData = LoadNewData(Resources.Load<SaveStartData>(_startDataPath));
+        InitText.Instance.ChangeText();
+        Loader.Instance.OnLoader();
+        Loader.Instance.SetNextLevel(SaveData.LastLevelId);
+        yield break;
+#endif
+    }
+
+    private async void StartAsync()
+    {
+        Task task = LoadDataAsync();
+        await task;
+
+        Debug.Log("SaveData is null " + (SaveData == null));
+        if (SaveData == null || SaveData.UnlockedSkins.Count() == 0)
+        {
+            SaveData = LoadNewData(Resources.Load<SaveStartData>(_startDataPath));
+        }
+
+        Loader.Instance.SetNextLevel(SaveData.LastLevelId);
+        Loader.Instance.OnLoader();
+        InitText.Instance.ChangeText();
+        Save();
+    }
+
+    private async Task LoadDataAsync()
+    {
+        string json = null;
+
+        // Вызов асинхронного метода PlayerAccount.GetCloudSaveData с использованием TaskCompletionSource
+        var tcs = new TaskCompletionSource<string>();
+
+        PlayerAccount.GetCloudSaveData((data) =>
+        {
+            json = data;
+            tcs.SetResult(data); // Устанавливаем результат асинхронной операции
+        });
+
+        // Ожидаем завершения асинхронной операции
+        await tcs.Task;
+
+        Debug.Log("Первая попытка загрузить");
+        Debug.Log(json != null);
+
+        if (json != null)
+        {
+            Debug.Log("Так как json не null, то SaveData присваиваем");
+            SaveData = JsonUtility.FromJson<SaveData>(json);
+        }
+        else
+        {
+            PlayerAccount.GetCloudSaveData((data) => json = data);
+            Debug.Log(json + "Вторая попытка загрузить");
+
+            if (json != null || json == "")
+            {
+                SaveData = null;
+            }
+            else
+            {
+                SaveData = JsonUtility.FromJson<SaveData>(json);
+            }
+        }
     }
 
     private void Save()
     {
         string jsonData = JsonUtility.ToJson(SaveData);
-        PlayerPrefs.SetString(_savesKey, jsonData);
-        PlayerPrefs.Save();
+        Debug.Log("Сохранения");
+        Debug.Log(jsonData);
+#if UNITY_WEBGL && !UNITY_EDITOR
+       Debug.Log("Cloud Save");
+       PlayerAccount.SetCloudSaveData(jsonData);
+#endif
     }
 
     private SaveData LoadNewData(SaveStartData startData)

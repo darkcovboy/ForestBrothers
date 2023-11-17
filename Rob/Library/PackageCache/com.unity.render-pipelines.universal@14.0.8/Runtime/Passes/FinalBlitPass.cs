@@ -15,6 +15,7 @@ namespace UnityEngine.Rendering.Universal.Internal
         RTHandle m_Source;
         Material m_BlitMaterial;
         Material m_BlitHDRMaterial;
+        RTHandle m_CameraTargetHandle;
 
         /// <summary>
         /// Creates a new <c>FinalBlitPass</c> instance.
@@ -38,6 +39,7 @@ namespace UnityEngine.Rendering.Universal.Internal
         /// </summary>
         public void Dispose()
         {
+            m_CameraTargetHandle?.Release();
         }
 
         /// <summary>
@@ -85,9 +87,15 @@ namespace UnityEngine.Rendering.Universal.Internal
             DebugHandler debugHandler = GetActiveDebugHandler(ref renderingData);
             bool resolveToDebugScreen = debugHandler != null && debugHandler.WriteToDebugScreenTexture(ref cameraData);
 
-            // Get RTHandle alias to use RTHandle apis
-            RTHandleStaticHelpers.SetRTHandleStaticWrapper(cameraTarget);
-            var cameraTargetHandle = RTHandleStaticHelpers.s_RTHandleWrapper;
+            if (!resolveToDebugScreen)
+            {
+                // Create RTHandle alias to use RTHandle apis
+                if (m_CameraTargetHandle != cameraTarget)
+                {
+                    m_CameraTargetHandle?.Release();
+                    m_CameraTargetHandle = RTHandles.Alloc(cameraTarget);
+                }
+            }
 
             var cmd = renderingData.commandBuffer;
 
@@ -127,12 +135,11 @@ namespace UnityEngine.Rendering.Universal.Internal
                 if (resolveToDebugScreen)
                 {
                     debugHandler.BlitTextureToDebugScreenTexture(cmd, m_Source, blitMaterial, m_Source.rt?.filterMode == FilterMode.Bilinear ? 1 : 0);
-                    cameraData.renderer.ConfigureCameraTarget(debugHandler.DebugScreenColorHandle, debugHandler.DebugScreenDepthHandle);
                 }
                 else
                 {
-                    FinalBlitPass.ExecutePass(ref renderingData, blitMaterial, cameraTargetHandle, m_Source);
-                    cameraData.renderer.ConfigureCameraTarget(cameraTargetHandle, cameraTargetHandle);
+                    FinalBlitPass.ExecutePass(ref renderingData, blitMaterial, m_CameraTargetHandle, m_Source);
+                    cameraData.renderer.ConfigureCameraTarget(m_CameraTargetHandle, m_CameraTargetHandle);
                 }
             }
         }

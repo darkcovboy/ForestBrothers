@@ -13,7 +13,6 @@ namespace UnityEngine.Rendering.Universal.Internal
         static ShaderTagId s_ShaderTagLit = new ShaderTagId("Lit");
         static ShaderTagId s_ShaderTagSimpleLit = new ShaderTagId("SimpleLit");
         static ShaderTagId s_ShaderTagUnlit = new ShaderTagId("Unlit");
-        static ShaderTagId s_ShaderTagComplexLit = new ShaderTagId("ComplexLit");
         static ShaderTagId s_ShaderTagUniversalGBuffer = new ShaderTagId("UniversalGBuffer");
         static ShaderTagId s_ShaderTagUniversalMaterialType = new ShaderTagId("UniversalMaterialType");
 
@@ -44,22 +43,20 @@ namespace UnityEngine.Rendering.Universal.Internal
 
             if (s_ShaderTagValues == null)
             {
-                s_ShaderTagValues = new ShaderTagId[5];
+                s_ShaderTagValues = new ShaderTagId[4];
                 s_ShaderTagValues[0] = s_ShaderTagLit;
                 s_ShaderTagValues[1] = s_ShaderTagSimpleLit;
                 s_ShaderTagValues[2] = s_ShaderTagUnlit;
-                s_ShaderTagValues[3] = s_ShaderTagComplexLit;
-                s_ShaderTagValues[4] = new ShaderTagId(); // Special catch all case for materials where UniversalMaterialType is not defined or the tag value doesn't match anything we know.
+                s_ShaderTagValues[3] = new ShaderTagId(); // Special catch all case for materials where UniversalMaterialType is not defined or the tag value doesn't match anything we know.
             }
 
             if (s_RenderStateBlocks == null)
             {
-                s_RenderStateBlocks = new RenderStateBlock[5];
+                s_RenderStateBlocks = new RenderStateBlock[4];
                 s_RenderStateBlocks[0] = DeferredLights.OverwriteStencil(m_RenderStateBlock, (int)StencilUsage.MaterialMask, (int)StencilUsage.MaterialLit);
                 s_RenderStateBlocks[1] = DeferredLights.OverwriteStencil(m_RenderStateBlock, (int)StencilUsage.MaterialMask, (int)StencilUsage.MaterialSimpleLit);
                 s_RenderStateBlocks[2] = DeferredLights.OverwriteStencil(m_RenderStateBlock, (int)StencilUsage.MaterialMask, (int)StencilUsage.MaterialUnlit);
-                s_RenderStateBlocks[3] = DeferredLights.OverwriteStencil(m_RenderStateBlock, (int)StencilUsage.MaterialMask, (int)StencilUsage.MaterialUnlit);  // Fill GBuffer, but skip lighting pass for ComplexLit
-                s_RenderStateBlocks[4] = s_RenderStateBlocks[0];
+                s_RenderStateBlocks[3] = s_RenderStateBlocks[0];
             }
         }
 
@@ -143,7 +140,7 @@ namespace UnityEngine.Rendering.Universal.Internal
 
         static void ExecutePass(ScriptableRenderContext context, PassData data, ref RenderingData renderingData, bool useRenderGraph = false)
         {
-            bool usesRenderingLayers = data.deferredLights.UseRenderingLayers && !data.deferredLights.HasRenderingLayerPrepass;
+            bool usesRenderingLayers = data.deferredLights.UseRenderingLayers && !data.deferredLights.HasNormalPrepass;
             if (usesRenderingLayers)
                 CoreUtils.SetKeyword(renderingData.commandBuffer, ShaderKeywordStrings.WriteRenderingLayers, true);
 

@@ -158,6 +158,8 @@ namespace UnityEngine.Rendering
             m_ProbeSceneData = m_SerializedObject.FindProperty(sceneData.parentSceneDataPropertyName);
 
             InitializeBakingSetList();
+            InitializeScenarioList();
+            UpdateScenariosStatuses();
 
             Lightmapping.lightingDataCleared += UpdateScenariosStatuses;
             EditorSceneManager.sceneOpened += OnSceneOpened;
@@ -485,6 +487,10 @@ namespace UnityEngine.Rendering
             }
 
             InitializeBakingSetList();
+            InitializeScenarioList();
+            UpdateScenariosStatuses();
+
+            OnBakingSetSelected(m_BakingSets);
 
             Repaint();
         }
@@ -523,8 +529,6 @@ namespace UnityEngine.Rendering
             // Update left panel data
             EditorPrefs.SetInt(k_SelectedBakingSetKey, list.index);
             var set = GetCurrentBakingSet();
-            if (set == null)
-                return;
 
             m_ScenesInSet = new ReorderableList(set.sceneGUIDs, typeof(string), true, true, true, true);
             m_ScenesInSet.drawHeaderCallback = (rect) => EditorGUI.LabelField(rect, "Scenes", EditorStyles.largeLabel);
@@ -615,10 +619,7 @@ namespace UnityEngine.Rendering
 
         ProbeVolumeSceneData.BakingSet GetCurrentBakingSet()
         {
-            int index = Mathf.Max(m_BakingSets.index, 0);
-            if (index >= sceneData.bakingSets.Count)
-                return null;
-
+            int index = Mathf.Clamp(m_BakingSets.index, 0, sceneData.bakingSets.Count - 1);
             return sceneData.bakingSets[index];
         }
 
@@ -718,19 +719,17 @@ namespace UnityEngine.Rendering
                     OpenProbeVolumeDebugPanel();
             }
 
+            EditorGUILayout.Space();
+            SanitizeScenes();
+            m_ScenesInSet.DoLayoutList();
+
+            EditorGUILayout.Space();
+            m_Scenarios.Select(GetCurrentBakingSet().lightingScenarios.IndexOf(ProbeReferenceVolume.instance.lightingScenario));
+            m_Scenarios.DoLayoutList();
+
             var set = GetCurrentBakingSet();
-            if (set != null)
-            {
-                EditorGUILayout.Space();
-                SanitizeScenes();
-                m_ScenesInSet.DoLayoutList();
-
-                EditorGUILayout.Space();
-                m_Scenarios.Select(GetCurrentBakingSet().lightingScenarios.IndexOf(ProbeReferenceVolume.instance.lightingScenario));
-                m_Scenarios.DoLayoutList();
-            }
-
-            if (set != null && sceneData.GetFirstProbeVolumeSceneGUID(set) != null)
+            var sceneGUID = sceneData.GetFirstProbeVolumeSceneGUID(set);
+            if (sceneGUID != null)
             {
                 EditorGUILayout.Space();
 
@@ -796,10 +795,6 @@ namespace UnityEngine.Rendering
                     EditorGUI.indentLevel--;
                 }
             }
-            else if (set == null)
-            {
-                EditorGUILayout.HelpBox("You need to create at least one baking set to bake Probe Volumes.", MessageType.Info, true);
-            }
             else
             {
                 EditorGUILayout.HelpBox("You need to assign at least one scene with probe volumes to configure the baking settings", MessageType.Error, true);
@@ -808,8 +803,7 @@ namespace UnityEngine.Rendering
             EditorGUILayout.EndScrollView();
 
             EditorGUILayout.Space();
-            using (new EditorGUI.DisabledScope(set == null))
-                DrawBakeButton();
+            DrawBakeButton();
 
             EditorGUILayout.EndVertical();
         }

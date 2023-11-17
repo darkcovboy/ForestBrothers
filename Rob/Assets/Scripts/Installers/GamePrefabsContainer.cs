@@ -11,4 +11,6 @@ public class GamePrefabsContainer : ScriptableObject
     public bool HaveEnemy;
     [ShowIf("HaveEnemy")]
     public Enemy Enemy;
+    [ShowIf("HaveEnemy")]
+    public EnemyPointerView EnemyPointerView;
 }

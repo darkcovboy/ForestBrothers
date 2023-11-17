@@ -17,9 +17,4 @@ public class MainScenePanel : MonoBehaviour
     {
         _loadLevel.onClick.RemoveListener(Loader.Instance.LoadNextLevel);
     }
-    [Inject]
-    private void Constructor(Loader loader)
-    {
-        _loader = loader;
-    }
 }

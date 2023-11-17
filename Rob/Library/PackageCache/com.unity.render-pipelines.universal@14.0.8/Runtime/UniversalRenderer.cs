@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering.Universal.Internal;
@@ -500,30 +499,7 @@ namespace UnityEngine.Rendering.Universal
             RenderTextureDescriptor cameraTargetDescriptor = cameraData.cameraTargetDescriptor;
 
             var cmd = renderingData.commandBuffer;
-            if (DebugHandler != null)
-            {
-                DebugHandler.Setup(context, ref renderingData);
-                
-                if (DebugHandler.IsActiveForCamera(ref cameraData))
-                {
-                    if (DebugHandler.WriteToDebugScreenTexture(ref cameraData))
-                    {
-                        RenderTextureDescriptor colorDesc = cameraData.cameraTargetDescriptor;
-                        DebugHandler.ConfigureColorDescriptorForDebugScreen(ref colorDesc, cameraData.pixelWidth, cameraData.pixelHeight);
-                        RenderingUtils.ReAllocateIfNeeded(ref DebugHandler.DebugScreenColorHandle, colorDesc, name: "_DebugScreenColor");
-
-                        RenderTextureDescriptor depthDesc = cameraData.cameraTargetDescriptor;
-                        DebugHandler.ConfigureDepthDescriptorForDebugScreen(ref depthDesc, k_DepthBufferBits, cameraData.pixelWidth, cameraData.pixelHeight);
-                        RenderingUtils.ReAllocateIfNeeded(ref DebugHandler.DebugScreenDepthHandle, depthDesc, name: "_DebugScreenDepth");
-                    }
-
-                    if (DebugHandler.HDRDebugViewIsActive(ref cameraData))
-                    {
-                        DebugHandler.hdrDebugViewPass.Setup(ref cameraData, DebugHandler.DebugDisplaySettings.lightingSettings.hdrDebugMode);
-                        EnqueuePass(DebugHandler.hdrDebugViewPass);
-                    }
-                }
-            }
+            DebugHandler?.Setup(context, ref renderingData);
 
             if (cameraData.cameraType != CameraType.Game)
                 useRenderPassEnabled = false;
@@ -564,22 +540,11 @@ namespace UnityEngine.Rendering.Universal
             if (IsGLDevice())
                 requiresRenderingLayer = false;
 
-            bool renderingLayerProvidesByDepthNormalPass = false;
-            bool renderingLayerProvidesRenderObjectPass = false;
-            if (requiresRenderingLayer && renderingModeActual != RenderingMode.Deferred)
-            {
-                switch (renderingLayersEvent)
-                {
-                    case RenderingLayerUtils.Event.DepthNormalPrePass:
-                        renderingLayerProvidesByDepthNormalPass = true;
-                        break;
-                    case RenderingLayerUtils.Event.Opaque:
-                        renderingLayerProvidesRenderObjectPass = true;
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
-            }
+            bool renderingLayerProvidesByDepthNormalPass = requiresRenderingLayer && renderingLayersEvent == RenderingLayerUtils.Event.DepthNormalPrePass;
+            bool renderingLayerProvidesRenderObjectPass = requiresRenderingLayer &&
+                this.renderingModeActual != RenderingMode.Deferred && renderingLayersEvent == RenderingLayerUtils.Event.Opaque;
+            bool renderingLayerProvidesGBufferPass = requiresRenderingLayer &&
+                this.renderingModeActual == RenderingMode.Deferred && renderingLayersEvent == RenderingLayerUtils.Event.Opaque;
 
             // Enable depth normal prepass
             if (renderingLayerProvidesByDepthNormalPass)
@@ -596,19 +561,6 @@ namespace UnityEngine.Rendering.Universal
 
                 m_DeferredLights.ResolveMixedLightingMode(ref renderingData);
                 m_DeferredLights.IsOverlay = cameraData.renderType == CameraRenderType.Overlay;
-                if (m_DeferredLights.UseRenderPass)
-                {
-                    // At this point we only have injected renderer features in the queue and can do assumptions on whether we'll need Framebuffer Fetch
-                    foreach (var pass in activeRenderPassQueue)
-                    {
-                        if (pass.renderPassEvent >= RenderPassEvent.AfterRenderingGbuffer &&
-                            pass.renderPassEvent <= RenderPassEvent.BeforeRenderingDeferredLights)
-                        {
-                            m_DeferredLights.DisableFramebufferFetchInput();
-                            break;
-                        }
-                    }
-                }
             }
 
             // Should apply post-processing after rendering this camera?
@@ -721,12 +673,6 @@ namespace UnityEngine.Rendering.Universal
             if (RTHandles.rtHandleProperties.rtHandleScale.x != 1.0f || RTHandles.rtHandleProperties.rtHandleScale.y != 1.0f)
                 createColorTexture |= createDepthTexture;
 
-            // If there is any scaling, the color and depth need to be the same resolution and the target texture
-            // will not be the proper size in this case. Same happens with GameView.
-            // This introduces the final blit pass.
-            if (RTHandles.rtHandleProperties.rtHandleScale.x != 1.0f || RTHandles.rtHandleProperties.rtHandleScale.y != 1.0f)
-                createColorTexture |= createDepthTexture;
-
             if (useRenderPassEnabled || useDepthPriming)
                 createColorTexture |= createDepthTexture;
 
@@ -753,13 +699,11 @@ namespace UnityEngine.Rendering.Universal
                 if (cameraData.xr.enabled)
                     targetId = cameraData.xr.renderTarget;
 #endif
-                if (m_XRTargetHandleAlias == null)
+
+                if (m_XRTargetHandleAlias == null || m_XRTargetHandleAlias.nameID != targetId)
                 {
+                    m_XRTargetHandleAlias?.Release();
                     m_XRTargetHandleAlias = RTHandles.Alloc(targetId);
-                }
-                else if (m_XRTargetHandleAlias.nameID != targetId)
-                {
-                    RTHandleStaticHelpers.SetRTHandleUserManagedWrapper(ref m_XRTargetHandleAlias, targetId);
                 }
 
                 // Doesn't create texture for Overlay cameras as they are already overlaying on top of created textures.
@@ -845,7 +789,7 @@ namespace UnityEngine.Rendering.Universal
             if ((this.renderingModeActual == RenderingMode.Deferred && !this.useRenderPassEnabled) || requiresDepthPrepass || requiresDepthCopyPass)
             {
                 var depthDescriptor = cameraTargetDescriptor;
-                if ((requiresDepthPrepass && this.renderingModeActual != RenderingMode.Deferred) || !RenderingUtils.SupportsGraphicsFormat(GraphicsFormat.R32_SFloat, FormatUsage.Render))
+                if (requiresDepthPrepass && this.renderingModeActual != RenderingMode.Deferred)
                 {
                     depthDescriptor.graphicsFormat = GraphicsFormat.None;
                     depthDescriptor.depthStencilFormat = k_DepthStencilFormat;
@@ -866,7 +810,7 @@ namespace UnityEngine.Rendering.Universal
                 cmd.Clear();
             }
 
-            if (requiresRenderingLayer || (renderingModeActual == RenderingMode.Deferred && m_DeferredLights.UseRenderingLayers))
+            if (requiresRenderingLayer)
             {
                 ref var renderingLayersTexture = ref m_DecalLayersTexture;
                 string renderingLayersTextureName = "_CameraRenderingLayersTexture";
@@ -1168,7 +1112,7 @@ namespace UnityEngine.Rendering.Universal
             bool outputToHDR = cameraData.isHDROutputActive;
             if (shouldRenderUI && outputToHDR)
             {
-                m_DrawOffscreenUIPass.Setup(ref cameraData, k_DepthBufferBits);
+                m_DrawOffscreenUIPass.Setup(cameraTargetDescriptor, m_ActiveCameraDepthAttachment);
                 EnqueuePass(m_DrawOffscreenUIPass);
             }
 

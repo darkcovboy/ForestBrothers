@@ -101,7 +101,6 @@ IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_i
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Billing_tC40F604ED0321682CE5A8069F9F7AF8530ED933F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
@@ -120,7 +119,6 @@ IL2CPP_EXTERN_C RuntimeClass* Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2
 IL2CPP_EXTERN_C RuntimeClass* U3CInitializeU3Ed__10_tFD2D4DB341D7DDC4EA3CB29BB940501B187D8D3F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VideoAd_t033E51D90813B8C5F21AD9D830B40087C2F8ACE0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* YandexGamesSdk_t03FDB4F6D64CA94827A0B47AD15C3311315E21BB_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0038E74E6557C17FDC8E94FDC56CD09453CD75EA;
 IL2CPP_EXTERN_C String_t* _stringLiteral0065EB42BC710CC6098D452F7EB43E8C358C5AB8;
 IL2CPP_EXTERN_C String_t* _stringLiteral012A18907B249DF0954BFA806717C2FD7DDB76F9;
@@ -5211,11 +5209,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CDownloadU3Ed__18_MoveNext_m7D89CBF601
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_TisYieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_TisU3CDownloadU3Ed__18_t5757499D3028F339956D3B2ED4D979BCD48862E5_m15C10A13BA30BBD4CB2B14DAFA655BF995B42120_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8A8D28163102C4CC8F2B08F0080DE748BBE39BEB);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9DD73FC7103DE516C520B448DF8C70EA5AFAC2BC);
 		s_Il2CppMethodInitialized = true;
@@ -5311,7 +5307,6 @@ IL_014f_1:
 IL_0039_2:
 				{
 					CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED* L_12 = (CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED*)(&__this->___cancellationToken);
-					il2cpp_codegen_runtime_class_init_inline(CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_il2cpp_TypeInfo_var);
 					bool L_13;
 					L_13 = CancellationToken_get_IsCancellationRequested_m9744F7A1A82946FDD1DC68E905F1ED826471D350(L_12, NULL);
 					if (L_13)
@@ -5327,7 +5322,6 @@ IL_0039_2:
 					YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A L_15;
 					L_15 = YieldAwaitable_GetAwaiter_m359A05B8C1B9F3F1E9CAE29AD231C0987718DE5E((&V_3), NULL);
 					V_2 = L_15;
-					il2cpp_codegen_runtime_class_init_inline(YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_il2cpp_TypeInfo_var);
 					bool L_16;
 					L_16 = YieldAwaiter_get_IsCompleted_m783B6E67654FDBF490A65AC59972AF6B985A9286((&V_2), NULL);
 					if (L_16)
@@ -5359,7 +5353,6 @@ IL_0080_2:
 
 IL_009c_2:
 				{
-					il2cpp_codegen_runtime_class_init_inline(YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_il2cpp_TypeInfo_var);
 					YieldAwaiter_GetResult_m83C9B35D4BBEB09AC5B560912436454D69794F07((&V_2), NULL);
 				}
 
@@ -5379,7 +5372,6 @@ IL_00b0_2:
 					RemoteImage_tEBC2C9043ABB280A889DE00D27AD572ED5944F0A* L_25 = V_1;
 					RemoteImage_set_IsDownloadFinished_m86206D1F05904C2AC5832E10F42B0599F9531580_inline(L_25, (bool)1, NULL);
 					CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED* L_26 = (CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED*)(&__this->___cancellationToken);
-					il2cpp_codegen_runtime_class_init_inline(CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED_il2cpp_TypeInfo_var);
 					bool L_27;
 					L_27 = CancellationToken_get_IsCancellationRequested_m9744F7A1A82946FDD1DC68E905F1ED826471D350(L_26, NULL);
 					if (!L_27)

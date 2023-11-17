@@ -8,6 +8,7 @@ public class SettingsPanel : MonoBehaviour
     private void OnEnable()
     {
         _exitButton.onClick.AddListener(ClosePanel);
+
     }
 
     private void OnDisable()

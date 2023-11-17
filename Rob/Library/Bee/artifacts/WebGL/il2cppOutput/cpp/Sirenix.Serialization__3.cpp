@@ -7879,7 +7879,6 @@ IL_00b0:
 	}
 	{
 		V_7 = (bool)0;
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_39;
 		L_39 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&V_9), NULL);
 		String_t* L_40;
@@ -8095,7 +8094,6 @@ IL_0226:
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_103;
 		L_103 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_104;
 		L_104 = Char_ToString_m34499826F048A38EB8216D5844A5DA49F54719C8((&V_13), L_103, NULL);
 		String_t* L_105;
@@ -8393,7 +8391,6 @@ IL_04aa:
 		il2cpp_codegen_runtime_class_init_inline(CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_il2cpp_TypeInfo_var);
 		CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* L_191;
 		L_191 = CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6(NULL);
-		il2cpp_codegen_runtime_class_init_inline(Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_il2cpp_TypeInfo_var);
 		String_t* L_192;
 		L_192 = Decimal_ToString_m2600674D09D44940FA0AAA00A87858E741671F4E((&V_23), _stringLiteral3DCC6243286938BE75C3FA773B9BA71160A2E869, L_191, NULL);
 		String_t* L_193;

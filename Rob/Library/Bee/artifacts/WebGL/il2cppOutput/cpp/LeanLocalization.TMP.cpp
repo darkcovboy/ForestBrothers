@@ -2110,13 +2110,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeanLocalizedTextMeshPro_UpdateTranslati
 		RuntimeObject* L_6 = L_5->___Data;
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_7 = V_0;
 		String_t* L_8;
-		L_8 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_7);
+		L_8 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LeanTranslation_t93178F7CDE9E4DAA97BC7B09D21EF91D763847A2_il2cpp_TypeInfo_var);
 		String_t* L_10;
 		L_10 = LeanTranslation_FormatText_m7F6B5700142384C2A11B2AD08078410FE5D1CF67(((String_t*)CastclassSealed((RuntimeObject*)L_6, String_t_il2cpp_TypeInfo_var)), L_8, __this, L_9, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_4, L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, L_10);
 		return;
 	}
 
@@ -2126,13 +2126,13 @@ IL_003b:
 		String_t* L_12 = __this->___FallbackText;
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_13 = V_0;
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_13);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
 		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LeanTranslation_t93178F7CDE9E4DAA97BC7B09D21EF91D763847A2_il2cpp_TypeInfo_var);
 		String_t* L_16;
 		L_16 = LeanTranslation_FormatText_m7F6B5700142384C2A11B2AD08078410FE5D1CF67(L_12, L_14, __this, L_15, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_11, L_16);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_11, L_16);
 		return;
 	}
 }
@@ -2160,7 +2160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeanLocalizedTextMeshPro_Awake_m5567DA49
 		V_0 = L_2;
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_3 = V_0;
 		String_t* L_4;
-		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_3);
+		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_3);
 		__this->___FallbackText = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___FallbackText), (void*)L_4);
 	}
@@ -2315,13 +2315,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeanLocalizedTextMeshProUGUI_UpdateTrans
 		RuntimeObject* L_6 = L_5->___Data;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = V_0;
 		String_t* L_8;
-		L_8 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_7);
+		L_8 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
 		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LeanTranslation_t93178F7CDE9E4DAA97BC7B09D21EF91D763847A2_il2cpp_TypeInfo_var);
 		String_t* L_10;
 		L_10 = LeanTranslation_FormatText_m7F6B5700142384C2A11B2AD08078410FE5D1CF67(((String_t*)CastclassSealed((RuntimeObject*)L_6, String_t_il2cpp_TypeInfo_var)), L_8, __this, L_9, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_4, L_10);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, L_10);
 		return;
 	}
 
@@ -2331,13 +2331,13 @@ IL_003b:
 		String_t* L_12 = __this->___FallbackText;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_13 = V_0;
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_13);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_15;
 		L_15 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
 		il2cpp_codegen_runtime_class_init_inline(LeanTranslation_t93178F7CDE9E4DAA97BC7B09D21EF91D763847A2_il2cpp_TypeInfo_var);
 		String_t* L_16;
 		L_16 = LeanTranslation_FormatText_m7F6B5700142384C2A11B2AD08078410FE5D1CF67(L_12, L_14, __this, L_15, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_11, L_16);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_11, L_16);
 		return;
 	}
 }
@@ -2365,7 +2365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeanLocalizedTextMeshProUGUI_Awake_mE036
 		V_0 = L_2;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_3 = V_0;
 		String_t* L_4;
-		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(63, L_3);
+		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(65, L_3);
 		__this->___FallbackText = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___FallbackText), (void*)L_4);
 	}

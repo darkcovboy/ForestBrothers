@@ -415,7 +415,6 @@ IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19
 IL2CPP_EXTERN_C RuntimeClass* CanvasUpdateRegistry_t7A4CC63D880F418DCDE83152B6FDB3259DF14DD1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColorTweenCallback_tA3F6E0BB4EBAA1CFB97539807CE8C9BB7C851F53_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ContentTypeU5BU5D_t9CD28BD8595DADB2BF0E1020E0E5701C95E80B39_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
@@ -6812,7 +6811,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TMP_LinkInfo_GetLinkText_m954EE8FF3
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -6838,7 +6836,6 @@ IL_001b:
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_6 = L_5->___characterInfo;
 		int32_t L_7 = V_2;
 		Il2CppChar* L_8 = (Il2CppChar*)(&((L_6)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)))->___character);
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_9;
 		L_9 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C(L_8, NULL);
 		String_t* L_10;
@@ -6953,7 +6950,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TMP_WordInfo_GetWord_m7F72AB87E8AB0
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -6979,7 +6975,6 @@ IL_0020:
 		TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* L_6 = V_1;
 		int32_t L_7 = V_2;
 		Il2CppChar* L_8 = (Il2CppChar*)(&((L_6)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)))->___character);
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_9;
 		L_9 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C(L_8, NULL);
 		String_t* L_10;
@@ -9110,12 +9105,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_DefaultControls_SetDefaultTextValues
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_DefaultControls_SetDefaultColorTransitionValues_m72AC254CDF013CD5831DC9FF9A49A17E9857A228 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___0_slider, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
 	ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
@@ -9126,7 +9115,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_DefaultControls_SetDefaultColorTrans
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_2), (0.882000029f), (0.882000029f), (0.882000029f), NULL);
-		il2cpp_codegen_runtime_class_init_inline(ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_il2cpp_TypeInfo_var);
 		ColorBlock_set_highlightedColor_m04E97DF2CCE7CAC47120D8F486E18BF62F16FF86_inline((&V_0), L_2, NULL);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3;
 		memset((&L_3), 0, sizeof(L_3));
@@ -9374,7 +9362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_17;
 		L_17 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_16, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_18 = L_17;
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_18, _stringLiteral7DE03E5EBA0308517D1762F2C0DF3B9E2A2F1870);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_18, _stringLiteral7DE03E5EBA0308517D1762F2C0DF3B9E2A2F1870);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = L_18;
 		TMP_Text_set_alignment_mE5216A28797987CC19927ED3CB8DFAC438C6B95A(L_19, ((int32_t)514), NULL);
 		TMP_DefaultControls_SetDefaultTextValues_mDC3353B8B8D0ED33A70A1B2AC9B7602DA9DCC67F(L_19, NULL);
@@ -9517,7 +9505,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		L_34 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_33, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
 		V_5 = L_34;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_35 = V_5;
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_35, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_35, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_36 = V_5;
 		TMP_Text_set_enableWordWrapping_mFAEE849315B4723F9C86C127B1A59EF50BE1C12F(L_36, (bool)0, NULL);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_37 = V_5;
@@ -9531,7 +9519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		L_41 = GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB(L_40, GameObject_AddComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m15E50057DA76710B136ADF4E7CA55A463D9DA3EB_RuntimeMethod_var);
 		V_6 = L_41;
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_42 = V_6;
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_42, _stringLiteralA818D784EEE0EEB6AB11F62A9BF9EF44CF6146AC);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_42, _stringLiteralA818D784EEE0EEB6AB11F62A9BF9EF44CF6146AC);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_43 = V_6;
 		TMP_Text_set_fontSize_m1C3A3BA2BC88E5E1D89375FD35A0AA91E75D3AAD(L_43, (14.0f), NULL);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_44 = V_6;
@@ -9875,7 +9863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_111 = V_10;
 		TMP_Dropdown_set_itemText_mCC983B4A78E8C594E5C78BE1F8F8DBB067E3CA1B(L_110, L_111, NULL);
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_112 = V_10;
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_112, _stringLiteral17AEAD6B86236368E44E9297467458F1158CAF04);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_112, _stringLiteral17AEAD6B86236368E44E9297467458F1158CAF04);
 		TMP_Dropdown_t73B37BFDA0D005451C7B750938AFB1748E5EA504* L_113 = L_110;
 		List_1_tCADFA900711C24701A9C70EE674B91FC45D42A52* L_114;
 		L_114 = TMP_Dropdown_get_options_mA543A0EFE4D1953E73C6F60ECA8CE177182571C5(L_113, NULL);
@@ -10693,14 +10681,14 @@ IL_0042:
 		OptionData_tFDFBCB4A5FB860E95AE46FDAC112DB4140A8525E* L_16 = V_0;
 		String_t* L_17;
 		L_17 = OptionData_get_text_m2E822D5D50B597BFBA7AB3485EF15B526A726A1A_inline(L_16, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_15, L_17);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_15, L_17);
 		goto IL_007d;
 	}
 
 IL_006d:
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_18 = __this->___m_CaptionText;
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_18, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_18, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 	}
 
 IL_007d:
@@ -12525,7 +12513,7 @@ IL_0088:
 		OptionData_tFDFBCB4A5FB860E95AE46FDAC112DB4140A8525E* L_30 = ___0_data;
 		String_t* L_31;
 		L_31 = OptionData_get_text_m2E822D5D50B597BFBA7AB3485EF15B526A726A1A_inline(L_30, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_29, L_31);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_29, L_31);
 	}
 
 IL_00a6:
@@ -16247,7 +16235,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TMP_FontAsset_GetCharacters_mF4A9E3
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m9487E2DD5481AE7E89DD20CF6E6640DF763A9998_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m94F97B65B40EA25788630CFD505F65003028DF28_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
@@ -16275,7 +16262,6 @@ IL_000a:
 		uint32_t L_6;
 		L_6 = TMP_TextElement_get_unicode_mF963B03CCA673335FB682EBDD1CFF86F0DB8539F_inline(L_5, NULL);
 		V_2 = ((int32_t)(uint16_t)L_6);
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_7;
 		L_7 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&V_2), NULL);
 		String_t* L_8;
@@ -17001,7 +16987,7 @@ IL_01eb:
 		int32_t L_77 = L_76;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_78 = (L_75)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_77));
 		int32_t L_79;
-		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_78);
+		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_78);
 		if (!L_79)
 		{
 			goto IL_0213;
@@ -17013,7 +16999,7 @@ IL_01eb:
 		int32_t L_82 = L_81;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_83 = (L_80)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_82));
 		int32_t L_84;
-		L_84 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_83);
+		L_84 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_83);
 		if (L_84)
 		{
 			goto IL_0244;
@@ -17671,7 +17657,7 @@ IL_01ee:
 		int32_t L_77 = L_76;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_78 = (L_75)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_77));
 		int32_t L_79;
-		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_78);
+		L_79 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_78);
 		if (!L_79)
 		{
 			goto IL_0216;
@@ -17683,7 +17669,7 @@ IL_01ee:
 		int32_t L_82 = L_81;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_83 = (L_80)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_82));
 		int32_t L_84;
-		L_84 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_83);
+		L_84 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_83);
 		if (L_84)
 		{
 			goto IL_0247;
@@ -18147,7 +18133,7 @@ IL_00b5:
 		int32_t L_38 = L_37;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_39 = (L_36)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_38));
 		bool L_40;
-		L_40 = VirtualFuncInvoker0< bool >::Invoke(8, L_39);
+		L_40 = VirtualFuncInvoker0< bool >::Invoke(11, L_39);
 		if (L_40)
 		{
 			goto IL_0120;
@@ -18191,7 +18177,7 @@ IL_0120:
 		int32_t L_60 = L_59;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_61 = (L_58)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_60));
 		int32_t L_62;
-		L_62 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_61);
+		L_62 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_61);
 		if (!L_62)
 		{
 			goto IL_0148;
@@ -18203,7 +18189,7 @@ IL_0120:
 		int32_t L_65 = L_64;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_66 = (L_63)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_65));
 		int32_t L_67;
-		L_67 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_66);
+		L_67 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_66);
 		if (L_67)
 		{
 			goto IL_0179;
@@ -18923,7 +18909,7 @@ IL_000e:
 		int32_t L_4 = L_3;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_5 = (L_2)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4));
 		int32_t L_6;
-		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_5);
+		L_6 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_5);
 		if (!L_6)
 		{
 			goto IL_0036;
@@ -18935,7 +18921,7 @@ IL_000e:
 		int32_t L_9 = L_8;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_10 = (L_7)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_9));
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_10);
 		if (L_11)
 		{
 			goto IL_0067;
@@ -19598,7 +19584,7 @@ IL_0033:
 		V_0 = L_16;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_17 = V_0;
 		bool L_18;
-		L_18 = VirtualFuncInvoker0< bool >::Invoke(8, L_17);
+		L_18 = VirtualFuncInvoker0< bool >::Invoke(11, L_17);
 		if (L_18)
 		{
 			goto IL_00a0;
@@ -19648,7 +19634,7 @@ IL_00b0:
 	{
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_33 = V_0;
 		int32_t L_34;
-		L_34 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_33);
+		L_34 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_33);
 		int32_t L_35 = __this->___m_AtlasWidth;
 		if ((!(((uint32_t)L_34) == ((uint32_t)L_35))))
 		{
@@ -19658,7 +19644,7 @@ IL_00b0:
 	{
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_36 = V_0;
 		int32_t L_37;
-		L_37 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_36);
+		L_37 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_36);
 		int32_t L_38 = __this->___m_AtlasHeight;
 		if ((((int32_t)L_37) == ((int32_t)L_38)))
 		{
@@ -27100,7 +27086,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_InputField_LateUpdate_m9D1496DFE349C
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventSystem_t61C51380B105BE9D2C39C4F15B7E655659957707_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_m6CA031C91E5D203C24D3315721B6E3910B9C8729_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -27620,7 +27605,6 @@ IL_02b8:
 	}
 	{
 		String_t* L_84 = __this->___m_Text;
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_85;
 		L_85 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&V_5), NULL);
 		String_t* L_86;
@@ -29480,7 +29464,7 @@ IL_001d:
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___m_TextComponent;
 		float L_5;
-		L_5 = VirtualFuncInvoker0< float >::Invoke(83, L_4);
+		L_5 = VirtualFuncInvoker0< float >::Invoke(85, L_4);
 		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_6 = __this->___m_TextViewport;
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_7;
 		L_7 = RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488(L_6, NULL);
@@ -29564,7 +29548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TMP_InputField_GetScrollPositionRelativ
 		float L_10 = L_9.___y;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_11 = __this->___m_TextComponent;
 		float L_12;
-		L_12 = VirtualFuncInvoker0< float >::Invoke(83, L_11);
+		L_12 = VirtualFuncInvoker0< float >::Invoke(85, L_11);
 		float L_13;
 		L_13 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&V_0), NULL);
 		return ((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_5, L_6)), L_10))/((float)il2cpp_codegen_subtract(L_12, L_13)))), (1000.0f))), (0.5f)))))/(1000.0f)));
@@ -32681,7 +32665,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_InputField_Insert_mD8773951E82B4743A
 
 IL_0009:
 	{
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&___0_c), NULL);
 		V_0 = L_1;
@@ -33244,7 +33227,7 @@ IL_014c:
 		String_t* L_47 = V_1;
 		String_t* L_48;
 		L_48 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_47, _stringLiteral22BE618ADF9DAFBF84F27DD4CA2D8D34F67B1103, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_46, L_48);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_46, L_48);
 		bool L_49 = __this->___m_IsDrivenByLayoutComponents;
 		if (!L_49)
 		{
@@ -33267,7 +33250,7 @@ IL_0175:
 	}
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_52 = __this->___m_TextComponent;
-		VirtualActionInvoker2< bool, bool >::Invoke(104, L_52, (bool)0, (bool)0);
+		VirtualActionInvoker2< bool, bool >::Invoke(106, L_52, (bool)0, (bool)0);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_53 = __this->___m_TextComponent;
 		TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* L_54;
 		L_54 = TMP_Text_get_textInfo_mA24C606B8EA51436E4AA3B9D6DCDFA7A8995E10E_inline(L_53, NULL);
@@ -33316,7 +33299,7 @@ IL_0175:
 		L_78 = TMP_InputField_get_text_mA4ACBF52435893D9DFD822A492454301740B3C6A_inline(__this, NULL);
 		String_t* L_79;
 		L_79 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_78, _stringLiteral22BE618ADF9DAFBF84F27DD4CA2D8D34F67B1103, NULL);
-		VirtualActionInvoker1< String_t* >::Invoke(64, L_77, L_79);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_77, L_79);
 	}
 
 IL_0221:
@@ -33342,7 +33325,7 @@ IL_0236:
 	{
 		__this->___m_IsTextComponentUpdateRequired = (bool)0;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_83 = __this->___m_TextComponent;
-		VirtualActionInvoker2< bool, bool >::Invoke(104, L_83, (bool)0, (bool)0);
+		VirtualActionInvoker2< bool, bool >::Invoke(106, L_83, (bool)0, (bool)0);
 	}
 
 IL_024a:
@@ -33386,7 +33369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_InputField_UpdateScrollbar_m61D071BE
 		L_4 = Rect_get_height_mE1AA6C6C725CCD2D317BD2157396D3CF7D47C9D8_inline((&V_0), NULL);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___m_TextComponent;
 		float L_6;
-		L_6 = VirtualFuncInvoker0< float >::Invoke(83, L_5);
+		L_6 = VirtualFuncInvoker0< float >::Invoke(85, L_5);
 		V_1 = ((float)(L_4/L_6));
 		Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3* L_7 = __this->___m_VerticalScrollbar;
 		float L_8 = V_1;
@@ -33518,7 +33501,7 @@ IL_003f:
 		V_1 = (0.0f);
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_13 = __this->___m_TextComponent;
 		float L_14;
-		L_14 = VirtualFuncInvoker0< float >::Invoke(83, L_13);
+		L_14 = VirtualFuncInvoker0< float >::Invoke(85, L_13);
 		V_2 = L_14;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_15 = __this->___m_TextComponent;
 		int32_t L_16;
@@ -35363,7 +35346,7 @@ IL_000f:
 		float L_41 = L_40.___x;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_42 = __this->___m_TextComponent;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_43;
-		L_43 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(71, L_42);
+		L_43 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(73, L_42);
 		float L_44 = L_43.___z;
 		int32_t L_45 = __this->___m_CaretWidth;
 		V_6 = ((float)il2cpp_codegen_subtract(L_39, ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_41, L_44)), ((float)L_45)))));
@@ -35415,7 +35398,7 @@ IL_0132:
 		float L_58 = L_57.___x;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_59 = __this->___m_TextComponent;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_60;
-		L_60 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(71, L_59);
+		L_60 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(73, L_59);
 		float L_61 = L_60.___x;
 		float L_62;
 		L_62 = Rect_get_xMin_mE89C40702926D016A633399E20DB9501E251630D_inline((&V_5), NULL);
@@ -35540,7 +35523,7 @@ IL_0226:
 		float L_109 = ((L_108)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(0)))->___origin;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_110 = __this->___m_TextComponent;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_111;
-		L_111 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(71, L_110);
+		L_111 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(73, L_110);
 		float L_112 = L_111.___x;
 		V_11 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_101, L_103)), L_105)), L_109)), L_112));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_113 = V_0;
@@ -35560,7 +35543,7 @@ IL_0226:
 		float L_125 = ((L_121)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_124, 1)))))->___origin;
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_126 = __this->___m_TextComponent;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_127;
-		L_127 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(71, L_126);
+		L_127 = VirtualFuncInvoker0< Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 >::Invoke(73, L_126);
 		float L_128 = L_127.___z;
 		int32_t L_129 = __this->___m_CaretWidth;
 		V_12 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_114, L_116)), L_118)), L_125)), L_128)), ((float)L_129)));
@@ -36621,7 +36604,6 @@ IL_0330:
 		}
 	}
 	{
-		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		String_t* L_160;
 		L_160 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&___2_ch), NULL);
 		String_t* L_161 = __this->___m_RegexValue;
@@ -37759,7 +37741,7 @@ IL_006c:
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___m_TextComponent;
 		float L_17;
-		L_17 = VirtualFuncInvoker0< float >::Invoke(82, L_16);
+		L_17 = VirtualFuncInvoker0< float >::Invoke(84, L_16);
 		float L_18 = V_0;
 		return ((float)il2cpp_codegen_add(L_17, L_18));
 	}
@@ -37849,7 +37831,7 @@ IL_006c:
 	{
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_16 = __this->___m_TextComponent;
 		float L_17;
-		L_17 = VirtualFuncInvoker0< float >::Invoke(83, L_16);
+		L_17 = VirtualFuncInvoker0< float >::Invoke(85, L_16);
 		float L_18 = V_0;
 		return ((float)il2cpp_codegen_add(L_17, L_18));
 	}

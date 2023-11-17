@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Zenject;
 
 public class Loader : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Loader : MonoBehaviour
     public static Loader Instance { get; private set; }
 
     private int _nextLevelIndex;
+    private bool _canLoad = false;
     private readonly int FirstLevelIndex = 1;
 
     private void Awake()
@@ -27,6 +29,7 @@ public class Loader : MonoBehaviour
 
     public void SetNextLevel(int index)
     {
+        Debug.Log("Устанавливаем - " + index);
         _nextLevelIndex = index;
     }
 
@@ -35,8 +38,16 @@ public class Loader : MonoBehaviour
         Load(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void OnLoader()
+    {
+        _canLoad = true;
+    }
+
     public void LoadNextLevel()
     {
+        if (!_canLoad)
+            return;
+
         if ((_nextLevelIndex + 1) > SceneManager.sceneCountInBuildSettings)
         {
             Load(FirstLevelIndex);
@@ -51,6 +62,7 @@ public class Loader : MonoBehaviour
 
     private void Load(int levelIndex)
     {
+        Debug.Log("Загрузка " + levelIndex);
         gameObject.Activate();
         StartCoroutine(LoadSceneAsync(levelIndex));
     }

@@ -33,7 +33,3 @@ HlslFunctionView > #Row {
     -unity-text-align: upper-left;
     overflow: hidden;
 }
-
-.unity-base-text-field__input--multiline {
-    align-self: stretch;
-}

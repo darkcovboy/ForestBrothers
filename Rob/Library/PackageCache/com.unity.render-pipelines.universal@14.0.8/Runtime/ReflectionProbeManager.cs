@@ -213,13 +213,9 @@ namespace UnityEngine.Rendering.Universal
                     m_NeedsUpdate.Add(id);
                 }
 
-                // If the probe is set to be updated every frame, we assign the last used frame to -1 so it's evicted in next frame.
-                if (probe.reflectionProbe.refreshMode == ReflectionProbeRefreshMode.EveryFrame)
-                    cachedProbe.lastUsed = -1;
-                else
-                    cachedProbe.lastUsed = frameIndex;
-                
+                cachedProbe.lastUsed = frameIndex;
                 cachedProbe.hdrData = probe.hdrData;
+
                 m_Cache[id] = cachedProbe;
             }
 

@@ -11,8 +11,8 @@ public class WinPanel : MonoBehaviour
     [SerializeField] private CanvasGroupHolder _canvasGroupHolder;
 
     private IGameResultHandler _gameResult;
-    private Loader _loader;
     private RewardedVideo _rewardedVideo;
+    private FullVideo _fullVideo;
     private MoneyCounter _moneyCounter;
     private PlayerSave _playerSave;
 
@@ -34,13 +34,14 @@ public class WinPanel : MonoBehaviour
     }
 
     [Inject]
-    public void Constructor(IGameResultHandler gameResultHandler, Loader loader, RewardedVideo rewardedVideo, MoneyCounter moneyCounter, PlayerSave playerSave)
+    public void Constructor(IGameResultHandler gameResultHandler, FullVideo fullVideo, RewardedVideo rewardedVideo, MoneyCounter moneyCounter, PlayerSave playerSave)
     {
-        _gameResult = gameResultHandler;
-        _loader = loader;
+        _gameResult = gameResultHandler;;
         _rewardedVideo = rewardedVideo;
+        _fullVideo = fullVideo;
         _gameResult.OnGameWinning += OnWinGame;
         _moneyCounter = moneyCounter;
+        _playerSave = playerSave;
     }
 
     private void OnWinGame()
@@ -55,10 +56,10 @@ public class WinPanel : MonoBehaviour
         _rewardedVideo.MultiplyMoney();
     }
 
-    private void ShowEarned(int earnedMoney) => _earnedMoney.text = $"+{earnedMoney}";
+    private void ShowEarned(int earnedMoney) => _earnedMoney.text = $"{earnedMoney}";
     private void NextLevel()
     {
         _playerSave.CompleteLevel(_moneyCounter.GetMoney());
-        _loader.LoadNextLevel();
+        _fullVideo.ShowVideoNext();
     }
 }

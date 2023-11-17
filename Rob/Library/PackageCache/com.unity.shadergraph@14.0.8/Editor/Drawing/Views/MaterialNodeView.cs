@@ -76,19 +76,17 @@ namespace UnityEditor.ShaderGraph.Drawing
                 contents.Add(controlsContainer);
 
             // Add dropdowns container
-            if (inNode is SubGraphNode)
+            var dropdownContainer = new VisualElement { name = "dropdowns" };
             {
-                var dropdownContainer = new VisualElement { name = "dropdowns" };
-                {
-                    m_DropdownsDivider = new VisualElement { name = "divider" };
-                    m_DropdownsDivider.AddToClassList("horizontal");
-                    dropdownContainer.Add(m_DropdownsDivider);
-                    m_DropdownItems = new VisualElement { name = "items" };
-                    dropdownContainer.Add(m_DropdownItems);
-                    UpdateDropdownEntries();
-                }
-                contents.Add(dropdownContainer);
+                m_DropdownsDivider = new VisualElement { name = "divider" };
+                m_DropdownsDivider.AddToClassList("horizontal");
+                dropdownContainer.Add(m_DropdownsDivider);
+                m_DropdownItems = new VisualElement { name = "items" };
+                dropdownContainer.Add(m_DropdownItems);
+                UpdateDropdownEntries();
             }
+            if (m_DropdownItems.childCount > 0)
+                contents.Add(dropdownContainer);
 
             if (node.hasPreview)
             {
@@ -814,7 +812,7 @@ namespace UnityEditor.ShaderGraph.Drawing
             styleSheets.Clear();
             inputContainer.Clear();
             outputContainer.Clear();
-            m_DropdownsDivider?.Clear();
+            m_DropdownsDivider.Clear();
             m_ControlsDivider.Clear();
             m_PreviewContainer?.Clear();
             m_ControlItems.Clear();

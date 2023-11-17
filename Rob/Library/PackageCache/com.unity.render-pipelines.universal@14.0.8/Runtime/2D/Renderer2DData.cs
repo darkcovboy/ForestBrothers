@@ -15,7 +15,7 @@ namespace UnityEngine.Rendering.Universal
     /// </summary>
     [Serializable, ReloadGroup, ExcludeFromPreset]
     [MovedFrom("UnityEngine.Experimental.Rendering.Universal")]
-    [URPHelpURL("2DRendererData_overview")]
+    [HelpURL("https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@latest/index.html?subfolder=/manual/2DRendererData_overview.html")]
     public partial class Renderer2DData : ScriptableRendererData
     {
         internal enum Renderer2DDefaultMaterialType
@@ -152,17 +152,6 @@ namespace UnityEngine.Rendering.Universal
             }
 #endif
             return new Renderer2D(this);
-        }
-
-        internal void Dispose()
-        {
-            for (var i = 0; i < m_LightBlendStyles.Length; ++i)
-                m_LightBlendStyles[i].renderTargetHandle?.Release();
-
-            foreach(var mat in lightMaterials)
-                CoreUtils.Destroy(mat.Value);
-
-            lightMaterials.Clear();
         }
 
         /// <summary>

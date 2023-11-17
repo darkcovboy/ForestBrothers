@@ -35,6 +35,7 @@ public class Player : MonoBehaviour, IGameLose
             throw new NullReferenceException();
 
         SetPositions();
+        Debug.Log("SetPositions");
         Create();
     }
 
@@ -78,6 +79,7 @@ public class Player : MonoBehaviour, IGameLose
             animal.transform.LookAt(lookAt);
             animal.Win();
         }
+
     }
 
     public void RemoveCharacter(Animal animal)
@@ -141,6 +143,7 @@ public class Player : MonoBehaviour, IGameLose
 
     private void Create()
     {
+        Debug.Log("Create");
         for (int i = 0; i < _capacity; i++)
         {
             AddCharacter(i);
@@ -159,6 +162,7 @@ public class Player : MonoBehaviour, IGameLose
             character.Init(this);
             character.GetComponent<MovementHandler>().Init(_inputType, _charactersPositions[index], _animalData.Speed);
             _characters.Add(character);
+            Debug.Log("Create " + character.name);
         }
     }
 }

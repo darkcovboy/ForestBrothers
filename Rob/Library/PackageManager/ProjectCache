@@ -5,23 +5,75 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638331458522117708
-    m_Hash: 465948591
+      ticks: 638332470257427371
+    m_Hash: 969764412
   m_LockFileStatus:
     m_FilePath: C:/Users/darkc/Documents/GitHub/Rob/Rob/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638331458522237377
-    m_Hash: 1982138769
+      ticks: 638332470257500818
+    m_Hash: 2911846299
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/darkc/Documents/GitHub/Rob/Rob/Packages
-m_EditorVersion: 2022.3.10f1 (ff3792e53c62)
+m_EditorVersion: 2022.3.4f1 (35713cd46cd7)
 m_ResolvedPackages:
+- packageId: com.agava.webutility@https://github.com/forcepusher/com.agava.webutility.git#3.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 3.0.0
+  source: 5
+  resolvedPath: C:\Users\darkc\Documents\GitHub\Rob\Rob\Library\PackageCache\com.agava.webutility@8b3ff53334
+  assetPath: Packages/com.agava.webutility
+  name: com.agava.webutility
+  displayName: Web Utility
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: Tools that fix common issues in Unity WebGL export.
+  status: 0
+  errors: []
+  versions:
+    all: []
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.agava.yandexgames@https://github.com/forcepusher/com.agava.yandexgames.git#15.1.0
   testable: 0
   isDirectDependency: 1
@@ -407,6 +459,7 @@ m_ResolvedPackages:
     - 2.1.0
     - 2.2.0
     compatible:
+    - 2.0.5
     - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
@@ -451,7 +504,7 @@ m_ResolvedPackages:
     revision: 13a0e74f47307a1b20a57747cea59891ce36a647
     path: 
   unityLifecycle:
-    version: 2.0.7
+    version: 2.0.5
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -887,6 +940,7 @@ m_ResolvedPackages:
     - 5.1.1
     - 5.2.0
     compatible:
+    - 5.1.0
     - 5.1.1
     - 5.2.0
     recommended: 5.1.1
@@ -945,7 +999,7 @@ m_ResolvedPackages:
     revision: 2ffcb3295c03b76fcafb93b92d1b4041e67591c3
     path: 
   unityLifecycle:
-    version: 5.1.1
+    version: 5.1.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1147,7 +1201,7 @@ m_ResolvedPackages:
   - name: com.unity.mathematics
     version: 1.2.6
   - name: com.unity.burst
-    version: 1.8.8
+    version: 1.8.7
   - name: com.unity.render-pipelines.core
     version: 14.0.8
   - name: com.unity.ugui
@@ -1614,6 +1668,7 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     compatible:
+    - 1.7.4
     - 1.7.5
     - 1.7.6
     - 1.8.0
@@ -1668,7 +1723,7 @@ m_ResolvedPackages:
     revision: fdb1ca9a2c2a131e0ff9cb257b2eae3b53337b3a
     path: 
   unityLifecycle:
-    version: 1.7.5
+    version: 1.7.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -1726,9 +1781,10 @@ m_ResolvedPackages:
     - 1.9.0
     - 1.9.1
     compatible:
+    - 1.8.0
     - 1.9.0
     - 1.9.1
-    recommended: 1.9.1
+    recommended: 1.8.0
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1765,7 +1821,7 @@ m_ResolvedPackages:
     revision: 21b38599b7fcf9bdccd964bdb90710e6a1094810
     path: 
   unityLifecycle:
-    version: 1.9.0
+    version: 1.8.0
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3889,12 +3945,12 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.burst@1.8.8
+- packageId: com.unity.burst@1.8.7
   testable: 0
   isDirectDependency: 0
-  version: 1.8.8
+  version: 1.8.7
   source: 1
-  resolvedPath: C:\Users\darkc\Documents\GitHub\Rob\Rob\Library\PackageCache\com.unity.burst@1.8.8
+  resolvedPath: C:\Users\darkc\Documents\GitHub\Rob\Rob\Library\PackageCache\com.unity.burst@1.8.7
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -4035,6 +4091,7 @@ m_ResolvedPackages:
     - 1.8.8
     - 1.8.9
     compatible:
+    - 1.8.7
     - 1.8.8
     - 1.8.9
     recommended: 1.8.9
@@ -4056,16 +4113,16 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638271934420000000
+  datePublishedTicks: 638221796120000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.burst@1.8/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: git@github.cds.internal.unity3d.com:unity/burst
-    revision: 7673d9a736112fc9d58f32024c19150c2fa6d8ea
+    revision: 47aa5e222ec0a9e94b78af0bb63021cf722ad06b
     path: 
   unityLifecycle:
-    version: 1.8.8
+    version: 1.8.7
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0

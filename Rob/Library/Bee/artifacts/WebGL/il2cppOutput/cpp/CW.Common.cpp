@@ -4140,7 +4140,7 @@ IL_009f:
 
 IL_00a5:
 	{
-		VirtualActionInvoker1< String_t* >::Invoke(73, G_B9_1, G_B9_0);
+		VirtualActionInvoker1< String_t* >::Invoke(75, G_B9_1, G_B9_0);
 	}
 
 IL_00aa:
@@ -10081,7 +10081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11
 	{
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_3 = ___0_texture;
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(5, L_3);
 		___3_width = L_4;
 	}
 
@@ -10096,7 +10096,7 @@ IL_0017:
 	{
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_6 = ___0_texture;
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_6);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(7, L_6);
 		___4_height = L_7;
 	}
 

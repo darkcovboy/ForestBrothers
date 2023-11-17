@@ -815,8 +815,7 @@ namespace UnityEngine.Rendering.Universal
         /// <inheritdoc/>
         public void OnDestroy()
         {
-            if (camera.cameraType != CameraType.SceneView )
-                scriptableRenderer?.ReleaseRenderTargets();
+            scriptableRenderer?.ReleaseRenderTargets();
             m_Camera.DestroyVolumeStack(this);
             m_TaaPersistentData?.DeallocateTargets();
         }

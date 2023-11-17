@@ -85,23 +85,7 @@ namespace UnityEngine.Rendering.Universal
             m_LightCullResult = new Light2DCullResult();
             m_Renderer2DData.lightCullResult = m_LightCullResult;
 
-            // Initialize Blitter if UniversalRenderPipeline hasn't done so
-            bool initBlitter = Blitter.GetBlitMaterial(TextureDimension.Tex2D) == null;
-            var asset = UniversalRenderPipeline.asset;
-            if (asset != null)
-            {
-                foreach (var rendererData in asset.m_RendererDataList)
-                {
-                    if (rendererData is UniversalRendererData)
-                    {
-                        initBlitter = false;
-                        break;
-                    }
-                }
-            }
-
-            if (initBlitter)
-                Blitter.Initialize(data.coreBlitPS, data.coreBlitColorAndDepthPS);
+            // No need to initialize blitter the ScriptableRenderer already does this
 
             LensFlareCommonSRP.mergeNeeded = 0;
             LensFlareCommonSRP.maxLensFlareWithOcclusionTemporalSample = 1;
@@ -110,7 +94,6 @@ namespace UnityEngine.Rendering.Universal
 
         protected override void Dispose(bool disposing)
         {
-            m_Renderer2DData.Dispose();
             m_PostProcessPasses.Dispose();
             m_ColorTextureHandle?.Release();
             m_DepthTextureHandle?.Release();
@@ -123,7 +106,6 @@ namespace UnityEngine.Rendering.Universal
             CoreUtils.Destroy(m_BlitHDRMaterial);
             CoreUtils.Destroy(m_SamplingMaterial);
 
-			Blitter.Cleanup();
             base.Dispose(disposing);
         }
 
@@ -132,46 +114,11 @@ namespace UnityEngine.Rendering.Universal
             return m_Renderer2DData;
         }
 
-        private struct RenderPassInputSummary
-        {
-            internal bool requiresDepthTexture;
-            internal bool requiresColorTexture;
-        }
-
-        private RenderPassInputSummary GetRenderPassInputs(ref RenderingData renderingData, ref CameraData cameraData)
-        {
-            RenderPassInputSummary inputSummary = new RenderPassInputSummary();
-
-            for (int i = 0; i < activeRenderPassQueue.Count; ++i)
-            {
-                ScriptableRenderPass pass = activeRenderPassQueue[i];
-                bool needsDepth = (pass.input & ScriptableRenderPassInput.Depth) != ScriptableRenderPassInput.None;
-                bool needsColor = (pass.input & ScriptableRenderPassInput.Color) != ScriptableRenderPassInput.None;
-
-                inputSummary.requiresDepthTexture |= needsDepth;
-                inputSummary.requiresColorTexture |= needsColor;
-            }
-
-            inputSummary.requiresColorTexture |= cameraData.postProcessEnabled
-                    || cameraData.isHdrEnabled
-                    || cameraData.isSceneViewCamera
-                    || !cameraData.isDefaultViewport
-                    || cameraData.requireSrgbConversion
-                    || !cameraData.resolveFinalTarget
-                    || m_Renderer2DData.useCameraSortingLayerTexture
-                    || !Mathf.Approximately(cameraData.renderScale, 1.0f)
-                    || (DebugHandler != null && DebugHandler.WriteToDebugScreenTexture(ref cameraData));
-
-            inputSummary.requiresDepthTexture |= (!cameraData.resolveFinalTarget && m_UseDepthStencilBuffer);
-
-            return inputSummary;
-        }
-
         void CreateRenderTextures(
-            ref RenderPassInputSummary renderPassInputs,
             ref CameraData cameraData,
             bool forceCreateColorTexture,
             FilterMode colorTextureFilterMode,
+            CommandBuffer cmd,
             out RTHandle colorTargetHandle,
             out RTHandle depthTargetHandle)
         {
@@ -179,34 +126,38 @@ namespace UnityEngine.Rendering.Universal
 
             if (cameraData.renderType == CameraRenderType.Base)
             {
-                m_CreateColorTexture = renderPassInputs.requiresColorTexture;
-                m_CreateDepthTexture = renderPassInputs.requiresDepthTexture;
-                m_CreateColorTexture |= forceCreateColorTexture;
+                m_CreateColorTexture = forceCreateColorTexture
+                    || (DebugHandler != null && DebugHandler.WriteToDebugScreenTexture(ref cameraData))
+                    || cameraData.postProcessEnabled
+                    || cameraData.isHdrEnabled
+                    || cameraData.isSceneViewCamera
+                    || !cameraData.isDefaultViewport
+                    || cameraData.requireSrgbConversion
+                    || !cameraData.resolveFinalTarget
+                    || m_Renderer2DData.useCameraSortingLayerTexture
+                    || !Mathf.Approximately(cameraData.renderScale, 1.0f);
 
-                // RTHandles do not support combining color and depth in the same texture so we create them separately
-                m_CreateDepthTexture |= createColorTexture;
+                m_CreateDepthTexture = (!cameraData.resolveFinalTarget && m_UseDepthStencilBuffer) || createColorTexture;
 
-                if (createColorTexture)
+                if (m_CreateColorTexture)
                 {
                     var colorDescriptor = cameraTargetDescriptor;
                     colorDescriptor.depthBufferBits = 0;
                     RenderingUtils.ReAllocateIfNeeded(ref m_ColorTextureHandle, colorDescriptor, colorTextureFilterMode, wrapMode: TextureWrapMode.Clamp, name: "_CameraColorTexture");
                 }
 
-                if (createDepthTexture)
+                if (m_CreateDepthTexture)
                 {
                     var depthDescriptor = cameraTargetDescriptor;
                     depthDescriptor.colorFormat = RenderTextureFormat.Depth;
-                    depthDescriptor.graphicsFormat = GraphicsFormat.None;
                     depthDescriptor.depthBufferBits = k_DepthBufferBits;
                     if (!cameraData.resolveFinalTarget && m_UseDepthStencilBuffer)
                         depthDescriptor.bindMS = depthDescriptor.msaaSamples > 1 && !SystemInfo.supportsMultisampleAutoResolve && (SystemInfo.supportsMultisampledTextures != 0);
-
                     RenderingUtils.ReAllocateIfNeeded(ref m_DepthTextureHandle, depthDescriptor, FilterMode.Point, wrapMode: TextureWrapMode.Clamp, name: "_CameraDepthAttachment");
                 }
 
-                colorTargetHandle = createColorTexture ? m_ColorTextureHandle : k_CameraTarget;
-                depthTargetHandle = createDepthTexture ? m_DepthTextureHandle : k_CameraTarget;
+                colorTargetHandle = m_CreateColorTexture ? m_ColorTextureHandle : k_CameraTarget;
+                depthTargetHandle = m_CreateDepthTexture ? m_DepthTextureHandle : k_CameraTarget;
             }
             else    // Overlay camera
             {
@@ -250,26 +201,6 @@ namespace UnityEngine.Rendering.Universal
                     hasPostProcess = hasPostProcess && DebugHandler.IsPostProcessingAllowed;
                 }
                 DebugHandler.Setup(context, ref renderingData);
-
-                if (DebugHandler.IsActiveForCamera(ref cameraData))
-                {
-                    if (DebugHandler.WriteToDebugScreenTexture(ref cameraData))
-                    {
-                        RenderTextureDescriptor descriptor = cameraData.cameraTargetDescriptor;
-                        DebugHandler.ConfigureColorDescriptorForDebugScreen(ref descriptor, cameraData.pixelWidth, cameraData.pixelHeight);
-                        RenderingUtils.ReAllocateIfNeeded(ref DebugHandler.DebugScreenColorHandle, descriptor, name: "_DebugScreenColor");
-                        
-                        RenderTextureDescriptor depthDesc = cameraData.cameraTargetDescriptor;
-                        DebugHandler.ConfigureDepthDescriptorForDebugScreen(ref depthDesc, k_DepthBufferBits, cameraData.pixelWidth, cameraData.pixelHeight);
-                        RenderingUtils.ReAllocateIfNeeded(ref DebugHandler.DebugScreenDepthHandle, depthDesc, name: "_DebugScreenDepth");
-                    }
-
-                    if (DebugHandler.HDRDebugViewIsActive(ref cameraData))
-                    {
-                        DebugHandler.hdrDebugViewPass.Setup(ref cameraData, DebugHandler.DebugDisplaySettings.lightingSettings.hdrDebugMode);
-                        EnqueuePass(DebugHandler.hdrDebugViewPass);
-                    }
-                }
             }
 
 #if UNITY_EDITOR
@@ -301,15 +232,13 @@ namespace UnityEngine.Rendering.Universal
                 }
             }
 
-            RenderPassInputSummary renderPassInputs = GetRenderPassInputs(ref renderingData, ref cameraData);
-
             RTHandle colorTargetHandle;
             RTHandle depthTargetHandle;
 
             var cmd = renderingData.commandBuffer;
             using (new ProfilingScope(cmd, m_ProfilingSampler))
             {
-                CreateRenderTextures(ref renderPassInputs, ref cameraData, ppcUsesOffscreenRT, colorTextureFilterMode,
+                CreateRenderTextures(ref cameraData, ppcUsesOffscreenRT, colorTextureFilterMode, cmd,
                     out colorTargetHandle, out depthTargetHandle);
             }
             context.ExecuteCommandBuffer(cmd);
@@ -325,7 +254,8 @@ namespace UnityEngine.Rendering.Universal
                 EnqueuePass(colorGradingLutPass);
             }
 
-            m_Render2DLightingPass.Setup(renderPassInputs.requiresDepthTexture);
+            var needsDepth = m_CreateDepthTexture || m_UseDepthStencilBuffer;
+            m_Render2DLightingPass.Setup(needsDepth);
             m_Render2DLightingPass.ConfigureTarget(colorTargetHandle, depthTargetHandle);
             EnqueuePass(m_Render2DLightingPass);
 
@@ -333,7 +263,7 @@ namespace UnityEngine.Rendering.Universal
             bool outputToHDR = cameraData.isHDROutputActive;
             if (shouldRenderUI && outputToHDR)
             {
-                m_DrawOffscreenUIPass.Setup(ref cameraData, k_DepthBufferBits);
+                m_DrawOffscreenUIPass.Setup(cameraTargetDescriptor, depthTargetHandle);
                 EnqueuePass(m_DrawOffscreenUIPass);
             }
             

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Alligator
   m_EditorClassIdentifier: 
   _animalType: 9
-  _animalPrefab: {fileID: 6838291309816963480, guid: 4fd97497f6085e841b52ce7729065f68, type: 3}
+  _animalPrefab: {fileID: 1914353637048930444, guid: 3337389746165d44f99ce5ad26b7de2f, type: 3}
   _speedMove: 6

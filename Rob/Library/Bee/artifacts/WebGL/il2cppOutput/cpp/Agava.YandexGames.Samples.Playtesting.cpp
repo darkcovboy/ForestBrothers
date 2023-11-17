@@ -2696,7 +2696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProductPanel_set_Product_m27CF1196CDE99F
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->____productIdText;
 		CatalogProduct_t4037F38A7644A9B788D7EDA7D1EFE3682CD9A918* L_2 = ___0_value;
 		String_t* L_3 = L_2->___id;
-		VirtualActionInvoker1< String_t* >::Invoke(73, L_1, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_1, L_3);
 		CatalogProduct_t4037F38A7644A9B788D7EDA7D1EFE3682CD9A918* L_4 = ___0_value;
 		String_t* L_5 = L_4->___imageURI;
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
@@ -3335,7 +3335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasedProductPanel_set_PurchasedProdu
 		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->____purchasedProductIdText;
 		PurchasedProduct_tA66F8054306A3A17C1B5FDCEA8F9FAE91B10D7EA* L_2 = ___0_value;
 		String_t* L_3 = L_2->___productID;
-		VirtualActionInvoker1< String_t* >::Invoke(73, L_1, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_1, L_3);
 		return;
 	}
 }

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: SkibidiCapybara
   m_EditorClassIdentifier: 
   _animalType: 13
-  _animalPrefab: {fileID: 404156674473420278, guid: 71b8f70e629c45c41b321134165cee4b, type: 3}
+  _animalPrefab: {fileID: 8624709352274486435, guid: 31ab883f5583c254d84cecd6177c812c, type: 3}
   _speedMove: 6

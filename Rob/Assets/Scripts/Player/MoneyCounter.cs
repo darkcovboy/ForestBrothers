@@ -1,4 +1,5 @@
 using System;
+using Zenject;
 
 public class MoneyCounter : IMoneyChangedHandler
 {
@@ -9,6 +10,13 @@ public class MoneyCounter : IMoneyChangedHandler
     private int _money;
     private int _earnedMoney;
     private int _startMoney;
+    private PlayerSave _playerSave;
+
+    [Inject]
+    public void Constructor(PlayerSave playerSave)
+    {
+        _playerSave = playerSave;
+    }
 
     public MoneyCounter(int startMoney)
     {
@@ -25,6 +33,7 @@ public class MoneyCounter : IMoneyChangedHandler
 
         _money += money;
         _earnedMoney += money;
+        _playerSave.UpdateMoney(_money);
         OnMoneyChanged?.Invoke(_money);
     }
 
@@ -39,6 +48,7 @@ public class MoneyCounter : IMoneyChangedHandler
             throw new ArgumentException();
 
         _money -= price;
+        _playerSave.UpdateMoney(_money);
         OnMoneyChanged?.Invoke(_money);
     }
 
